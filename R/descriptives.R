@@ -43,6 +43,7 @@ treats <- bes17.dat %>%
 
 
 ## ----balance-table-----
+# Gives summary statistics on the political background of the British MPs included in our sample (first row) and all British MPs (second row)
 
 bind_rows(treats, overall)%>%
   rename(" " = in_experiment) %>%
@@ -79,6 +80,8 @@ gtreats <- bes17.dat %>%
 
 
 ## ----regional-distribution-table----
+# Geographic distribution of constituencies contin in sample compared to the distribution of all GB constituencies
+
 gtreats %>%
   ungroup() %>%
   select(c("Region", "Included")) %>%
