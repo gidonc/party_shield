@@ -360,3 +360,77 @@ bes17.dat <- bes17.dat %>%
 #   set_bottom_border(row = 1, col = everywhere,  brdr(.4, "solid", "black")) %>% 
 #   set_right_border(everywhere, 1,  brdr(.4, "solid", "black")) %>%
 #   set_caption("Characteristics of constituencies included in and excluded from the experiment.")
+
+main <- main %>% 
+  mutate(
+    orig_send_position = send_position,
+    send_cat = case_when(
+      send_position == 1 ~ "1",
+      send_position %in% c(2:6) ~ "2-6",
+      TRUE ~ "beyond 6"
+    ),
+    emailonlyresponse = case_when(
+      respondent_reported_letter_status==1 ~ 0,
+      manualresponse_exists==1 ~ 1,
+      TRUE ~ NA_real_
+    ),
+    has_response_info = as.numeric(!is.na(respondent_reported_letter_status)),
+    partycongruent_neat = recode(partycongruent, 
+                                 `0` = "Constituent-party not congruent",
+                                 `1` = "Constituent-party congruent")
+  )
+
+
+
+issue_nice <- tribble(
+  ~issue, ~issue_nice,
+  "customs", "Support EU/UK Customs Union",
+  "singlem", "Support remaining in single market",
+  "freedomm", "Support EU/UK Freedom of movement",
+  "secondr", "Support second referendum",
+  "regulation", "Support removing EU regulations",
+  "immigration", "Support tougher immigration control",
+  "skilled", "Support points based immigration system",
+  "tuitionfree", "Support abolition of university tuition fees",
+  "tuitionlevel", "Support variable tuition fees across subjects"
+)
+issue_nice$issue_order <- 1:nrow(issue_nice)
+
+const_with_multi_mps <-mp_rebel_dat %>% 
+  group_by(ONSConstID, constituency_name, mp_name)%>%
+  summarize() %>%
+  group_by(ONSConstID, constituency_name) %>% 
+  tally() %>%
+  filter(n>1)
+
+n_byelection_affected<-sum(new.anon$constituency %in% const_with_multi_mps$ONSConstID)
+
+
+
+## ----save-party-shield-processed-data-local----
+current_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
+parent_dir <- file.path(current_dir, "..")
+data_dir <- file.path(parent_dir, "Data")
+
+set.seed(123)
+main_ids <- main |>
+  group_by(onsconstid) |>
+  summarise(msender = max(senderid)) |>
+  arrange(msender) |>
+  rowid_to_column("const_anon_id")
+  
+main_small <- main |>
+  left_join(main_ids, by = "onsconstid") |>
+  dplyr::select(response_auto_and_manual,
+         manualresponse_exists_inc_post_count_nonresponse,
+         partycongruent,
+         issue,
+         position,
+         send_cat,
+         mp_type_detailed,
+         has_response_info,
+         id,
+         respondent_reported_letter_status,
+         manualresponse_exists, 
+         lr_mp_party,
+         const_anon_id)
