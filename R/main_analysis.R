@@ -49,13 +49,16 @@ treats <- bes17.dat %>%
 ## ----load-party-shield-processed-data-local----
 current_dir <- rstudioapi::getActiveDocumentContext()$path
 parent_dir <- file.path(current_dir, "..")
-data_path <- file.path(parent_dir, "Data")
-  
+data_dir <- file.path(parent_dir, "Data")
+
+main <- read_csv(file.path(data_dir, "main.csv"))  
+
 ##----load-party-shield-processed-data-Rmd----
 
+main <- read_csv("../Data/main.csv")
 
 ## ----response-rate-descriptives----
-# Overall MP response rates ncluding holidng responses and restricted to substantive responses only
+# Overall MP response rates including holding responses and restricted to substantive responses only
 
 main %>% 
   summarise(
@@ -97,7 +100,7 @@ prop.test1 <- main %>%
   tally() %>%
   pivot_wider(names_from=sub_resp, values_from=n) %>%
   ungroup() %>%
-  select(no, yes) %>%
+  dplyr::select(no, yes) %>%
   as.matrix() %>%
   prop.test()
 diff1 <- mean(main$manualresponse_exists_inc_post_count_nonresponse[main$partycongruent==1])-mean(main$manualresponse_exists_inc_post_count_nonresponse[main$partycongruent==0])
@@ -133,9 +136,9 @@ main %>%
 ##----lin-mod-responsiveness----
 # run and report linear probability models of MP responsiveness
 
-fit1.1<-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
+fit1.1<-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
 
-fit1.2<-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(onsconstid)+factor(send_cat), data=filter(main, mp_type_detailed=="loyalist"), cluster=id)
+fit1.2<-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id)+factor(send_cat), data=filter(main, mp_type_detailed=="loyalist"), cluster=id)
 
 
 reg_table_1<-huxtable::huxreg('Full sample' = fit1.1, 
@@ -158,9 +161,9 @@ reg_table_1
 ##----lin-responsiveness--varyresponsetypes----
 # run and report regression using different definitions of responsiveness
 
-fit2.1<-lm_robust(has_response_info~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
-fit2.2<-lm_robust(respondent_reported_letter_status~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
-fit2.3<-lm_robust(manualresponse_exists~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
+fit2.1<-lm_robust(has_response_info~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
+fit2.2<-lm_robust(respondent_reported_letter_status~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
+fit2.3<-lm_robust(manualresponse_exists~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
 
 reg_table_2<-huxtable::huxreg('Letter Status Reported' = fit2.1, 
                      'Letter Response' = fit2.2, 
@@ -182,9 +185,9 @@ reg_table_2
 
 ##----OLS-self-v-party----
 
-fit3.1 <- lm_robust(lr_mp_party~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
+fit3.1 <- lm_robust(lr_mp_party~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
 
-fit3.2 <- lm_robust(lr_mp_party~ partycongruent + factor(issue)*factor(position) + factor(onsconstid)+factor(send_cat), data=filter(main, mp_type_detailed=="loyalist"), cluster=id)
+fit3.2 <- lm_robust(lr_mp_party~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id)+factor(send_cat), data=filter(main, mp_type_detailed=="loyalist"), cluster=id)
 
 
 reg_table_3 <-huxtable::huxreg('Full sample' = fit3.1, 
@@ -339,9 +342,9 @@ main %>%
 ##----lin-responsiveness-alternativeloyalist----
 # MP responsiveness regressions using alternative coding of MP loyalty
 
-fitSI.1.1_abstain_nonreb<-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
+fitSI.1.1_abstain_nonreb<-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
 
-fitSI.1.2_abstain_nonreb<-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(onsconstid)+factor(send_cat), data=filter(main, mp_type_abstain_nonreb=="loyalist"), cluster=id)
+fitSI.1.2_abstain_nonreb<-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id)+factor(send_cat), data=filter(main, mp_type_abstain_nonreb=="loyalist"), cluster=id)
 
 reg_table_SI5<-huxtable::huxreg('Full sample' = fitSI.1.1_abstain_nonreb, 
                                 'Loyalist MPs' = fitSI.1.2_abstain_nonreb,
@@ -363,10 +366,10 @@ reg_table_SI5
 ##----OLS-self-v-party-alternativeloyalist----
 
 
-fitSI.2.1_abstain_nonreb<-lm_robust(lr_mp_party~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
+fitSI.2.1_abstain_nonreb<-lm_robust(lr_mp_party~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
 
 
-fitSI.2.2_abstain_nonreb<-lm_robust(lr_mp_party~ partycongruent + factor(issue)*factor(position) + factor(onsconstid)+factor(send_cat), data=filter(main, mp_type_abstain_nonreb=="loyalist"), cluster=id)
+fitSI.2.2_abstain_nonreb<-lm_robust(lr_mp_party~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id)+factor(send_cat), data=filter(main, mp_type_abstain_nonreb=="loyalist"), cluster=id)
 
 
 reg_table_SI6 <- huxtable::huxreg('Full sample' = fitSI.2.1_abstain_nonreb, 
@@ -434,7 +437,7 @@ main %>%
 
 ##----lin-responsiveness-brexit----
 
-fitSI.8.1 <-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), 
+fitSI.8.1 <-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), 
                       data=main %>%
                         filter(issue %in% c("customs", "singlem",
                                             "freedomm", "regulation", 
@@ -442,7 +445,7 @@ fitSI.8.1 <-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycon
                       cluster=id)
 
 
-fitSI.8.2 <-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_position), 
+fitSI.8.2 <-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_position), 
                          data=main %>%
                            filter(!(issue %in% c("customs", "singlem",
                                                  "freedomm", "regulation", 
@@ -485,9 +488,9 @@ SIFig3
 ##----lin-mpparty-standardised----
 # OLS models of difference in number of MP mentions and party mentions standardised by number of words in the response
 
-fitSI.9.1<-lm_robust(diff_mp_party_outliers_removed~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
+fitSI.9.1<-lm_robust(diff_mp_party_outliers_removed~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
 
-fitSI.9.2<-lm_robust(diff_mp_party_outliers_removed~ partycongruent + factor(issue)*factor(position) + factor(onsconstid)+factor(send_cat), data=filter(main, mp_type_detailed=="loyalist"), cluster=id)
+fitSI.9.2<-lm_robust(diff_mp_party_outliers_removed~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id)+factor(send_cat), data=filter(main, mp_type_detailed=="loyalist"), cluster=id)
 
 
 
@@ -511,9 +514,9 @@ reg_table_SI9
 
 ##----reg-letter-length----
 
-fitSI.10.1 <- lm_robust(I(log(word_total)) ~ partycongruent + factor(issue)*factor(position) + factor(onsconstid) + factor(send_cat), data=main, cluster=id)
+fitSI.10.1 <- lm_robust(I(log(word_total)) ~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id) + factor(send_cat), data=main, cluster=id)
 
-fitSI.10.2 <- lm_robust(I(log(word_total))~ partycongruent + factor(issue)*factor(position) + factor(onsconstid)+factor(send_cat), data=filter(main, mp_type_detailed=="loyalist"), cluster=id)
+fitSI.10.2 <- lm_robust(I(log(word_total))~ partycongruent + factor(issue)*factor(position) + factor(const_anon_id)+factor(send_cat), data=filter(main, mp_type_detailed=="loyalist"), cluster=id)
 
 
 reg_table_SI10<-huxtable::huxreg('Full Sample' = fitSI.10.1, 
