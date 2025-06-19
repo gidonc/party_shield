@@ -1,0 +1,625 @@
+const_anon_id,response_auto_and_manual,manualresponse_exists_inc_post_count_nonresponse,partycongruent,issue,position,send_cat,mp_type_detailed,has_response_info,id,respondent_reported_letter_status,manualresponse_exists,lr_mp_party
+1,FALSE,0,1,tuitionfree,disagree,1,loyalist,0,6,NA,0,NA
+1,TRUE,1,0,tuitionfree,agree,2-6,loyalist,1,18,0,1,0
+2,TRUE,1,1,tuitionfree,disagree,2-6,loyalist,1,33,0,1,0.4054651081081644
+2,TRUE,1,0,tuitionfree,agree,1,loyalist,0,34,NA,1,0
+2,TRUE,1,1,tuitionlevel,agree,2-6,loyalist,0,35,NA,1,0
+2,TRUE,1,0,tuitionlevel,disagree,2-6,loyalist,0,37,NA,1,0.4054651081081644
+3,FALSE,0,1,secondr,disagree,1,loyalist,0,7,NA,0,NA
+3,FALSE,0,0,regulation,disagree,2-6,unclear rebel,0,80,NA,0,NA
+3,FALSE,0,0,secondr,agree,2-6,loyalist,1,81,0,0,NA
+3,FALSE,0,1,regulation,agree,2-6,unclear rebel,1,85,0,0,NA
+4,TRUE,1,0,secondr,agree,1,loyalist,1,25,0,1,0.9985288301111273
+4,TRUE,1,1,immigration,disagree,2-6,loyalist,0,25,NA,1,-0.40546510810816444
+4,TRUE,1,0,tuitionlevel,agree,beyond 6,loyalist,1,27,0,1,0.47000362924573563
+4,FALSE,0,1,secondr,disagree,2-6,loyalist,0,88,NA,0,NA
+4,TRUE,1,1,tuitionlevel,disagree,beyond 6,loyalist,0,89,NA,1,0.6061358035703155
+4,TRUE,1,0,immigration,agree,2-6,loyalist,1,93,0,1,-1.0986122886681098
+4,FALSE,0,0,skilled,agree,2-6,loyalist,1,93,0,0,NA
+4,FALSE,0,1,skilled,disagree,2-6,loyalist,0,110,NA,0,NA
+5,TRUE,1,0,freedomm,agree,2-6,unclear rebel,0,115,NA,1,-0.6931471805599453
+5,TRUE,0,0,skilled,disagree,2-6,loyalist,0,115,NA,0,NA
+5,TRUE,0,1,freedomm,disagree,1,unclear rebel,1,119,0,0,NA
+5,TRUE,1,1,skilled,agree,2-6,loyalist,1,119,0,1,-0.6931471805599453
+6,FALSE,0,0,customs,agree,1,loyalist,1,114,0,0,NA
+6,FALSE,0,1,singlem,disagree,2-6,loyalist,1,114,0,0,NA
+6,TRUE,1,1,skilled,agree,beyond 6,loyalist,1,114,0,1,-1.6094379124341003
+6,FALSE,0,0,singlem,agree,2-6,loyalist,1,116,0,0,NA
+6,TRUE,1,1,tuitionfree,disagree,beyond 6,loyalist,1,116,0,1,-0.4700036292457356
+6,FALSE,0,1,tuitionlevel,agree,beyond 6,loyalist,1,116,0,0,NA
+6,FALSE,0,0,freedomm,agree,2-6,unclear rebel,1,121,0,0,NA
+6,TRUE,1,0,tuitionfree,agree,beyond 6,loyalist,1,121,0,1,-1.0986122886681098
+6,FALSE,0,0,tuitionlevel,disagree,beyond 6,loyalist,1,121,0,0,NA
+6,TRUE,1,1,customs,disagree,2-6,loyalist,1,124,0,1,-0.6931471805599453
+6,FALSE,0,1,freedomm,disagree,2-6,unclear rebel,1,124,0,0,NA
+6,FALSE,0,0,skilled,disagree,beyond 6,loyalist,1,124,0,0,NA
+7,TRUE,1,0,secondr,agree,1,unclear rebel,1,103,0,1,0.5877866649021191
+7,TRUE,1,1,secondr,disagree,2-6,unclear rebel,1,125,0,1,1.6094379124341003
+8,TRUE,1,1,secondr,disagree,1,loyalist,0,28,NA,1,-0.2876820724517809
+8,TRUE,1,1,freedomm,disagree,2-6,loyalist,0,28,NA,1,-0.2876820724517809
+8,TRUE,1,1,immigration,agree,2-6,loyalist,0,28,NA,1,-0.2876820724517809
+8,TRUE,1,0,secondr,agree,2-6,loyalist,0,255,NA,1,-0.2876820724517809
+8,TRUE,1,0,freedomm,agree,2-6,loyalist,0,255,NA,1,-0.2876820724517809
+8,TRUE,1,0,immigration,disagree,2-6,loyalist,0,255,NA,1,-0.2876820724517809
+9,FALSE,0,1,tuitionfree,agree,2-6,loyalist,0,227,NA,0,NA
+9,FALSE,0,0,tuitionfree,disagree,1,loyalist,0,257,NA,0,NA
+10,TRUE,1,0,secondr,agree,1,loyalist,0,265,NA,1,0.6931471805599453
+10,TRUE,1,0,customs,agree,2-6,loyalist,0,265,NA,1,1.791759469228055
+10,TRUE,1,0,freedomm,agree,2-6,unclear rebel,0,265,NA,1,0.6931471805599453
+10,TRUE,1,1,secondr,disagree,2-6,loyalist,0,266,NA,1,2.5649493574615367
+10,TRUE,1,1,customs,disagree,2-6,loyalist,0,266,NA,1,1.0986122886681098
+10,TRUE,1,1,freedomm,disagree,2-6,unclear rebel,0,266,NA,1,1.0986122886681098
+11,TRUE,1,0,singlem,agree,2-6,loyalist,0,273,NA,1,-0.6931471805599453
+11,TRUE,1,1,immigration,agree,2-6,loyalist,0,273,NA,1,0.6931471805599453
+11,FALSE,0,1,skilled,agree,2-6,loyalist,0,273,NA,0,NA
+11,TRUE,1,1,singlem,disagree,1,loyalist,0,287,NA,1,0
+11,TRUE,1,0,immigration,disagree,2-6,loyalist,0,287,NA,1,1.0986122886681098
+11,FALSE,0,0,skilled,disagree,2-6,loyalist,0,287,NA,0,NA
+12,TRUE,1,0,regulation,agree,1,loyalist,0,274,NA,1,0.3794896217049037
+12,FALSE,0,0,tuitionlevel,agree,2-6,loyalist,0,274,NA,0,NA
+12,TRUE,1,1,regulation,disagree,2-6,loyalist,0,290,NA,1,0.3794896217049037
+12,FALSE,0,1,tuitionlevel,disagree,2-6,loyalist,0,290,NA,0,NA
+13,TRUE,1,1,regulation,agree,2-6,extreme rebel,0,113,NA,1,1.6094379124341003
+13,TRUE,1,1,skilled,agree,beyond 6,loyalist,0,113,NA,1,1.5125880864441827
+13,TRUE,1,0,tuitionfree,agree,beyond 6,loyalist,0,113,NA,1,0.6931471805599453
+13,TRUE,1,0,customs,agree,1,extreme rebel,1,118,0,1,1.6094379124341003
+13,TRUE,1,0,regulation,disagree,2-6,extreme rebel,1,118,0,1,1.4853852637641216
+13,TRUE,1,1,customs,disagree,2-6,extreme rebel,0,127,NA,1,1.6094379124341003
+13,TRUE,1,1,singlem,disagree,2-6,extreme rebel,0,127,NA,1,1.4853852637641216
+13,TRUE,1,1,tuitionfree,disagree,beyond 6,loyalist,0,127,NA,1,1.0360919316867758
+13,TRUE,1,0,singlem,agree,2-6,extreme rebel,0,291,NA,1,0
+13,TRUE,1,0,skilled,disagree,beyond 6,loyalist,0,291,NA,1,1.3862943611198906
+14,TRUE,1,0,secondr,agree,2-6,loyalist,0,306,NA,1,-1.5040773967762742
+14,TRUE,1,1,immigration,disagree,2-6,loyalist,0,306,NA,1,-0.49247648509779407
+14,TRUE,1,0,skilled,agree,2-6,loyalist,0,306,NA,1,-0.2363887780642304
+14,FALSE,0,1,secondr,disagree,1,loyalist,0,320,NA,0,NA
+14,FALSE,0,0,immigration,agree,2-6,loyalist,0,320,NA,0,NA
+14,FALSE,0,1,skilled,disagree,2-6,loyalist,0,320,NA,0,NA
+15,FALSE,0,0,secondr,agree,1,extreme rebel,0,275,NA,0,NA
+15,FALSE,0,0,freedomm,agree,2-6,extreme rebel,0,275,NA,0,NA
+15,FALSE,0,0,regulation,agree,2-6,unclear rebel,0,275,NA,0,NA
+15,FALSE,0,1,regulation,disagree,2-6,unclear rebel,0,285,NA,0,NA
+15,FALSE,0,1,immigration,disagree,beyond 6,loyalist,0,285,NA,0,NA
+15,FALSE,0,1,freedomm,disagree,2-6,extreme rebel,0,324,NA,0,NA
+15,FALSE,0,0,immigration,agree,beyond 6,loyalist,0,324,NA,0,NA
+15,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,324,NA,0,NA
+15,FALSE,0,1,secondr,disagree,2-6,extreme rebel,0,327,NA,0,NA
+15,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,0,327,NA,0,NA
+16,TRUE,1,0,secondr,agree,2-6,moderate rebel,0,230,NA,1,1.3862943611198906
+16,TRUE,1,1,secondr,disagree,1,moderate rebel,1,240,0,1,1.540445040947149
+16,TRUE,1,0,tuitionfree,disagree,2-6,loyalist,1,321,0,1,1.3862943611198906
+16,TRUE,1,1,tuitionfree,agree,2-6,loyalist,0,330,NA,1,0
+17,TRUE,1,1,regulation,disagree,2-6,loyalist,0,111,NA,1,-1.8718021769015913
+17,TRUE,1,1,immigration,disagree,beyond 6,loyalist,0,111,NA,1,-1.8718021769015913
+17,TRUE,1,0,immigration,agree,beyond 6,loyalist,0,318,NA,1,-1.8718021769015913
+17,TRUE,1,0,skilled,agree,beyond 6,loyalist,0,318,NA,1,-1.8718021769015913
+17,FALSE,0,0,tuitionfree,disagree,beyond 6,loyalist,0,318,NA,0,NA
+17,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,0,325,NA,0,NA
+17,TRUE,1,1,skilled,disagree,beyond 6,loyalist,0,331,NA,1,-1.8718021769015913
+17,TRUE,0,1,tuitionfree,agree,beyond 6,loyalist,0,331,NA,0,NA
+17,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,331,NA,0,NA
+17,TRUE,1,1,secondr,disagree,1,loyalist,0,334,NA,1,-0.04445176257083381
+17,TRUE,1,0,customs,disagree,2-6,unclear rebel,0,334,NA,1,-0.04445176257083381
+17,TRUE,0,0,regulation,agree,2-6,loyalist,0,334,NA,0,NA
+17,TRUE,1,0,secondr,agree,2-6,loyalist,0,336,NA,1,-0.04445176257083381
+17,TRUE,1,1,customs,agree,2-6,unclear rebel,0,336,NA,1,-0.04445176257083381
+18,FALSE,0,1,regulation,agree,1,extreme rebel,0,337,NA,0,NA
+18,FALSE,0,1,singlem,disagree,2-6,extreme rebel,0,337,NA,0,NA
+18,FALSE,0,0,tuitionlevel,disagree,2-6,loyalist,0,337,NA,0,NA
+18,FALSE,0,0,regulation,disagree,2-6,extreme rebel,0,339,NA,0,NA
+18,FALSE,0,0,singlem,agree,2-6,extreme rebel,0,339,NA,0,NA
+18,FALSE,0,1,tuitionlevel,agree,2-6,loyalist,0,339,NA,0,NA
+19,TRUE,1,0,regulation,disagree,1,extreme rebel,0,296,NA,1,-0.6190392084062235
+19,TRUE,1,1,tuitionlevel,agree,2-6,loyalist,0,296,NA,1,0.6931471805599453
+19,TRUE,1,1,regulation,agree,2-6,extreme rebel,0,405,NA,1,0.8472978603872037
+19,TRUE,1,0,tuitionlevel,disagree,2-6,loyalist,0,405,NA,1,0.6931471805599453
+20,TRUE,1,1,tuitionfree,agree,1,loyalist,0,409,NA,1,0.9808292530117262
+20,TRUE,1,0,tuitionfree,disagree,2-6,loyalist,1,410,0,1,1.9459101490553132
+21,TRUE,0,1,secondr,disagree,1,loyalist,0,276,NA,0,NA
+21,TRUE,0,1,customs,disagree,2-6,unclear rebel,0,276,NA,0,NA
+21,TRUE,0,1,freedomm,disagree,2-6,loyalist,0,276,NA,0,NA
+21,TRUE,0,0,secondr,agree,2-6,loyalist,0,421,NA,0,NA
+21,TRUE,0,0,customs,agree,2-6,unclear rebel,0,421,NA,0,NA
+21,TRUE,0,0,freedomm,agree,2-6,loyalist,0,421,NA,0,NA
+22,FALSE,0,0,tuitionfree,disagree,2-6,loyalist,0,68,NA,0,NA
+22,FALSE,0,0,customs,disagree,2-6,unclear rebel,1,71,0,0,NA
+22,FALSE,0,0,skilled,agree,2-6,loyalist,0,281,NA,0,NA
+22,FALSE,0,1,tuitionfree,agree,2-6,loyalist,0,281,NA,0,NA
+22,FALSE,0,1,customs,agree,1,unclear rebel,1,322,0,0,NA
+22,FALSE,0,1,skilled,disagree,2-6,loyalist,0,422,NA,0,NA
+23,TRUE,1,1,secondr,disagree,2-6,loyalist,1,424,1,0,NA
+23,TRUE,1,1,singlem,disagree,2-6,loyalist,1,424,1,0,NA
+23,TRUE,1,1,skilled,agree,2-6,loyalist,1,424,1,0,NA
+23,FALSE,0,0,secondr,agree,1,loyalist,0,425,NA,0,NA
+23,FALSE,0,0,skilled,disagree,2-6,loyalist,0,425,NA,0,NA
+23,FALSE,0,1,tuitionfree,disagree,beyond 6,loyalist,0,425,NA,0,NA
+23,FALSE,0,0,singlem,agree,2-6,loyalist,0,428,NA,0,NA
+23,FALSE,0,0,tuitionfree,agree,beyond 6,loyalist,0,428,NA,0,NA
+24,TRUE,1,0,tuitionlevel,disagree,2-6,loyalist,0,418,NA,1,0.9808292530117262
+24,TRUE,1,1,tuitionlevel,agree,1,loyalist,1,431,1,1,1.0986122886681098
+25,TRUE,1,1,singlem,disagree,2-6,loyalist,0,52,NA,1,1.1349799328389845
+25,FALSE,0,1,immigration,disagree,2-6,loyalist,0,52,NA,0,NA
+25,FALSE,0,0,skilled,agree,beyond 6,loyalist,0,52,NA,0,NA
+25,TRUE,1,1,freedomm,disagree,1,loyalist,0,55,NA,1,1.1349799328389845
+25,TRUE,1,0,immigration,agree,2-6,loyalist,0,55,NA,1,0.6931471805599453
+25,TRUE,0,0,freedomm,agree,2-6,loyalist,1,452,0,0,NA
+25,TRUE,1,0,singlem,agree,2-6,loyalist,1,452,0,1,1.1349799328389845
+25,FALSE,0,1,skilled,disagree,beyond 6,loyalist,1,452,0,0,NA
+26,TRUE,1,0,secondr,agree,1,loyalist,0,313,NA,1,0.9555114450274363
+26,TRUE,1,1,secondr,disagree,2-6,loyalist,0,458,NA,1,0.9555114450274363
+27,TRUE,1,0,freedomm,agree,2-6,loyalist,0,50,NA,1,-1.791759469228055
+27,TRUE,1,1,immigration,disagree,beyond 6,loyalist,0,50,NA,1,-0.9808292530117262
+27,TRUE,1,1,tuitionlevel,disagree,beyond 6,loyalist,1,50,1,1,0.4054651081081644
+27,TRUE,1,0,customs,disagree,2-6,unclear rebel,0,112,NA,1,-1.791759469228055
+27,TRUE,1,1,freedomm,disagree,2-6,loyalist,0,112,NA,1,-1.7047480922384253
+27,TRUE,1,1,singlem,disagree,beyond 6,loyalist,0,112,NA,1,-1.7047480922384253
+27,TRUE,1,1,secondr,disagree,2-6,unclear rebel,0,239,NA,1,-1.7047480922384253
+27,TRUE,1,0,singlem,agree,beyond 6,loyalist,0,239,NA,1,-1.7047480922384253
+27,TRUE,1,1,skilled,disagree,beyond 6,loyalist,0,239,NA,1,-0.9808292530117262
+27,TRUE,1,0,secondr,agree,1,unclear rebel,0,241,NA,1,-0.916290731874155
+27,FALSE,0,1,customs,agree,2-6,unclear rebel,0,241,NA,0,NA
+27,TRUE,1,0,tuitionlevel,agree,beyond 6,loyalist,0,241,NA,1,0.4054651081081644
+27,TRUE,1,0,immigration,agree,beyond 6,loyalist,0,461,NA,1,-0.9808292530117262
+27,TRUE,1,0,skilled,agree,beyond 6,loyalist,0,461,NA,1,-0.9808292530117262
+28,FALSE,0,0,customs,disagree,2-6,loyalist,0,53,NA,0,NA
+28,TRUE,1,0,singlem,disagree,2-6,loyalist,0,53,NA,1,2.03688192726104
+28,TRUE,1,1,singlem,agree,2-6,loyalist,0,352,NA,1,1.55814461804655
+28,TRUE,1,1,secondr,agree,2-6,loyalist,0,441,NA,1,0.15415067982725836
+28,TRUE,1,1,customs,agree,2-6,loyalist,0,448,NA,1,1.55814461804655
+28,TRUE,1,1,tuitionfree,agree,beyond 6,loyalist,0,449,NA,1,1.252762968495368
+28,TRUE,1,0,secondr,disagree,1,loyalist,0,454,NA,1,1.2039728043259361
+28,TRUE,1,0,tuitionlevel,agree,beyond 6,loyalist,0,459,NA,1,0.9555114450274363
+28,TRUE,1,0,tuitionfree,disagree,beyond 6,loyalist,0,463,NA,1,0.9555114450274363
+28,TRUE,1,1,tuitionlevel,disagree,beyond 6,loyalist,1,470,0,1,1.252762968495368
+29,TRUE,0,1,immigration,agree,1,loyalist,0,305,NA,0,NA
+29,TRUE,1,1,skilled,agree,2-6,loyalist,0,305,NA,1,0.28768207245178085
+29,TRUE,1,1,tuitionfree,disagree,2-6,loyalist,0,305,NA,1,0
+29,TRUE,0,0,immigration,disagree,2-6,loyalist,0,471,NA,0,NA
+29,TRUE,1,0,skilled,disagree,2-6,loyalist,0,471,NA,1,0.6931471805599453
+29,FALSE,0,0,tuitionfree,agree,2-6,loyalist,0,471,NA,0,NA
+30,TRUE,0,1,freedomm,disagree,2-6,loyalist,0,44,NA,0,NA
+30,TRUE,1,1,tuitionfree,disagree,beyond 6,loyalist,0,44,NA,1,1.0986122886681098
+30,TRUE,0,1,secondr,disagree,1,loyalist,0,90,NA,0,NA
+30,FALSE,0,0,freedomm,agree,2-6,loyalist,0,90,NA,0,NA
+30,TRUE,1,0,skilled,disagree,2-6,loyalist,0,90,NA,1,1.992430164690206
+30,TRUE,1,0,secondr,agree,2-6,loyalist,0,474,NA,1,0.10536051565782635
+30,TRUE,1,1,skilled,agree,2-6,loyalist,0,474,NA,1,1.252762968495368
+30,TRUE,1,0,tuitionfree,agree,beyond 6,loyalist,0,474,NA,1,0.6931471805599453
+31,TRUE,0,1,secondr,disagree,1,loyalist,0,485,NA,0,NA
+31,TRUE,0,0,secondr,agree,2-6,loyalist,0,489,NA,0,NA
+32,FALSE,0,0,freedomm,agree,1,loyalist,0,504,NA,0,NA
+32,TRUE,1,1,freedomm,disagree,2-6,loyalist,1,511,0,1,-1.791759469228055
+33,FALSE,0,1,tuitionlevel,agree,1,loyalist,0,515,NA,0,NA
+33,FALSE,0,0,tuitionlevel,disagree,2-6,loyalist,1,516,0,0,NA
+34,TRUE,1,0,tuitionfree,agree,2-6,loyalist,1,472,1,0,NA
+34,TRUE,1,0,tuitionlevel,disagree,2-6,loyalist,1,472,1,0,NA
+34,TRUE,0,1,tuitionfree,disagree,1,loyalist,0,521,NA,0,NA
+34,FALSE,0,1,tuitionlevel,agree,2-6,loyalist,0,521,NA,0,NA
+35,TRUE,0,1,skilled,disagree,1,loyalist,1,363,0,0,NA
+35,TRUE,0,0,skilled,agree,2-6,loyalist,0,521,NA,0,NA
+36,FALSE,0,0,secondr,agree,2-6,loyalist,0,207,NA,0,NA
+36,FALSE,0,0,tuitionlevel,agree,2-6,loyalist,0,207,NA,0,NA
+36,TRUE,1,1,secondr,disagree,1,loyalist,0,528,NA,1,0.9734491457141037
+36,TRUE,1,1,tuitionlevel,disagree,2-6,loyalist,0,528,NA,1,1.3862943611198906
+37,TRUE,1,0,customs,disagree,1,unclear rebel,0,492,NA,1,0.8754687373538999
+37,TRUE,1,1,freedomm,disagree,2-6,loyalist,0,492,NA,1,1.0986122886681098
+37,FALSE,0,0,immigration,agree,2-6,loyalist,0,492,NA,0,NA
+37,FALSE,0,1,customs,agree,2-6,unclear rebel,1,532,0,0,NA
+37,FALSE,0,0,freedomm,agree,2-6,loyalist,1,532,0,0,NA
+37,FALSE,0,1,immigration,disagree,2-6,loyalist,1,532,0,0,NA
+38,FALSE,0,1,secondr,disagree,1,unclear rebel,1,73,0,0,NA
+38,TRUE,1,1,tuitionfree,disagree,2-6,loyalist,1,73,0,1,0
+38,FALSE,0,0,tuitionlevel,disagree,beyond 6,loyalist,1,73,0,0,NA
+38,TRUE,0,0,secondr,agree,2-6,unclear rebel,0,86,NA,0,NA
+38,FALSE,0,0,freedomm,agree,2-6,unclear rebel,0,86,NA,0,NA
+38,FALSE,0,0,tuitionfree,agree,2-6,loyalist,0,86,NA,0,NA
+38,TRUE,1,1,freedomm,disagree,2-6,unclear rebel,0,534,NA,1,-0.587786664902119
+38,TRUE,1,1,tuitionlevel,agree,beyond 6,loyalist,0,534,NA,1,0
+39,TRUE,0,1,tuitionlevel,disagree,2-6,loyalist,0,78,NA,0,NA
+39,TRUE,0,0,tuitionlevel,agree,1,loyalist,0,535,NA,0,NA
+40,TRUE,0,1,regulation,agree,2-6,loyalist,0,338,NA,0,NA
+40,TRUE,1,1,immigration,agree,2-6,loyalist,1,338,1,0,NA
+40,FALSE,0,1,skilled,agree,2-6,loyalist,0,338,NA,0,NA
+40,TRUE,0,0,immigration,disagree,2-6,loyalist,0,453,NA,0,NA
+40,TRUE,0,0,skilled,disagree,2-6,loyalist,0,453,NA,0,NA
+40,TRUE,0,0,regulation,disagree,1,loyalist,0,544,NA,0,NA
+41,FALSE,0,1,skilled,disagree,2-6,loyalist,0,543,NA,0,NA
+41,FALSE,0,0,skilled,agree,1,loyalist,0,546,NA,0,NA
+42,TRUE,0,0,tuitionlevel,disagree,2-6,loyalist,0,543,NA,0,NA
+42,TRUE,1,1,tuitionlevel,agree,1,loyalist,0,551,NA,1,0
+43,FALSE,0,0,secondr,agree,2-6,loyalist,0,541,NA,0,NA
+43,FALSE,0,1,tuitionfree,agree,beyond 6,loyalist,0,541,NA,0,NA
+43,FALSE,0,0,freedomm,agree,2-6,loyalist,0,549,NA,0,NA
+43,TRUE,1,1,skilled,disagree,2-6,loyalist,1,549,1,0,NA
+43,TRUE,1,0,tuitionfree,disagree,beyond 6,loyalist,1,549,1,0,NA
+43,FALSE,0,1,secondr,disagree,1,loyalist,0,552,NA,0,NA
+43,FALSE,0,1,freedomm,disagree,2-6,loyalist,0,552,NA,0,NA
+43,FALSE,0,0,skilled,agree,2-6,loyalist,0,552,NA,0,NA
+44,TRUE,1,1,singlem,disagree,1,moderate rebel,0,226,NA,1,-0.048790164169432056
+44,TRUE,1,0,singlem,agree,2-6,moderate rebel,0,555,NA,1,-0.048790164169432056
+45,TRUE,0,0,skilled,disagree,2-6,loyalist,1,457,0,0,NA
+45,TRUE,0,1,skilled,agree,1,loyalist,0,561,NA,0,NA
+46,FALSE,0,0,tuitionfree,agree,2-6,loyalist,0,91,NA,0,NA
+46,FALSE,0,1,tuitionlevel,agree,2-6,loyalist,0,91,NA,0,NA
+46,TRUE,0,1,tuitionfree,disagree,1,loyalist,1,565,0,0,NA
+46,FALSE,0,0,tuitionlevel,disagree,2-6,loyalist,1,565,0,0,NA
+47,FALSE,0,1,tuitionfree,disagree,2-6,loyalist,0,4,NA,0,NA
+47,FALSE,0,0,tuitionfree,agree,1,loyalist,0,573,NA,0,NA
+48,TRUE,0,0,secondr,agree,1,loyalist,0,563,NA,0,NA
+48,TRUE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,564,NA,0,NA
+48,TRUE,1,1,secondr,disagree,2-6,loyalist,0,565,NA,1,0.8109302162163288
+48,TRUE,0,0,singlem,agree,2-6,loyalist,0,565,NA,0,NA
+48,FALSE,0,1,tuitionfree,agree,beyond 6,loyalist,1,570,0,0,NA
+48,TRUE,0,1,freedomm,disagree,2-6,loyalist,0,571,NA,0,NA
+48,TRUE,0,1,singlem,disagree,2-6,loyalist,0,571,NA,0,NA
+48,TRUE,0,0,tuitionfree,disagree,beyond 6,loyalist,0,571,NA,0,NA
+48,TRUE,0,0,tuitionlevel,agree,beyond 6,loyalist,0,579,NA,0,NA
+48,TRUE,0,0,freedomm,agree,2-6,loyalist,0,580,NA,0,NA
+49,TRUE,1,0,tuitionlevel,disagree,2-6,loyalist,1,582,1,0,NA
+49,TRUE,0,1,tuitionlevel,agree,1,loyalist,0,585,NA,0,NA
+50,FALSE,0,0,customs,agree,1,extreme rebel,0,435,NA,0,NA
+50,FALSE,0,0,skilled,disagree,2-6,loyalist,0,445,NA,0,NA
+50,FALSE,0,0,tuitionfree,agree,2-6,loyalist,0,445,NA,0,NA
+50,TRUE,1,1,customs,disagree,2-6,extreme rebel,0,586,NA,1,1.8718021769015913
+50,TRUE,1,1,skilled,agree,2-6,loyalist,0,586,NA,1,1.8718021769015913
+50,FALSE,0,1,tuitionfree,disagree,2-6,loyalist,0,586,NA,0,NA
+51,TRUE,1,0,tuitionfree,agree,1,loyalist,0,560,NA,1,0.5108256237659907
+51,TRUE,0,1,tuitionlevel,agree,2-6,loyalist,0,560,NA,0,NA
+51,TRUE,1,1,tuitionfree,disagree,2-6,loyalist,0,586,NA,1,0.9162907318741551
+51,TRUE,0,0,tuitionlevel,disagree,2-6,loyalist,0,586,NA,0,NA
+52,TRUE,1,0,singlem,agree,2-6,loyalist,0,101,NA,1,-0.1466034741918754
+52,TRUE,1,0,secondr,agree,2-6,loyalist,0,494,NA,1,-0.1466034741918754
+52,FALSE,0,1,tuitionfree,agree,2-6,loyalist,0,494,NA,0,NA
+52,TRUE,0,1,secondr,disagree,1,loyalist,0,587,NA,0,NA
+52,TRUE,1,1,singlem,disagree,2-6,loyalist,0,587,NA,1,-0.1466034741918754
+52,FALSE,0,0,tuitionfree,disagree,2-6,loyalist,0,587,NA,0,NA
+53,TRUE,1,1,secondr,disagree,2-6,loyalist,1,347,0,1,0.6931471805599453
+53,TRUE,1,0,secondr,agree,1,loyalist,1,588,0,1,0.6931471805599453
+54,TRUE,1,1,secondr,disagree,1,loyalist,0,11,NA,1,1.791759469228055
+54,TRUE,0,1,immigration,disagree,2-6,loyalist,0,11,NA,0,NA
+54,TRUE,0,1,skilled,disagree,2-6,loyalist,0,11,NA,0,NA
+54,TRUE,1,0,secondr,agree,2-6,loyalist,1,589,1,1,0.47000362924573563
+54,TRUE,1,0,immigration,agree,2-6,loyalist,1,589,1,0,NA
+54,TRUE,1,0,skilled,agree,2-6,loyalist,1,589,1,0,NA
+55,FALSE,0,0,tuitionlevel,disagree,2-6,loyalist,0,252,NA,0,NA
+55,TRUE,1,0,singlem,agree,2-6,loyalist,0,591,NA,1,0.8472978603872037
+55,FALSE,0,1,tuitionlevel,agree,2-6,loyalist,0,591,NA,0,NA
+55,FALSE,0,1,singlem,disagree,1,loyalist,1,593,0,0,NA
+56,TRUE,1,1,secondr,disagree,2-6,loyalist,0,294,NA,1,0.055569851154810786
+56,TRUE,1,0,secondr,agree,1,loyalist,0,295,NA,1,0.055569851154810786
+56,FALSE,0,0,freedomm,agree,2-6,loyalist,0,295,NA,0,NA
+56,TRUE,0,1,tuitionfree,disagree,beyond 6,loyalist,0,295,NA,0,NA
+56,FALSE,0,1,freedomm,disagree,2-6,loyalist,0,298,NA,0,NA
+56,TRUE,0,1,immigration,agree,2-6,loyalist,0,298,NA,0,NA
+56,TRUE,0,1,skilled,agree,beyond 6,loyalist,0,298,NA,0,NA
+56,TRUE,1,0,immigration,disagree,2-6,loyalist,1,595,1,0,NA
+56,TRUE,1,0,skilled,disagree,beyond 6,loyalist,1,595,1,0,NA
+56,TRUE,1,0,tuitionfree,agree,beyond 6,loyalist,1,595,1,0,NA
+57,TRUE,1,0,freedomm,agree,2-6,loyalist,0,560,NA,1,0.6931471805599453
+57,TRUE,1,0,immigration,disagree,beyond 6,loyalist,0,560,NA,1,0.6931471805599453
+57,TRUE,1,0,skilled,disagree,beyond 6,loyalist,0,560,NA,1,0.6931471805599453
+57,TRUE,1,0,regulation,disagree,beyond 6,unclear rebel,1,599,1,0,NA
+57,TRUE,1,0,tuitionfree,agree,beyond 6,loyalist,1,599,1,0,NA
+57,TRUE,1,1,tuitionlevel,agree,beyond 6,loyalist,1,599,1,0,NA
+57,FALSE,0,1,freedomm,disagree,2-6,loyalist,0,602,NA,0,NA
+57,FALSE,0,0,singlem,agree,beyond 6,loyalist,0,602,NA,0,NA
+57,TRUE,1,1,customs,disagree,2-6,loyalist,1,603,1,1,0.7884573603642703
+57,TRUE,1,1,regulation,agree,beyond 6,unclear rebel,1,603,1,0,2.120263536200091
+57,TRUE,1,1,immigration,agree,beyond 6,loyalist,1,603,1,0,NA
+57,TRUE,1,1,singlem,disagree,beyond 6,loyalist,1,606,1,1,2.120263536200091
+57,TRUE,1,1,skilled,agree,beyond 6,loyalist,1,606,1,1,0.14660347419187544
+57,FALSE,0,1,tuitionfree,disagree,beyond 6,loyalist,0,606,NA,0,NA
+57,TRUE,1,1,secondr,disagree,1,loyalist,1,608,1,0,NA
+57,TRUE,1,0,customs,agree,2-6,loyalist,1,608,1,0,NA
+57,TRUE,1,0,secondr,agree,2-6,loyalist,1,611,1,1,0.8754687373538999
+57,FALSE,0,0,tuitionlevel,disagree,beyond 6,loyalist,0,611,NA,0,NA
+58,TRUE,1,1,regulation,agree,2-6,extreme rebel,1,524,1,0,NA
+58,TRUE,1,0,immigration,disagree,2-6,loyalist,1,524,1,0,NA
+58,FALSE,0,1,secondr,disagree,2-6,unclear rebel,0,601,NA,0,NA
+58,FALSE,0,1,immigration,agree,2-6,loyalist,0,601,NA,0,NA
+58,FALSE,0,1,tuitionfree,disagree,beyond 6,loyalist,0,601,NA,0,NA
+58,FALSE,0,0,secondr,agree,1,unclear rebel,0,613,NA,0,NA
+58,FALSE,0,0,regulation,disagree,2-6,extreme rebel,0,613,NA,0,NA
+58,FALSE,0,0,tuitionfree,agree,beyond 6,loyalist,0,613,NA,0,NA
+59,FALSE,0,1,regulation,disagree,2-6,loyalist,1,613,0,0,NA
+59,TRUE,1,1,immigration,disagree,beyond 6,loyalist,1,613,0,1,1.7047480922384253
+59,FALSE,0,0,skilled,agree,beyond 6,loyalist,1,613,0,0,NA
+59,FALSE,0,0,singlem,agree,2-6,loyalist,1,614,0,0,NA
+59,FALSE,0,1,skilled,disagree,beyond 6,loyalist,1,614,0,0,NA
+59,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,614,NA,0,NA
+59,FALSE,0,0,regulation,agree,2-6,loyalist,1,615,0,0,NA
+59,FALSE,0,1,singlem,disagree,2-6,loyalist,0,615,NA,0,NA
+59,TRUE,1,0,freedomm,agree,2-6,unclear rebel,1,618,0,1,0.22314355131420976
+59,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,1,618,0,0,NA
+59,FALSE,0,1,freedomm,disagree,1,unclear rebel,1,619,0,0,NA
+59,TRUE,1,0,immigration,agree,beyond 6,loyalist,1,619,0,1,1.7047480922384253
+60,FALSE,0,1,secondr,disagree,2-6,unclear rebel,0,246,NA,0,NA
+60,FALSE,0,1,immigration,agree,2-6,loyalist,0,246,NA,0,NA
+60,FALSE,0,0,secondr,agree,1,unclear rebel,1,622,0,0,NA
+60,FALSE,0,0,immigration,disagree,2-6,loyalist,0,622,NA,0,NA
+61,FALSE,0,0,secondr,agree,2-6,loyalist,0,102,NA,0,NA
+61,TRUE,1,1,immigration,disagree,2-6,loyalist,0,102,NA,1,0
+61,FALSE,0,1,skilled,disagree,2-6,loyalist,0,102,NA,0,NA
+61,FALSE,0,1,secondr,disagree,1,loyalist,0,624,NA,0,NA
+61,FALSE,0,0,immigration,agree,2-6,loyalist,0,624,NA,0,NA
+61,TRUE,1,0,skilled,agree,2-6,loyalist,0,624,NA,1,0
+62,FALSE,0,1,skilled,disagree,2-6,loyalist,0,4,NA,0,NA
+62,FALSE,0,1,tuitionfree,agree,2-6,loyalist,0,4,NA,0,NA
+62,FALSE,0,0,freedomm,agree,2-6,extreme rebel,1,16,0,0,NA
+62,FALSE,0,1,freedomm,disagree,1,extreme rebel,0,551,NA,0,NA
+62,FALSE,0,0,skilled,agree,2-6,loyalist,0,625,NA,0,NA
+62,FALSE,0,0,tuitionfree,disagree,2-6,loyalist,0,625,NA,0,NA
+63,FALSE,0,1,secondr,disagree,2-6,loyalist,0,163,NA,0,NA
+63,FALSE,0,1,immigration,disagree,beyond 6,loyalist,0,163,NA,0,NA
+63,FALSE,0,0,customs,disagree,2-6,unclear rebel,0,620,NA,0,NA
+63,FALSE,0,1,singlem,disagree,2-6,loyalist,0,620,NA,0,NA
+63,FALSE,0,0,immigration,agree,beyond 6,loyalist,0,620,NA,0,NA
+63,FALSE,0,0,secondr,agree,1,loyalist,1,626,0,0,NA
+63,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,0,626,NA,0,NA
+63,FALSE,0,0,singlem,agree,2-6,loyalist,0,627,NA,0,NA
+63,FALSE,0,0,skilled,agree,beyond 6,loyalist,0,628,NA,0,NA
+63,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,628,NA,0,NA
+63,FALSE,0,1,customs,agree,2-6,unclear rebel,0,629,NA,0,NA
+63,FALSE,0,1,skilled,disagree,beyond 6,loyalist,0,629,NA,0,NA
+64,FALSE,0,0,singlem,agree,2-6,moderate rebel,1,202,0,0,NA
+64,FALSE,0,1,tuitionfree,agree,beyond 6,loyalist,1,202,0,0,NA
+64,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,1,202,0,0,NA
+64,FALSE,0,0,secondr,agree,1,moderate rebel,0,210,NA,0,NA
+64,FALSE,0,0,freedomm,agree,2-6,moderate rebel,0,210,NA,0,NA
+64,FALSE,0,1,skilled,disagree,beyond 6,loyalist,0,210,NA,0,NA
+64,FALSE,0,1,immigration,disagree,beyond 6,loyalist,1,211,0,0,NA
+64,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,1,211,0,0,NA
+64,FALSE,0,1,secondr,disagree,2-6,moderate rebel,0,629,NA,0,NA
+64,FALSE,0,0,skilled,agree,beyond 6,loyalist,0,629,NA,0,NA
+64,FALSE,0,0,tuitionfree,disagree,beyond 6,loyalist,0,629,NA,0,NA
+64,FALSE,0,1,freedomm,disagree,2-6,moderate rebel,0,631,NA,0,NA
+64,FALSE,0,1,singlem,disagree,2-6,moderate rebel,0,631,NA,0,NA
+64,TRUE,1,0,immigration,agree,beyond 6,loyalist,1,631,1,0,-0.1823215567939546
+65,TRUE,0,0,freedomm,agree,2-6,extreme rebel,1,506,0,0,NA
+65,TRUE,1,0,singlem,agree,2-6,extreme rebel,1,508,1,0,0.5596157879354227
+65,TRUE,1,1,skilled,disagree,2-6,loyalist,1,508,1,0,NA
+65,TRUE,0,1,freedomm,disagree,1,extreme rebel,1,637,0,0,NA
+65,FALSE,0,1,singlem,disagree,2-6,extreme rebel,1,637,0,0,NA
+65,FALSE,0,0,skilled,agree,2-6,loyalist,1,637,0,0,NA
+66,TRUE,0,0,tuitionfree,disagree,2-6,loyalist,0,100,NA,0,NA
+66,TRUE,0,1,tuitionfree,agree,1,loyalist,0,640,NA,0,NA
+67,TRUE,1,1,secondr,disagree,2-6,moderate rebel,0,271,NA,1,0.4054651081081644
+67,FALSE,0,0,regulation,agree,2-6,moderate rebel,0,271,NA,0,NA
+67,FALSE,0,0,tuitionfree,disagree,2-6,loyalist,0,271,NA,0,NA
+67,FALSE,0,0,secondr,agree,1,moderate rebel,0,641,NA,0,NA
+67,FALSE,0,1,regulation,disagree,2-6,moderate rebel,0,641,NA,0,NA
+67,FALSE,0,1,tuitionfree,agree,2-6,loyalist,0,641,NA,0,NA
+68,TRUE,0,1,tuitionlevel,disagree,2-6,loyalist,0,115,NA,0,NA
+68,TRUE,0,0,secondr,agree,1,loyalist,1,481,0,0,NA
+68,TRUE,0,1,secondr,disagree,2-6,loyalist,0,651,NA,0,NA
+68,FALSE,0,0,tuitionlevel,agree,2-6,loyalist,0,651,NA,0,NA
+69,TRUE,1,1,skilled,agree,1,loyalist,1,651,0,1,1.5040773967762742
+69,TRUE,0,0,skilled,disagree,2-6,loyalist,1,652,0,0,NA
+70,TRUE,1,1,secondr,disagree,1,unclear rebel,1,379,0,1,0.6931471805599453
+70,TRUE,1,0,secondr,agree,2-6,unclear rebel,0,655,NA,1,1.6650077635889111
+71,TRUE,0,1,tuitionlevel,agree,2-6,loyalist,0,523,NA,0,NA
+71,TRUE,0,0,tuitionlevel,disagree,1,loyalist,1,658,0,0,NA
+72,FALSE,0,0,skilled,agree,1,loyalist,0,393,NA,0,NA
+72,TRUE,1,1,tuitionlevel,disagree,2-6,loyalist,0,393,NA,1,0.6931471805599453
+72,FALSE,0,1,skilled,disagree,2-6,loyalist,1,657,0,0,NA
+72,TRUE,1,0,tuitionlevel,agree,2-6,loyalist,0,661,NA,1,0.6931471805599453
+73,TRUE,1,0,secondr,agree,1,loyalist,0,45,NA,1,0.8472978603872037
+73,TRUE,1,1,immigration,disagree,beyond 6,loyalist,0,45,NA,1,-0.11778303565638351
+73,TRUE,1,0,customs,disagree,2-6,extreme rebel,1,47,0,1,0.6931471805599453
+73,TRUE,1,0,regulation,agree,beyond 6,loyalist,1,47,0,1,0.8266785731844679
+73,TRUE,1,1,singlem,disagree,beyond 6,extreme rebel,1,47,0,1,0.28768207245178085
+73,TRUE,1,1,customs,agree,2-6,extreme rebel,0,49,NA,1,0.20067069546215124
+73,TRUE,1,1,tuitionlevel,disagree,beyond 6,loyalist,0,49,NA,1,-0.3364722366212129
+73,TRUE,1,1,freedomm,disagree,2-6,extreme rebel,0,292,NA,1,-0.11778303565638351
+73,TRUE,1,0,skilled,agree,beyond 6,loyalist,0,292,NA,1,-0.11778303565638351
+73,TRUE,1,1,regulation,disagree,beyond 6,loyalist,0,293,NA,1,-0.11778303565638351
+73,TRUE,1,0,tuitionfree,disagree,beyond 6,loyalist,0,293,NA,1,-0.9555114450274363
+73,TRUE,1,0,freedomm,agree,2-6,extreme rebel,1,368,0,1,0.16251892949777494
+73,TRUE,1,0,immigration,agree,beyond 6,loyalist,1,368,0,1,0.3184537311185346
+73,TRUE,1,0,tuitionlevel,agree,beyond 6,loyalist,1,368,0,1,-0.3364722366212129
+73,TRUE,1,1,secondr,disagree,2-6,loyalist,0,369,NA,1,0.8109302162163288
+73,TRUE,1,0,singlem,agree,beyond 6,extreme rebel,0,369,NA,1,0
+73,TRUE,1,1,skilled,disagree,beyond 6,loyalist,0,662,NA,1,-0.11778303565638351
+73,TRUE,1,1,tuitionfree,agree,beyond 6,loyalist,0,662,NA,1,-1.1786549963416462
+74,TRUE,0,0,regulation,agree,2-6,loyalist,0,384,NA,0,NA
+74,TRUE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,487,NA,0,NA
+74,TRUE,1,0,freedomm,agree,2-6,loyalist,1,507,1,0,NA
+74,FALSE,0,1,skilled,disagree,beyond 6,loyalist,0,537,NA,0,NA
+74,TRUE,0,0,tuitionlevel,agree,beyond 6,loyalist,1,566,0,0,NA
+74,TRUE,1,1,secondr,disagree,1,loyalist,1,568,0,1,-0.09844007281325252
+74,TRUE,1,1,freedomm,disagree,2-6,loyalist,1,568,0,1,-0.09844007281325252
+74,TRUE,1,0,skilled,agree,beyond 6,loyalist,1,568,0,1,-0.09844007281325252
+74,TRUE,0,0,secondr,agree,2-6,loyalist,0,576,NA,0,NA
+74,TRUE,1,1,regulation,disagree,2-6,loyalist,1,667,1,0,NA
+75,FALSE,0,0,singlem,agree,2-6,moderate rebel,0,61,NA,0,NA
+75,FALSE,0,1,skilled,disagree,2-6,loyalist,0,61,NA,0,NA
+75,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,0,61,NA,0,NA
+75,FALSE,0,1,singlem,disagree,2-6,moderate rebel,0,632,NA,0,NA
+75,FALSE,0,1,secondr,disagree,1,moderate rebel,0,674,NA,0,NA
+75,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,674,NA,0,NA
+75,FALSE,0,0,secondr,agree,2-6,moderate rebel,0,681,NA,0,NA
+75,FALSE,0,0,skilled,agree,2-6,loyalist,0,681,NA,0,NA
+76,FALSE,0,0,freedomm,agree,2-6,moderate rebel,0,10,NA,0,NA
+76,FALSE,0,1,immigration,disagree,beyond 6,loyalist,0,10,NA,0,NA
+76,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,10,NA,0,NA
+76,TRUE,1,0,customs,disagree,2-6,moderate rebel,1,245,0,1,0.20067069546215124
+76,FALSE,0,1,singlem,disagree,beyond 6,moderate rebel,1,245,0,0,NA
+76,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,1,245,0,0,NA
+76,FALSE,0,1,secondr,disagree,1,bothways rebel,0,248,NA,0,NA
+76,FALSE,0,1,freedomm,disagree,2-6,moderate rebel,0,248,NA,0,NA
+76,FALSE,0,0,secondr,agree,2-6,bothways rebel,1,683,0,0,NA
+76,FALSE,0,0,immigration,agree,beyond 6,loyalist,1,683,0,0,NA
+76,TRUE,1,1,customs,agree,2-6,moderate rebel,1,686,0,1,0.9162907318741551
+76,TRUE,1,0,singlem,agree,beyond 6,moderate rebel,1,686,0,1,0.9162907318741551
+77,TRUE,1,1,secondr,disagree,2-6,loyalist,0,152,NA,1,-0.6931471805599453
+77,TRUE,1,1,customs,disagree,2-6,loyalist,0,152,NA,1,0.6931471805599453
+77,TRUE,1,0,customs,agree,2-6,loyalist,0,661,NA,1,0.5596157879354227
+77,TRUE,1,0,secondr,agree,1,loyalist,1,691,0,1,1.0986122886681098
+78,TRUE,1,0,skilled,disagree,2-6,loyalist,0,689,NA,1,1.6094379124341003
+78,TRUE,1,1,skilled,agree,1,loyalist,0,692,NA,1,0
+79,TRUE,0,1,regulation,agree,beyond 6,loyalist,0,684,NA,0,NA
+79,TRUE,1,1,skilled,agree,beyond 6,loyalist,1,684,1,0,2.0794415416798357
+79,TRUE,0,0,secondr,agree,1,loyalist,0,685,NA,0,NA
+79,FALSE,0,0,customs,agree,2-6,loyalist,0,685,NA,0,NA
+79,TRUE,1,0,tuitionfree,agree,beyond 6,loyalist,0,685,NA,1,1.3862943611198906
+79,TRUE,0,1,secondr,disagree,2-6,loyalist,0,687,NA,0,NA
+79,FALSE,0,1,customs,disagree,2-6,loyalist,0,687,NA,0,NA
+79,FALSE,0,1,freedomm,disagree,2-6,loyalist,0,687,NA,0,NA
+79,TRUE,1,0,freedomm,agree,2-6,loyalist,0,690,NA,1,1.3862943611198906
+79,TRUE,1,1,immigration,agree,beyond 6,loyalist,0,690,NA,1,1.3862943611198906
+79,TRUE,1,1,tuitionfree,disagree,beyond 6,loyalist,0,690,NA,1,1.3862943611198906
+79,TRUE,1,0,regulation,disagree,beyond 6,loyalist,1,697,1,0,NA
+79,TRUE,1,0,immigration,disagree,beyond 6,loyalist,1,697,1,0,NA
+79,TRUE,1,0,skilled,disagree,beyond 6,loyalist,1,697,1,0,NA
+80,TRUE,0,1,tuitionlevel,agree,1,loyalist,0,193,NA,0,NA
+80,TRUE,0,0,tuitionlevel,disagree,2-6,loyalist,0,700,NA,0,NA
+81,TRUE,1,1,skilled,disagree,1,loyalist,0,628,NA,1,0.15415067982725836
+81,TRUE,0,1,tuitionfree,disagree,2-6,loyalist,0,628,NA,0,NA
+81,TRUE,0,0,skilled,agree,2-6,loyalist,0,700,NA,0,NA
+81,TRUE,0,0,tuitionfree,agree,2-6,loyalist,0,700,NA,0,NA
+82,FALSE,0,1,secondr,disagree,1,unclear rebel,0,699,NA,0,NA
+82,TRUE,1,0,singlem,agree,2-6,loyalist,0,699,NA,1,1.3862943611198906
+82,FALSE,0,0,immigration,agree,2-6,loyalist,0,699,NA,0,NA
+82,FALSE,0,0,secondr,agree,2-6,unclear rebel,0,701,NA,0,NA
+82,FALSE,0,1,singlem,disagree,2-6,loyalist,0,701,NA,0,NA
+82,TRUE,1,1,immigration,disagree,2-6,loyalist,0,701,NA,1,0.28768207245178085
+83,TRUE,1,1,skilled,disagree,2-6,loyalist,1,383,0,1,0.15415067982725836
+83,TRUE,1,0,skilled,agree,1,loyalist,0,702,NA,1,-1.8718021769015913
+84,TRUE,1,0,singlem,agree,beyond 6,loyalist,1,79,1,0,NA
+84,TRUE,1,1,immigration,disagree,beyond 6,loyalist,1,79,1,0,NA
+84,FALSE,0,1,freedomm,disagree,2-6,loyalist,0,137,NA,0,NA
+84,FALSE,0,1,singlem,disagree,beyond 6,loyalist,0,137,NA,0,NA
+84,FALSE,0,0,tuitionfree,disagree,beyond 6,loyalist,0,137,NA,0,NA
+84,TRUE,1,0,immigration,agree,beyond 6,loyalist,0,675,NA,1,-1.5040773967762742
+84,TRUE,1,0,tuitionlevel,agree,beyond 6,loyalist,0,675,NA,1,-0.40546510810816444
+84,FALSE,0,0,secondr,agree,2-6,loyalist,0,687,NA,0,NA
+84,FALSE,0,1,regulation,disagree,2-6,loyalist,0,687,NA,0,NA
+84,FALSE,0,1,tuitionfree,agree,beyond 6,loyalist,0,687,NA,0,NA
+84,FALSE,0,0,freedomm,agree,2-6,loyalist,0,695,NA,0,NA
+84,FALSE,0,1,skilled,disagree,beyond 6,loyalist,0,695,NA,0,NA
+84,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,695,NA,0,NA
+84,FALSE,0,1,secondr,disagree,1,loyalist,0,705,NA,0,NA
+84,FALSE,0,0,regulation,agree,2-6,loyalist,0,705,NA,0,NA
+84,FALSE,0,0,skilled,agree,beyond 6,loyalist,0,705,NA,0,NA
+85,TRUE,0,1,customs,agree,1,unclear rebel,0,652,NA,0,NA
+85,TRUE,1,0,tuitionlevel,agree,2-6,loyalist,0,652,NA,1,-0.1823215567939546
+85,TRUE,0,0,customs,disagree,2-6,unclear rebel,0,656,NA,0,NA
+85,TRUE,0,0,regulation,agree,2-6,loyalist,0,656,NA,0,NA
+85,TRUE,0,1,regulation,disagree,2-6,loyalist,0,705,NA,0,NA
+85,TRUE,1,1,tuitionlevel,disagree,2-6,loyalist,0,705,NA,1,1.6094379124341003
+86,TRUE,1,1,skilled,agree,1,loyalist,1,706,0,1,1.3217558399823195
+86,TRUE,1,1,tuitionlevel,agree,2-6,loyalist,0,707,NA,1,0.8109302162163288
+86,TRUE,1,0,skilled,disagree,2-6,loyalist,0,710,NA,1,0.9162907318741551
+86,TRUE,0,0,tuitionlevel,disagree,2-6,loyalist,0,710,NA,0,NA
+87,TRUE,1,1,customs,agree,2-6,extreme rebel,0,703,NA,1,0.4054651081081644
+87,TRUE,0,1,freedomm,disagree,2-6,extreme rebel,0,703,NA,0,NA
+87,TRUE,1,0,immigration,agree,2-6,loyalist,0,703,NA,1,-0.40546510810816444
+87,TRUE,1,0,customs,disagree,1,extreme rebel,1,713,0,1,1.252762968495368
+87,TRUE,0,0,freedomm,agree,2-6,extreme rebel,1,713,0,0,NA
+87,TRUE,1,1,immigration,disagree,2-6,loyalist,1,713,1,1,1.252762968495368
+88,TRUE,1,1,customs,agree,1,extreme rebel,0,326,NA,1,0.4519851237430572
+88,TRUE,1,0,freedomm,agree,2-6,extreme rebel,0,326,NA,1,0
+88,TRUE,1,1,immigration,disagree,2-6,loyalist,0,326,NA,1,0.4054651081081644
+88,TRUE,1,0,customs,disagree,2-6,extreme rebel,0,716,NA,1,-1.2992829841302609
+88,TRUE,1,1,freedomm,disagree,2-6,extreme rebel,0,716,NA,1,-0.7884573603642702
+88,FALSE,0,0,immigration,agree,2-6,loyalist,0,716,NA,0,NA
+89,TRUE,1,0,customs,disagree,2-6,unclear rebel,1,708,1,0,NA
+89,TRUE,1,1,freedomm,disagree,2-6,loyalist,1,708,1,0,NA
+89,TRUE,1,0,immigration,agree,2-6,loyalist,1,708,1,0,NA
+89,TRUE,1,1,customs,agree,1,unclear rebel,1,709,1,0,NA
+89,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,0,709,NA,0,NA
+89,FALSE,0,0,freedomm,agree,2-6,loyalist,0,716,NA,0,NA
+89,FALSE,0,1,immigration,disagree,2-6,loyalist,0,716,NA,0,NA
+89,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,716,NA,0,NA
+90,FALSE,0,0,customs,disagree,2-6,unclear rebel,0,706,NA,0,NA
+90,FALSE,0,1,singlem,disagree,beyond 6,extreme rebel,0,706,NA,0,NA
+90,FALSE,0,1,immigration,disagree,beyond 6,loyalist,0,706,NA,0,NA
+90,FALSE,0,1,secondr,disagree,2-6,loyalist,0,711,NA,0,NA
+90,FALSE,0,0,freedomm,agree,2-6,extreme rebel,0,711,NA,0,NA
+90,FALSE,0,0,immigration,agree,beyond 6,loyalist,0,711,NA,0,NA
+90,TRUE,0,0,secondr,agree,1,loyalist,0,713,NA,0,NA
+90,FALSE,0,1,tuitionfree,agree,beyond 6,loyalist,0,713,NA,0,NA
+90,FALSE,0,1,tuitionlevel,disagree,beyond 6,loyalist,0,713,NA,0,NA
+90,FALSE,0,0,singlem,agree,beyond 6,extreme rebel,0,714,NA,0,NA
+90,FALSE,0,0,tuitionlevel,agree,beyond 6,loyalist,0,714,NA,0,NA
+90,FALSE,0,1,freedomm,disagree,2-6,extreme rebel,0,715,NA,0,NA
+90,FALSE,0,0,skilled,agree,beyond 6,loyalist,0,715,NA,0,NA
+90,FALSE,0,0,tuitionfree,disagree,beyond 6,loyalist,0,715,NA,0,NA
+90,FALSE,0,1,customs,agree,2-6,unclear rebel,1,717,0,0,NA
+90,FALSE,0,1,skilled,disagree,beyond 6,loyalist,0,717,NA,0,NA
+91,TRUE,0,1,secondr,disagree,1,unclear rebel,0,399,NA,0,NA
+91,TRUE,0,1,tuitionfree,disagree,2-6,loyalist,0,399,NA,0,NA
+91,TRUE,0,1,tuitionlevel,agree,2-6,loyalist,0,399,NA,0,NA
+91,TRUE,0,0,secondr,agree,2-6,unclear rebel,0,558,NA,0,NA
+91,TRUE,0,0,tuitionfree,agree,2-6,loyalist,0,561,NA,0,NA
+91,TRUE,0,0,tuitionlevel,disagree,2-6,loyalist,0,719,NA,0,NA
+92,TRUE,1,1,customs,agree,1,loyalist,1,715,1,1,2.0794415416798357
+92,TRUE,1,0,singlem,agree,2-6,loyalist,1,715,1,0,-0.10536051565782628
+92,TRUE,1,1,skilled,disagree,2-6,loyalist,1,715,1,0,0.36772478012531734
+92,TRUE,1,0,customs,disagree,2-6,loyalist,1,720,1,0,NA
+92,TRUE,1,1,singlem,disagree,2-6,loyalist,1,720,1,0,NA
+92,TRUE,1,0,skilled,agree,2-6,loyalist,1,720,1,0,NA
+93,TRUE,1,0,freedomm,agree,2-6,loyalist,1,334,1,1,-0.11778303565638351
+93,TRUE,1,0,singlem,agree,beyond 6,loyalist,0,334,NA,1,-0.11778303565638351
+93,TRUE,1,1,skilled,agree,beyond 6,loyalist,0,334,NA,1,-0.11778303565638351
+93,TRUE,0,1,secondr,disagree,1,loyalist,0,720,NA,0,NA
+93,TRUE,0,1,regulation,agree,beyond 6,loyalist,0,720,NA,0,NA
+93,TRUE,0,0,tuitionlevel,disagree,beyond 6,loyalist,0,720,NA,0,NA
+93,TRUE,1,1,singlem,disagree,beyond 6,loyalist,0,721,NA,1,-0.11778303565638351
+93,TRUE,1,0,immigration,disagree,beyond 6,loyalist,0,721,NA,1,-0.11778303565638351
+93,TRUE,1,0,skilled,disagree,beyond 6,loyalist,0,721,NA,1,-0.11778303565638351
+93,TRUE,1,1,customs,disagree,2-6,unclear rebel,0,722,NA,1,-0.11778303565638351
+93,TRUE,1,0,regulation,disagree,beyond 6,loyalist,0,722,NA,1,-0.11778303565638351
+93,TRUE,1,0,secondr,agree,2-6,loyalist,0,723,NA,1,-0.11778303565638351
+93,TRUE,1,0,customs,agree,2-6,unclear rebel,0,723,NA,1,-0.11778303565638351
+93,TRUE,0,1,tuitionlevel,agree,beyond 6,loyalist,0,723,NA,0,NA
+93,TRUE,0,1,freedomm,disagree,2-6,loyalist,0,725,NA,0,NA
+93,TRUE,0,1,immigration,agree,beyond 6,loyalist,0,725,NA,0,NA
+94,TRUE,0,0,customs,disagree,1,unclear rebel,0,485,NA,0,NA
+94,TRUE,0,1,tuitionlevel,disagree,beyond 6,unclear rebel,0,485,NA,0,NA
+94,TRUE,0,0,regulation,agree,2-6,unclear rebel,0,728,NA,0,NA
+94,TRUE,0,1,singlem,disagree,2-6,unclear rebel,0,728,NA,0,NA
+94,TRUE,0,0,tuitionlevel,agree,beyond 6,unclear rebel,0,728,NA,0,NA
+94,TRUE,1,1,customs,agree,2-6,unclear rebel,0,729,NA,1,0.8472978603872037
+94,TRUE,1,1,regulation,disagree,2-6,unclear rebel,0,729,NA,1,0.8472978603872037
+94,TRUE,1,0,singlem,agree,2-6,unclear rebel,0,729,NA,1,0
+95,TRUE,1,1,freedomm,disagree,2-6,extreme rebel,0,189,NA,1,0
+95,TRUE,1,1,singlem,disagree,2-6,extreme rebel,0,189,NA,1,0
+95,TRUE,1,0,skilled,agree,2-6,loyalist,0,189,NA,1,0
+95,TRUE,1,0,freedomm,agree,1,extreme rebel,0,761,NA,1,0
+95,TRUE,1,0,singlem,agree,2-6,extreme rebel,0,761,NA,1,0
+95,TRUE,1,1,skilled,disagree,2-6,loyalist,0,761,NA,1,0
+96,TRUE,1,1,skilled,disagree,1,loyalist,0,139,NA,1,-0.15415067982725836
+96,TRUE,1,0,skilled,agree,2-6,loyalist,0,777,NA,1,-0.15415067982725836
+97,TRUE,0,0,singlem,agree,2-6,loyalist,0,237,NA,0,NA
+97,TRUE,1,1,immigration,disagree,2-6,loyalist,1,583,0,1,-0.0953101798043249
+97,TRUE,0,1,skilled,disagree,2-6,loyalist,1,583,0,0,NA
+97,TRUE,1,1,singlem,disagree,1,loyalist,0,807,NA,1,-1.3437347467010947
+97,TRUE,1,0,immigration,agree,2-6,loyalist,0,807,NA,1,-0.0953101798043249
+97,TRUE,0,0,skilled,agree,2-6,loyalist,0,807,NA,0,NA
+98,TRUE,1,0,freedomm,disagree,2-6,loyalist,0,484,NA,1,0
+98,TRUE,1,1,freedomm,agree,1,loyalist,1,817,0,1,0.6931471805599453
+99,TRUE,1,1,customs,disagree,2-6,extreme rebel,0,734,NA,1,0.6931471805599453
+99,TRUE,1,1,singlem,disagree,2-6,extreme rebel,0,734,NA,1,1.3862943611198906
+99,TRUE,1,1,tuitionfree,disagree,2-6,loyalist,0,734,NA,1,0.6931471805599453
+99,TRUE,1,0,singlem,agree,2-6,extreme rebel,0,827,NA,1,0
+99,TRUE,1,0,tuitionlevel,disagree,beyond 6,loyalist,0,827,NA,1,1.9459101490553132
+99,TRUE,1,0,tuitionfree,agree,2-6,loyalist,0,828,NA,1,1.0986122886681098
+99,TRUE,1,0,customs,agree,1,extreme rebel,0,829,NA,1,-0.6931471805599453
+99,TRUE,1,1,tuitionlevel,agree,beyond 6,loyalist,1,829,1,1,-0.2876820724517809
+100,TRUE,1,1,customs,disagree,1,loyalist,1,834,0,1,-0.35667494393873245
+100,TRUE,0,1,freedomm,disagree,2-6,loyalist,1,834,0,0,NA
+100,TRUE,1,1,immigration,agree,2-6,loyalist,1,834,0,1,1.252762968495368
+100,TRUE,0,0,customs,agree,2-6,loyalist,0,835,NA,0,NA
+100,TRUE,0,0,freedomm,agree,2-6,loyalist,0,835,NA,0,NA
+100,TRUE,0,0,immigration,disagree,2-6,loyalist,0,835,NA,0,NA
+101,TRUE,0,0,freedomm,agree,1,extreme rebel,0,843,NA,0,NA
+101,FALSE,0,1,regulation,disagree,2-6,loyalist,0,843,NA,0,NA
+101,FALSE,0,0,tuitionfree,disagree,beyond 6,loyalist,0,843,NA,0,NA
+101,TRUE,0,1,freedomm,disagree,2-6,extreme rebel,0,844,NA,0,NA
+101,FALSE,0,0,regulation,agree,2-6,loyalist,0,844,NA,0,NA
+101,FALSE,0,0,immigration,agree,2-6,loyalist,0,844,NA,0,NA
+101,TRUE,0,1,immigration,disagree,2-6,loyalist,0,845,NA,0,NA
+101,FALSE,0,1,tuitionfree,agree,beyond 6,loyalist,0,845,NA,0,NA
+102,TRUE,1,1,secondr,disagree,2-6,loyalist,1,589,1,0,0
+102,TRUE,0,0,secondr,agree,1,loyalist,0,853,NA,0,NA
