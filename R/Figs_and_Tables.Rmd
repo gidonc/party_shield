@@ -1,0 +1,14 @@
+---
+title: 'Using the Party as a Shield? How British MPs Explain Policy Positions to Constituents:
+  Figures and Tables'
+author: "Daniel Bishof, Vanessa Cheng-Matuno, Gidon Cohen, Sarah Cohen, Florian Foos,
+  Patrick M Kuhn, Kyriaki Nanou, Neil Visalvanich, Nick Vivyan"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
