@@ -421,16 +421,38 @@ main_ids <- main |>
   
 main_small <- main |>
   left_join(main_ids, by = "onsconstid") |>
-  dplyr::select(response_auto_and_manual,
-         manualresponse_exists_inc_post_count_nonresponse,
-         partycongruent,
-         issue,
-         position,
-         send_cat,
-         mp_type_detailed,
-         has_response_info,
-         id,
-         respondent_reported_letter_status,
-         manualresponse_exists, 
-         lr_mp_party,
-         const_anon_id)
+  dplyr::select(
+    id,
+    const_anon_id,
+    response_auto_and_manual,
+    manualresponse_exists_inc_post_count_nonresponse,
+    manualresponse_exists, 
+    partycongruent,
+    partycongruent_neat,
+    issue,
+    position,
+    send_cat,
+    mp_type_detailed,
+    mp_type_abstain_nonreb,
+    diff_mp_party_outliers_removed,
+    diff_mp_party,
+    has_response_info,
+    respondent_reported_letter_status,
+    lr_mp_party,
+    word_total) |>
+  arrange(const_anon_id)
+
+write_csv(main_small, 
+          file = file.path(data_dir, "main.csv"))
+
+bes17.dat_small <- bes17.dat|>
+  dplyr::select(Winner17,
+                leaveHanretty,
+                Majority17,
+                c11Degree,
+                in_experiment,
+                in_experimentn,
+                Region)
+
+write_csv(bes17.dat_small, 
+          file = file.path(data_dir, "bes17.dat_small.csv"))
