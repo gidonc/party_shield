@@ -1,4 +1,5 @@
-
+library(tidyverse)
+library(huxtable)
 
 ##----do-autoresponses-predict----
 # reviewer comments that autoresponses may be a sign that MPs have detected experiment
@@ -21,6 +22,71 @@ f4 <-lm_robust(manualresponse_exists_inc_post_count_nonresponse~ autoresponse_ex
 huxtable::huxreg(f1, f1a, f2, f3, f4, coefs = c("(Intercept)",
                                            "autoresponse_exists",
                                            "autoresponse_prop"))
+
+
+##----descriptive-responsiveness-analysis----
+
+names(main)
+
+main2 <- main |>
+  left_join(as_factor(bes17.dat), by = c("constituency"="ONSConstID")) |>
+  mutate(win17 = as_factor(Winner17),
+         win15 = as_factor(Winner15),
+         cont = as.character(win15)==as.character(win17),
+         MPsex = case_when(
+           win17 == "Conservative" ~ ConPPCsex17,
+           win17 == "Labour" ~ LabPPCsex17,
+           win17 == "Liberal Democrat" ~ LDPPCsex17,
+           win17 == "Green" ~ GreenPPCsex17,
+         ),
+         retired = c11Age65to74+c11Age75to84+c11Age85to89+c11Age90plus,
+         children = c11Age0to4 + c11Age5to7+c11Age8to9+c11Age10to14+c11Age15+c11Age16to17
+  ) |>
+  mutate(has_resp = manualresponse_exists_inc_post_count_nonresponse) |>
+  group_by(constituency) |>
+  mutate(
+    n_letters = n()
+  )
+rr_const <- main |>
+  group_by(constituency) |>
+  summarise(
+    response_rate = mean(manualresponse_exists_inc_post_count_nonresponse),
+    n_letters = n(),
+    n_responses = sum(manualresponse_exists_inc_post_count_nonresponse),
+    rebel_prop = mean(mp_type == "rebel")
+  ) |>
+  left_join(as_factor(bes17.dat), by = c("constituency"="ONSConstID")) |>
+  mutate(win17 = as_factor(Winner17),
+         win15 = as_factor(Winner15),
+         cont = as.character(win15)==as.character(win17),
+         MPsex = case_when(
+           
+           win17 == "Conservative" ~ ConPPCsex17,
+           win17 == "Labour" ~ LabPPCsex17,
+           win17 == "Liberal Democrat" ~ LDPPCsex17,
+           win17 == "Green" ~ GreenPPCsex17,
+         ),
+         retired = c11Age65to74+c11Age75to84+c11Age85to89+c11Age90plus,
+         children = c11Age0to4 + c11Age5to7+c11Age8to9+c11Age10to14+c11Age15+c11Age16to17
+         )
+
+# could do with data for:
+# MP Localness based on place of birth (log(distance) of place of birth from the constituency) - Bolet and Campbell find that localness is not generally related to responsiveness, but there is a significant interaction of localness and partisanship (at the .1 level)
+# Rural/Urban
+# Further MP characteristics: MP seniority
+
+hist(rr_const$response_rate)
+f1 <- lm(response_rate ~ c11CarsTwo, rr_const)
+f2 <- lm(response_rate ~ c11Degree, rr_const)
+
+
+
+huxreg(f1, f2)
+library(arm)
+mf1 <- lmer(has_resp ~ win17 + MPsex + mp_type+ c11Degree + send_position_red + I(Majority17<10) + (1|constituency), main2)
+mf2 <- lmer(has_resp ~ win17 + retired + c11Degree + c11PopulationDensity + (1|constituency), main2)
+
+huxreg(mf1, mf2)
 
 ##----Further-Analysis-and-Tables-Not-in-Paper-----
 
