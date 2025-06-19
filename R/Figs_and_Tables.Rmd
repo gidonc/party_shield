@@ -1,14 +1,210 @@
 ---
 title: 'Using the Party as a Shield? How British MPs Explain Policy Positions to Constituents:
   Figures and Tables'
-author: "Daniel Bishof, Vanessa Cheng-Matuno, Gidon Cohen, Sarah Cohen, Florian Foos,
-  Patrick M Kuhn, Kyriaki Nanou, Neil Visalvanich, Nick Vivyan"
+
+# author: "Daniel Bishof, Vanessa Cheng-Matuno, Gidon Cohen, Sarah Cohen, Florian Foos,
+#   Patrick M Kuhn, Kyriaki Nanou, Neil Visalvanich, Nick Vivyan"
 date: "`r Sys.Date()`"
-output: pdf_document
+output: 
+  pdf_document:
+    latex_engine: xelatex # Use xelatex for better font support
+    pandoc_arg: --listings
+    includes:
+        in_header: preamble.tex
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      width = 30
+                      
+                      )
+
+chunk_path <- paste0("main_analysis.R")
+
+knitr::read_chunk(chunk_path)
+
+library(kableExtra)
+
+
+```
+
+
+```{r main-variable-descriptions, echo=FALSE}
+
+main_description <- tibble::tribble(
+  ~variable_name, ~description,
+  "id", "id (identifying letter sent to MP)",
+  "const_anon_id", "id for constituency",
+  "response_auto_and_manual", "Response received by email (including autoresponses and substantive responses)",
+  "manualresponse_exists_inc_post_count_nonresponse", "Substantive response received either by email or post or both (all non-responses are coded as zero even if no confirmation of non-response was received from constituent).",
+    "manualresponse_exists", "Substantive response received by email",
+  "partycongruent", "Was the letter congruent with the MP's party's position on the issue?",
+  "partycongruent_neat", "Was the letter congruent with the MP's party's position on the issue? (Wording adjusted for neat output)",
+  "issue", "Which issue does the letter sent to the MP relate to?",
+  "position", "What position does the letter sent to the MP take?",
+  "send_cat", "What number letter was this sent to the same MP? (Categorised)",
+  "mp_type_detailed", "What was the MPs relationship to the party on this issue (loyalist, extreme rebel, moderate rebel, bothways rebel, unclear rebel)",
+  "mp_type_abstain_nonreb", "What was the MPs relationship to the party on this issue? (absentions are not counted as rebellion, categories loyalist, rebel)",
+  "diff_mp_party_outliers_removed", "difference in number of MP mentions and party mentions standardised by number of words in the response (outliers removed)",
+  "diff_mp_party", "difference in number of MP mentions and party mentions standardised by number of words in the response",
+  "respondent_reported_letter_status", "Information from respondents about whether they have received postal correspondence from the MP as a result of the letter sent to the MP",
+  "lr_mp_party", "Log-ratio of the mentions of MP to the mentions of the MPs party in the response",
+  "word total", "Number of words in the MPs reply."
+)
+
+kbl(main_description,
+    format="latex",
+    caption = "Variables in the main.csv dataset.",
+    label = "mainvardesc",
+    booktabs=TRUE) |>
+  column_spec(1, width = "8.5cm", border_left = F, border_right = F) |>
+  column_spec(2, width = "8cm", border_left = F, border_right = F) |>
+  kable_styling(latex_options="striped")
+
+```
+
+```{r bes17-vardesc, echo=FALSE}
+
+bes17_description <- tibble::tribble(
+  ~variable_name, ~description,
+  "Winner17", "Which party won the seat in the 2017 General Election.",
+  "leaveHanretty", "Estimate vote for leave in the 2016 Referendum",
+  "Majority17", "Majority for the winning party (percent) in 2017.",
+  "c11Degree", "Proportion of the population with a degree level qualification in 2011 census.",
+  "Region", "Government Office Region",
+  "in_experiment", "Is constituency in the experiement (categories: Included (letters sent), Excluded (no letters))",
+  "in_experimentn", "Is constituency in the experiment (categories: Included, Excluded)"
+)
+
+kbl(bes17_description,
+    format="latex",
+    caption = "Variables in the bes17.dat.csv dataset.",
+    label = "bes17vardesc",
+    booktabs=TRUE) |>
+  column_spec(1, width = "8.5cm", border_left = F, border_right = F) |>
+  column_spec(2, width = "8cm", border_left = F, border_right = F) |>
+  kable_styling(latex_options="striped")
+
+```
+
+# File Structure
+
+This `Figs_and_Tables.Rmd` file will compile and generate a pdf with the tables and figures from `main_analysis.R` if the files and data are stored with the following structure:
+
+*  `project_root/`
+    *  `Data/`
+        *  `main.csv`
+        *  `bes17.dat.small.csv`
+    * `R/`
+        *  `main_analysis.R`
+        *  `power_analysis.R`
+        *  `Figs_and_tables.Rmd`
+        *  `power_analysis.Rmd`
+
+# Files
+
+The replication code is stored in two files in the `R` folder:
+
+  1.  `main_analysis.R`  
+      Contains code for all of the tables and figures in the article and most of the tables and figures in the appendix. 
+  1.  `power_analysis.R`  
+      Contains the code which generates the power analysis graphs in the appendix.
+
+There are two `.Rmd` files which create pdfs which use these files:
+
+  1.  `Figs_and_Tables.Rmd`  
+       Generates the figures and tables from the `main_analysis.R` file.
+  1.  `power_analysis.Rmd`  
+       Generates the power analysis graphs and tables.
+  
+      
+
+# Data
+
+In the Data folder, we provide two dataset to enable replication of our analysis. 
+
+  1.  `main.csv`. This is the principle dataset with the results of the experiment. This dataset generates the main results. Each row in the dataset contains data about a letter we arranged to be sent to an MP. The variables in this dataset are described in Table \ref{tab:mainvardesc}. 
+  1.  `bes17.dat.small.csv`. This is a secondary dataset at constituency level. This dataset is principally used to describe the balance between constituencies in the experiment and those not in the experiment. Each row in the dataset contains data about a constituency. The variables in this dataset are described in Table \ref{tab:bes17vardesc}.
+
+
+
+# Code and Output
+
+The replication code for the figures and tables in the paper is provided in the  'main_analysis.R' file in the R folder. This document uses that file to produce output identical to that found in the article. 
+
+```{r setup-party-shield}
+
+```
+
+```{r load-party-shield-processed-data-Rmd}
+
+```
+
+
+
+```{r response-rate-descriptives}
+
+```
+
+```{r response-rate-on-congruence}
+
+```
+
+```{r lin-mod-responsiveness}
+
+```
+
+```{r lin-responsiveness-varyresponsetypes}
+
+```
+
+```{r OLS-self-v-party}
+
+```
+
+```{r balance-table}
+
+```
+
+```{r regional-distribution-setup}
+
+```
+
+```{r regional-distribution-table}
+
+```
+
+```{r lin-responsiveness-alternativeloyalist}
+
+```
+
+```{r OLS-self-v-party-alternativeloyalist}
+
+```
+
+```{r response-rate-by-issue-plot, fig.cap="Rates of MP substantive responses to constituent letters by policy topic."}
+
+```
+
+```{r response-rate-sendorder}
+
+```
+
+```{r lin-responsiveness-brexit}
+
+```
+
+```{r dist-lr-by-congruence, fig.cap="Distribution of log-ratio of MP versus party mentions in observed MP response texts, conditional on constituent-party policy congruence."}
+
+```
+
+```{r lin-mpparty-standardised}
+
+```
+
+```{r reg-letter-length}
 
 ```
 
