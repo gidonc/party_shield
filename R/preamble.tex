@@ -1,13 +1,49 @@
-\usepackage{lmodern} 
+% preamble.tex
 
-\definecolor{commentgreen}{rgb}{0.2, 0.5, 0.2}
-\definecolor{commentgray}{rgb}{0.4, 0.4, 0.4}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{listings}
+
+% Define a palette of colors for syntax highlighting using consistent 'lst' prefix
+\definecolor{lstgreen_string}{rgb}{0.18,0.55,0.34}   % Darkish Green for Strings
+\definecolor{lstgray_comment}{rgb}{0.4,0.4,0.4}      % Gray for Comments
+\definecolor{lstpurple_keyword}{rgb}{0.58,0.0,0.82}  % Purple for Keywords/Emphasized
+\definecolor{lstblue_number}{rgb}{0.0,0.0,0.8}       % Dark Blue for Numbers (used by literate below)
+\definecolor{lstorange_keyword2}{rgb}{0.9,0.5,0.0}   % Orange for secondary Keywords
+\definecolor{lstblack_basic}{rgb}{0.0,0.0,0.0}       % Black for default text/identifiers
+\definecolor{backgroundlightgray}{rgb}{0.93,0.93,0.93} % For background, like gray!10
 
 \lstset{
+  % General Settings
   breaklines=true,
-  language=R,
-  basicstyle=\ttfamily,
-  commentstyle=\color{commentgreen},
+  language=R, 
   showstringspaces=false,
-  backgroundcolor=\color{gray!10}
+  backgroundcolor=\color{backgroundlightgray},
+  % Base Styles for Code Content
+  basicstyle=\small\ttfamily\color{lstblack_basic}, % Default code text
+  commentstyle=\color{lstgray_comment}\ttfamily,     % Comments
+  stringstyle=\color{lstgreen_string}\ttfamily,      % Strings
+  identifierstyle=\color{lstblack_basic}, % Ensure identifiers (non-keywords) are black
+  % --- KEYWORD HIGHLIGHTING ---
+  % `emph` for specific terms (operators, function names)
+ emph={
+    `\string%\string>\string%`, % <-- NEW ATTEMPT for %>% without literate.
+                               %    Uses \string to get literal % characters.
+    ggplot, mutate, filter, group_by, summarise,
+    select, arrange, left_join, right_join, full_join, inner_join,
+    lm_robust
+  },
+  % emph={
+  %   `%>%`, % Backticks are often needed for operators in listings
+  %   ggplot, mutate, filter, group_by, summarise,
+  %   select, arrange, left_join, right_join, full_join, inner_join,
+  %   lm_robust
+  % },
+  % FIX: Changed to lstpurple_keyword for purple emphasis.
+  emphstyle=\color{lstpurple_keyword}\bfseries, % Style for emphasized terms (now purple)
+  % `morekeywords` for constants/secondary keywords
+  % morekeywords=[2]{TRUE, FALSE, NULL, NA, NaN, Inf},
+  % keywordstyle=[2]\color{lstorange_keyword2}\bfseries, % Secondary keyword style (orange)
+  % Default keyword style for R's built-in keywords (e.g., if, else, for, function, library)
+  keywordstyle=\color{lstpurple_keyword}\bfseries, % Default keyword style (purple)
 }
