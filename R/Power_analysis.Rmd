@@ -49,7 +49,7 @@ Figures \@ref(fig:contin-plot) and \@ref(fig:binary-plot) report the power of ou
 
 ```
 
-```{r set-n-sims-short}
+```{r set-n-sims-long}
 
 ```
 
