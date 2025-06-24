@@ -1,7 +1,10 @@
-
-set.seed(1234)
+##----power-anal-setup----
+library(tidyverse)
 current_mps_n <- 102 
 cases_per_issue <- c(26, 29, 33, 45, 45, 20, 37, 34, 43)
+
+
+##----power-anal-functions----
 
 invlogit<-function (x) 1/(1+exp(-x))
 
@@ -110,14 +113,18 @@ f.pow<-function(n_mp, n_issues, n.sims=100, beta1=-.1, corr_matrix, sds, mp_aver
   return(data.frame(bin_b1=mean(lm.signif.bin.b1), cont_b1=mean(lm.signif.b1)))
 }
 
+##----set-n-sims-short----
+n_sims <- 10
 
-  
+##----set-n-sims-long----
+n_sims <- 1000
+
+##----run-power-anal----
+set.seed(1234)
 pa.res<-NULL
-
-
 for (beta1 in seq(0, .15, .01)){
   
-  power.anal.this<-f.pow(n_mp=current_mps_n, n_issue=9, n.sims=1000, beta1=beta1, corr_matrix = Co, sds=rep(.2,10), mp_average_mean=.5, cases_per_issue = cases_per_issue, effect_sd=.2)
+  power.anal.this<-f.pow(n_mp=current_mps_n, n_issue=9, n.sims=n_sims, beta1=beta1, corr_matrix = Co, sds=rep(.2,10), mp_average_mean=.5, cases_per_issue = cases_per_issue, effect_sd=.2)
   
   pa.df<-data.frame(power=t(power.anal.this))
   #pa.df<-data.frame(apply(pa.df, 2, unlist))
@@ -134,6 +141,7 @@ for (beta1 in seq(0, .15, .01)){
 pa.res<-pa.res %>%
   separate(variable, c("type", "variable"), "_")
 
+##----contin-plot----
 p1<-pa.res %>%
   mutate(effect_size = as.numeric(as.character(beta1))) %>%
   filter(type=="cont") %>%
@@ -142,6 +150,9 @@ p1<-pa.res %>%
   geom_hline(yintercept = .8)+
   ggtitle("Power Analysis: Continuous")
 
+p1
+
+##----binary-plot----
 p2<-pa.res %>%
   mutate(effect_size = as.numeric(as.character(beta1))) %>%
   filter(type=="bin") %>%
@@ -149,3 +160,5 @@ p2<-pa.res %>%
   geom_line()+
   geom_hline(yintercept = .8)+
   ggtitle("Power Analysis: Binary")
+
+p2
