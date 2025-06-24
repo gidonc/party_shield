@@ -1,625 +1,625 @@
-const_anon_id,response_auto_and_manual,manualresponse_exists_inc_post_count_nonresponse,partycongruent,partycongruent_neat,issue,position,send_cat,mp_type_detailed,mp_type_abstain_nonreb,diff_mp_party_outliers_removed,diff_mp_party,has_response_info,id,respondent_reported_letter_status,manualresponse_exists,lr_mp_party,word_total
-1,FALSE,0,1,Constituent-party congruent,tuitionfree,disagree,1,loyalist,loyalist,NA,NA,0,6,NA,0,NA,NA
-1,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,0,0,1,18,0,1,0,68
-2,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.012195121951219513,0.012195121951219513,1,33,0,1,0.4054651081081644,82
-2,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,1,loyalist,loyalist,0,0,0,34,NA,1,0,239
-2,TRUE,1,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,0,0,0,35,NA,1,0,85
-2,TRUE,1,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.0125,0.0125,0,37,NA,1,0.4054651081081644,80
-3,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,7,NA,0,NA,NA
-3,FALSE,0,0,Constituent-party not congruent,regulation,disagree,2-6,unclear rebel,loyalist,NA,NA,0,80,NA,0,NA,NA
-3,FALSE,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,1,81,0,0,NA,NA
-3,FALSE,0,1,Constituent-party congruent,regulation,agree,2-6,unclear rebel,loyalist,NA,NA,1,85,0,0,NA,NA
-4,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.02877697841726619,0.02877697841726619,1,25,0,1,0.9985288301111273,417
-4,TRUE,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,-0.008163265306122448,-0.008163265306122448,0,25,NA,1,-0.40546510810816444,245
-4,TRUE,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,0.00974025974025974,0.00974025974025974,1,27,0,1,0.47000362924573563,308
-4,FALSE,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,88,NA,0,NA,NA
-4,TRUE,1,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,0.014285714285714285,0.014285714285714285,0,89,NA,1,0.6061358035703155,350
-4,TRUE,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,-0.015267175572519085,-0.015267175572519085,1,93,0,1,-1.0986122886681098,262
-4,FALSE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,93,0,0,NA,NA
-4,FALSE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,110,NA,0,NA,NA
-5,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,rebel,-0.012195121951219513,-0.012195121951219513,0,115,NA,1,-0.6931471805599453,82
-5,TRUE,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,115,NA,0,NA,NA
-5,TRUE,0,1,Constituent-party congruent,freedomm,disagree,1,unclear rebel,rebel,NA,NA,1,119,0,0,NA,NA
-5,TRUE,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,-0.012195121951219513,-0.012195121951219513,1,119,0,1,-0.6931471805599453,82
-6,FALSE,0,0,Constituent-party not congruent,customs,agree,1,loyalist,loyalist,NA,NA,1,114,0,0,NA,NA
-6,FALSE,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,1,114,0,0,NA,NA
-6,TRUE,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.03940886699507389,-0.03940886699507389,1,114,0,1,-1.6094379124341003,203
-6,FALSE,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,1,116,0,0,NA,NA
-6,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,-0.007894736842105262,-0.007894736842105262,1,116,0,1,-0.4700036292457356,380
-6,FALSE,0,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,116,0,0,NA,NA
-6,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,loyalist,NA,NA,1,121,0,0,NA,NA
-6,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,-0.007339449541284404,-0.007339449541284404,1,121,0,1,-1.0986122886681098,545
-6,FALSE,0,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,1,121,0,0,NA,NA
-6,TRUE,1,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,-0.017543859649122806,-0.017543859649122806,1,124,0,1,-0.6931471805599453,57
-6,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,unclear rebel,loyalist,NA,NA,1,124,0,0,NA,NA
-6,FALSE,0,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,124,0,0,NA,NA
-7,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,unclear rebel,rebel,0.013793103448275862,0.013793103448275862,1,103,0,1,0.5877866649021191,290
-7,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,unclear rebel,rebel,0.04597701149425287,0.04597701149425287,1,125,0,1,1.6094379124341003,87
-8,TRUE,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,28,NA,1,-0.2876820724517809,693
-8,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,28,NA,1,-0.2876820724517809,693
-8,TRUE,1,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,28,NA,1,-0.2876820724517809,693
-8,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,255,NA,1,-0.2876820724517809,693
-8,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,255,NA,1,-0.2876820724517809,693
-8,TRUE,1,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,255,NA,1,-0.2876820724517809,693
-9,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,227,NA,0,NA,NA
-9,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,1,loyalist,loyalist,NA,NA,0,257,NA,0,NA,NA
-10,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.021739130434782608,0.021739130434782608,0,265,NA,1,0.6931471805599453,46
-10,TRUE,1,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,0.027777777777777776,0.027777777777777776,0,265,NA,1,1.791759469228055,360
-10,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,loyalist,0.021739130434782608,0.021739130434782608,0,265,NA,1,0.6931471805599453,46
-10,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.06685236768802229,0.06685236768802229,0,266,NA,1,2.5649493574615367,359
-10,TRUE,1,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,0.05405405405405406,0.05405405405405406,0,266,NA,1,1.0986122886681098,37
-10,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,unclear rebel,loyalist,0.05405405405405406,0.05405405405405406,0,266,NA,1,1.0986122886681098,37
-11,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,-0.017621145374449337,-0.017621145374449337,0,273,NA,1,-0.6931471805599453,454
-11,TRUE,1,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,0.009615384615384616,0.009615384615384616,0,273,NA,1,0.6931471805599453,208
-11,FALSE,0,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,273,NA,0,NA,NA
-11,TRUE,1,1,Constituent-party congruent,singlem,disagree,1,loyalist,loyalist,0,0,0,287,NA,1,0,146
-11,TRUE,1,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,0.020942408376963352,0.020942408376963352,0,287,NA,1,1.0986122886681098,191
-11,FALSE,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,287,NA,0,NA,NA
-12,TRUE,1,0,Constituent-party not congruent,regulation,agree,1,loyalist,loyalist,0.012711864406779662,0.012711864406779662,0,274,NA,1,0.3794896217049037,472
-12,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,274,NA,0,NA,NA
-12,TRUE,1,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,0.012711864406779662,0.012711864406779662,0,290,NA,1,0.3794896217049037,472
-12,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,290,NA,0,NA,NA
-13,TRUE,1,1,Constituent-party congruent,regulation,agree,2-6,extreme rebel,rebel,NA,0.14444444444444446,0,113,NA,1,1.6094379124341003,360
-13,TRUE,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,0.0638888888888889,0.0638888888888889,0,113,NA,1,1.5125880864441827,720
-13,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,0.007425742574257426,0.007425742574257426,0,113,NA,1,0.6931471805599453,404
-13,TRUE,1,0,Constituent-party not congruent,customs,agree,1,extreme rebel,rebel,0.07222222222222223,0.07222222222222223,1,118,0,1,1.6094379124341003,720
-13,TRUE,1,0,Constituent-party not congruent,regulation,disagree,2-6,extreme rebel,rebel,0.06581059390048155,0.06581059390048155,1,118,0,1,1.4853852637641216,623
-13,TRUE,1,1,Constituent-party congruent,customs,disagree,2-6,extreme rebel,rebel,NA,0.14444444444444446,0,127,NA,1,1.6094379124341003,360
-13,TRUE,1,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,0.056944444444444436,0.056944444444444436,0,127,NA,1,1.4853852637641216,720
-13,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,0.027777777777777776,0.027777777777777776,0,127,NA,1,1.0360919316867758,720
-13,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,0,0,0,291,NA,1,0,104
-13,TRUE,1,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,0.03157894736842105,0.03157894736842105,0,291,NA,1,1.3862943611198906,190
-14,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,-0.07777777777777778,0,306,NA,1,-1.5040773967762742,360
-14,TRUE,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,-0.01977401129943503,-0.01977401129943503,0,306,NA,1,-0.49247648509779407,354
-14,TRUE,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,-0.039603960396039584,-0.039603960396039584,0,306,NA,1,-0.2363887780642304,101
-14,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,320,NA,0,NA,NA
-14,FALSE,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,320,NA,0,NA,NA
-14,FALSE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,320,NA,0,NA,NA
-15,FALSE,0,0,Constituent-party not congruent,secondr,agree,1,extreme rebel,rebel,NA,NA,0,275,NA,0,NA,NA
-15,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,0,275,NA,0,NA,NA
-15,FALSE,0,0,Constituent-party not congruent,regulation,agree,2-6,unclear rebel,loyalist,NA,NA,0,275,NA,0,NA,NA
-15,FALSE,0,1,Constituent-party congruent,regulation,disagree,2-6,unclear rebel,loyalist,NA,NA,0,285,NA,0,NA,NA
-15,FALSE,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,0,285,NA,0,NA,NA
-15,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,NA,NA,0,324,NA,0,NA,NA
-15,FALSE,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,0,324,NA,0,NA,NA
-15,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,324,NA,0,NA,NA
-15,FALSE,0,1,Constituent-party congruent,secondr,disagree,2-6,extreme rebel,rebel,NA,NA,0,327,NA,0,NA,NA
-15,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,327,NA,0,NA,NA
-16,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,moderate rebel,rebel,0.041666666666666664,0.041666666666666664,0,230,NA,1,1.3862943611198906,216
-16,TRUE,1,1,Constituent-party congruent,secondr,disagree,1,moderate rebel,rebel,NA,0.8461538461538461,1,240,0,1,1.540445040947149,13
-16,TRUE,1,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.06,0.06,1,321,0,1,1.3862943611198906,50
-16,TRUE,1,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,0,0,0,330,NA,1,0,9
-17,TRUE,1,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,111,NA,1,-1.8718021769015913,418
-17,TRUE,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,111,NA,1,-1.8718021769015913,418
-17,TRUE,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,318,NA,1,-1.8718021769015913,418
-17,TRUE,1,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,318,NA,1,-1.8718021769015913,418
-17,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,318,NA,0,NA,NA
-17,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,325,NA,0,NA,NA
-17,TRUE,1,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,331,NA,1,-1.8718021769015913,418
-17,TRUE,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,331,NA,0,NA,NA
-17,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,331,NA,0,NA,NA
-17,TRUE,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,-0.0013888888888888874,-0.0013888888888888874,0,334,NA,1,-0.04445176257083381,720
-17,TRUE,1,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,-0.0013888888888888874,-0.0013888888888888874,0,334,NA,1,-0.04445176257083381,720
-17,TRUE,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,334,NA,0,NA,NA
-17,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,-0.0013888888888888874,-0.0013888888888888874,0,336,NA,1,-0.04445176257083381,720
-17,TRUE,1,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,-0.0013888888888888874,-0.0013888888888888874,0,336,NA,1,-0.04445176257083381,720
-18,FALSE,0,1,Constituent-party congruent,regulation,agree,1,extreme rebel,rebel,NA,NA,0,337,NA,0,NA,NA
-18,FALSE,0,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,NA,NA,0,337,NA,0,NA,NA
-18,FALSE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,337,NA,0,NA,NA
-18,FALSE,0,0,Constituent-party not congruent,regulation,disagree,2-6,extreme rebel,rebel,NA,NA,0,339,NA,0,NA,NA
-18,FALSE,0,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,NA,NA,0,339,NA,0,NA,NA
-18,FALSE,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,339,NA,0,NA,NA
-19,TRUE,1,0,Constituent-party not congruent,regulation,disagree,1,extreme rebel,rebel,-0.01293103448275862,-0.01293103448275862,0,296,NA,1,-0.6190392084062235,464
-19,TRUE,1,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,0.006896551724137931,0.006896551724137931,0,296,NA,1,0.6931471805599453,435
-19,TRUE,1,1,Constituent-party congruent,regulation,agree,2-6,extreme rebel,rebel,0.01659751037344398,0.01659751037344398,0,405,NA,1,0.8472978603872037,241
-19,TRUE,1,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.006896551724137931,0.006896551724137931,0,405,NA,1,0.6931471805599453,435
-20,TRUE,1,1,Constituent-party congruent,tuitionfree,agree,1,loyalist,loyalist,0.0165016501650165,0.0165016501650165,0,409,NA,1,0.9808292530117262,303
-20,TRUE,1,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.03986710963455149,0.03986710963455149,1,410,0,1,1.9459101490553132,301
-21,TRUE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,276,NA,0,NA,NA
-21,TRUE,0,1,Constituent-party congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,0,276,NA,0,NA,NA
-21,TRUE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,276,NA,0,NA,NA
-21,TRUE,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,421,NA,0,NA,NA
-21,TRUE,0,0,Constituent-party not congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,0,421,NA,0,NA,NA
-21,TRUE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,421,NA,0,NA,NA
-22,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,68,NA,0,NA,NA
-22,FALSE,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,1,71,0,0,NA,NA
-22,FALSE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,281,NA,0,NA,NA
-22,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,281,NA,0,NA,NA
-22,FALSE,0,1,Constituent-party congruent,customs,agree,1,unclear rebel,loyalist,NA,NA,1,322,0,0,NA,NA
-22,FALSE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,422,NA,0,NA,NA
-23,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,1,424,1,0,NA,NA
-23,TRUE,1,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,1,424,1,0,NA,NA
-23,TRUE,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,424,1,0,NA,NA
-23,FALSE,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,425,NA,0,NA,NA
-23,FALSE,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,425,NA,0,NA,NA
-23,FALSE,0,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,425,NA,0,NA,NA
-23,FALSE,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,0,428,NA,0,NA,NA
-23,FALSE,0,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,428,NA,0,NA,NA
-24,TRUE,1,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.012195121951219513,0.012195121951219513,0,418,NA,1,0.9808292530117262,410
-24,TRUE,1,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,0.014150943396226415,0.014150943396226415,1,431,1,1,1.0986122886681098,424
-25,TRUE,1,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,0.0304975922953451,0.0304975922953451,0,52,NA,1,1.1349799328389845,623
-25,FALSE,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,52,NA,0,NA,NA
-25,FALSE,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,52,NA,0,NA,NA
-25,TRUE,1,1,Constituent-party congruent,freedomm,disagree,1,loyalist,loyalist,0.0304975922953451,0.0304975922953451,0,55,NA,1,1.1349799328389845,623
-25,TRUE,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,0.01639344262295082,0.01639344262295082,0,55,NA,1,0.6931471805599453,61
-25,TRUE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,1,452,0,0,NA,NA
-25,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,0.0304975922953451,0.0304975922953451,1,452,0,1,1.1349799328389845,623
-25,FALSE,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,452,0,0,NA,NA
-26,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.024024024024024024,0.024024024024024024,0,313,NA,1,0.9555114450274363,333
-26,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.024024024024024024,0.024024024024024024,0,458,NA,1,0.9555114450274363,333
-27,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,-0.022727272727272728,-0.022727272727272728,0,50,NA,1,-1.791759469228055,440
-27,TRUE,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,-0.029239766081871343,-0.029239766081871343,0,50,NA,1,-0.9808292530117262,171
-27,TRUE,1,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,0.009523809523809525,0.009523809523809525,1,50,1,1,0.4054651081081644,105
-27,TRUE,1,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,-0.023255813953488372,-0.023255813953488372,0,112,NA,1,-1.791759469228055,430
-27,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,-0.01079136690647482,-0.01079136690647482,0,112,NA,1,-1.7047480922384253,834
-27,TRUE,1,1,Constituent-party congruent,singlem,disagree,beyond 6,loyalist,loyalist,-0.010922330097087379,-0.010922330097087379,0,112,NA,1,-1.7047480922384253,824
-27,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,unclear rebel,loyalist,-0.010817307692307692,-0.010817307692307692,0,239,NA,1,-1.7047480922384253,832
-27,TRUE,1,0,Constituent-party not congruent,singlem,agree,beyond 6,loyalist,loyalist,-0.01090909090909091,-0.01090909090909091,0,239,NA,1,-1.7047480922384253,825
-27,TRUE,1,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,-0.033112582781456956,-0.033112582781456956,0,239,NA,1,-0.9808292530117262,151
-27,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,unclear rebel,loyalist,-0.02158273381294964,-0.02158273381294964,0,241,NA,1,-0.916290731874155,139
-27,FALSE,0,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,0,241,NA,0,NA,NA
-27,TRUE,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,0.009523809523809525,0.009523809523809525,0,241,NA,1,0.4054651081081644,105
-27,TRUE,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,-0.034482758620689655,-0.034482758620689655,0,461,NA,1,-0.9808292530117262,145
-27,TRUE,1,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.033112582781456956,-0.033112582781456956,0,461,NA,1,-0.9808292530117262,151
-28,FALSE,0,0,Constituent-party not congruent,customs,disagree,2-6,loyalist,loyalist,NA,NA,0,53,NA,0,NA,NA
-28,TRUE,1,0,Constituent-party not congruent,singlem,disagree,2-6,loyalist,loyalist,0.027247956403269755,0.027247956403269755,0,53,NA,1,2.03688192726104,734
-28,TRUE,1,1,Constituent-party congruent,singlem,agree,2-6,loyalist,loyalist,0.02066115702479339,0.02066115702479339,0,352,NA,1,1.55814461804655,726
-28,TRUE,1,1,Constituent-party congruent,secondr,agree,2-6,loyalist,loyalist,0.003311258278145695,0.003311258278145695,0,441,NA,1,0.15415067982725836,604
-28,TRUE,1,1,Constituent-party congruent,customs,agree,2-6,loyalist,loyalist,0.021306818181818184,0.021306818181818184,0,448,NA,1,1.55814461804655,704
-28,TRUE,1,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,0.02380952380952381,0.02380952380952381,0,449,NA,1,1.252762968495368,420
-28,TRUE,1,0,Constituent-party not congruent,secondr,disagree,1,loyalist,loyalist,0.016908212560386476,0.016908212560386476,0,454,NA,1,1.2039728043259361,828
-28,TRUE,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,0.019559902200488997,0.019559902200488997,0,459,NA,1,0.9555114450274363,409
-28,TRUE,1,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,0.01965601965601966,0.01965601965601966,0,463,NA,1,0.9555114450274363,407
-28,TRUE,1,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,0.024154589371980676,0.024154589371980676,1,470,0,1,1.252762968495368,414
-29,TRUE,0,1,Constituent-party congruent,immigration,agree,1,loyalist,loyalist,NA,NA,0,305,NA,0,NA,NA
-29,TRUE,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,0.015151515151515152,0.015151515151515152,0,305,NA,1,0.28768207245178085,66
-29,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0,0,0,305,NA,1,0,55
-29,TRUE,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,471,NA,0,NA,NA
-29,TRUE,1,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,0.02702702702702703,0.02702702702702703,0,471,NA,1,0.6931471805599453,37
-29,FALSE,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,471,NA,0,NA,NA
-30,TRUE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,44,NA,0,NA,NA
-30,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,0.009569377990430622,0.009569377990430622,0,44,NA,1,1.0986122886681098,209
-30,TRUE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,90,NA,0,NA,NA
-30,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,90,NA,0,NA,NA
-30,TRUE,1,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,0.21839080459770116,0,90,NA,1,1.992430164690206,87
-30,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,0.0032258064516129045,0.0032258064516129045,0,474,NA,1,0.10536051565782635,310
-30,TRUE,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,0.028089887640449437,0.028089887640449437,0,474,NA,1,1.252762968495368,178
-30,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,0.00737100737100737,0.00737100737100737,0,474,NA,1,0.6931471805599453,407
-31,TRUE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,485,NA,0,NA,NA
-31,TRUE,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,489,NA,0,NA,NA
-32,FALSE,0,0,Constituent-party not congruent,freedomm,agree,1,loyalist,loyalist,NA,NA,0,504,NA,0,NA,NA
-32,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,-0.029585798816568046,-0.029585798816568046,1,511,0,1,-1.791759469228055,169
-33,FALSE,0,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,NA,NA,0,515,NA,0,NA,NA
-33,FALSE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,1,516,0,0,NA,NA
-34,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,1,472,1,0,NA,NA
-34,TRUE,1,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,1,472,1,0,NA,NA
-34,TRUE,0,1,Constituent-party congruent,tuitionfree,disagree,1,loyalist,loyalist,NA,NA,0,521,NA,0,NA,NA
-34,FALSE,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,521,NA,0,NA,NA
-35,TRUE,0,1,Constituent-party congruent,skilled,disagree,1,loyalist,loyalist,NA,NA,1,363,0,0,NA,NA
-35,TRUE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,521,NA,0,NA,NA
-36,FALSE,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,207,NA,0,NA,NA
-36,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,207,NA,0,NA,NA
-36,TRUE,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,0.020000000000000004,0.020000000000000004,0,528,NA,1,0.9734491457141037,1400
-36,TRUE,1,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,0.15789473684210525,0,528,NA,1,1.3862943611198906,19
-37,TRUE,1,0,Constituent-party not congruent,customs,disagree,1,unclear rebel,loyalist,0.02348993288590604,0.02348993288590604,0,492,NA,1,0.8754687373538999,298
-37,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,0.03205128205128205,0.03205128205128205,0,492,NA,1,1.0986122886681098,312
-37,FALSE,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,492,NA,0,NA,NA
-37,FALSE,0,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,1,532,0,0,NA,NA
-37,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,1,532,0,0,NA,NA
-37,FALSE,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,1,532,0,0,NA,NA
-38,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,unclear rebel,rebel,NA,NA,1,73,0,0,NA,NA
-38,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0,0,1,73,0,1,0,41
-38,FALSE,0,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,1,73,0,0,NA,NA
-38,TRUE,0,0,Constituent-party not congruent,secondr,agree,2-6,unclear rebel,rebel,NA,NA,0,86,NA,0,NA,NA
-38,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,rebel,NA,NA,0,86,NA,0,NA,NA
-38,FALSE,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,86,NA,0,NA,NA
-38,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,unclear rebel,rebel,-0.01556420233463035,-0.01556420233463035,0,534,NA,1,-0.587786664902119,257
-38,TRUE,1,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,0,0,0,534,NA,1,0,43
-39,TRUE,0,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,78,NA,0,NA,NA
-39,TRUE,0,0,Constituent-party not congruent,tuitionlevel,agree,1,loyalist,loyalist,NA,NA,0,535,NA,0,NA,NA
-40,TRUE,0,1,Constituent-party congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,338,NA,0,NA,NA
-40,TRUE,1,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,1,338,1,0,NA,NA
-40,FALSE,0,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,338,NA,0,NA,NA
-40,TRUE,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,453,NA,0,NA,NA
-40,TRUE,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,453,NA,0,NA,NA
-40,TRUE,0,0,Constituent-party not congruent,regulation,disagree,1,loyalist,loyalist,NA,NA,0,544,NA,0,NA,NA
-41,FALSE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,543,NA,0,NA,NA
-41,FALSE,0,0,Constituent-party not congruent,skilled,agree,1,loyalist,loyalist,NA,NA,0,546,NA,0,NA,NA
-42,TRUE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,543,NA,0,NA,NA
-42,TRUE,1,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,0,0,0,551,NA,1,0,154
-43,FALSE,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,541,NA,0,NA,NA
-43,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,541,NA,0,NA,NA
-43,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,549,NA,0,NA,NA
-43,TRUE,1,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,549,1,0,NA,NA
-43,TRUE,1,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,1,549,1,0,NA,NA
-43,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,552,NA,0,NA,NA
-43,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,552,NA,0,NA,NA
-43,FALSE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,552,NA,0,NA,NA
-44,TRUE,1,1,Constituent-party congruent,singlem,disagree,1,moderate rebel,rebel,-0.0016313213703099474,-0.0016313213703099474,0,226,NA,1,-0.048790164169432056,613
-44,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,moderate rebel,rebel,-0.0016313213703099474,-0.0016313213703099474,0,555,NA,1,-0.048790164169432056,613
-45,TRUE,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,457,0,0,NA,NA
-45,TRUE,0,1,Constituent-party congruent,skilled,agree,1,loyalist,loyalist,NA,NA,0,561,NA,0,NA,NA
-46,FALSE,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,91,NA,0,NA,NA
-46,FALSE,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,91,NA,0,NA,NA
-46,TRUE,0,1,Constituent-party congruent,tuitionfree,disagree,1,loyalist,loyalist,NA,NA,1,565,0,0,NA,NA
-46,FALSE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,1,565,0,0,NA,NA
-47,FALSE,0,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,4,NA,0,NA,NA
-47,FALSE,0,0,Constituent-party not congruent,tuitionfree,agree,1,loyalist,loyalist,NA,NA,0,573,NA,0,NA,NA
-48,TRUE,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,563,NA,0,NA,NA
-48,TRUE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,564,NA,0,NA,NA
-48,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.02777777777777778,0.02777777777777778,0,565,NA,1,0.8109302162163288,180
-48,TRUE,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,0,565,NA,0,NA,NA
-48,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,1,570,0,0,NA,NA
-48,TRUE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,571,NA,0,NA,NA
-48,TRUE,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,0,571,NA,0,NA,NA
-48,TRUE,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,571,NA,0,NA,NA
-48,TRUE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,579,NA,0,NA,NA
-48,TRUE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,580,NA,0,NA,NA
-49,TRUE,1,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,1,582,1,0,NA,NA
-49,TRUE,0,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,NA,NA,0,585,NA,0,NA,NA
-50,FALSE,0,0,Constituent-party not congruent,customs,agree,1,extreme rebel,rebel,NA,NA,0,435,NA,0,NA,NA
-50,FALSE,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,445,NA,0,NA,NA
-50,FALSE,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,445,NA,0,NA,NA
-50,TRUE,1,1,Constituent-party congruent,customs,disagree,2-6,extreme rebel,rebel,NA,0.09565217391304347,0,586,NA,1,1.8718021769015913,115
-50,TRUE,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,NA,0.09565217391304347,0,586,NA,1,1.8718021769015913,115
-50,FALSE,0,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,586,NA,0,NA,NA
-51,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,1,loyalist,loyalist,0.03278688524590164,0.03278688524590164,0,560,NA,1,0.5108256237659907,61
-51,TRUE,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,560,NA,0,NA,NA
-51,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.05084745762711865,0.05084745762711865,0,586,NA,1,0.9162907318741551,59
-51,TRUE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,586,NA,0,NA,NA
-52,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,-0.0045454545454545435,-0.0045454545454545435,0,101,NA,1,-0.1466034741918754,660
-52,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,-0.0045454545454545435,-0.0045454545454545435,0,494,NA,1,-0.1466034741918754,660
-52,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,494,NA,0,NA,NA
-52,TRUE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,587,NA,0,NA,NA
-52,TRUE,1,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,-0.0045454545454545435,-0.0045454545454545435,0,587,NA,1,-0.1466034741918754,660
-52,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,587,NA,0,NA,NA
-53,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.05940594059405941,0.05940594059405941,1,347,0,1,0.6931471805599453,202
-53,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.05970149253731344,0.05970149253731344,1,588,0,1,0.6931471805599453,201
-54,TRUE,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,0.0662251655629139,0.0662251655629139,0,11,NA,1,1.791759469228055,151
-54,TRUE,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,11,NA,0,NA,NA
-54,TRUE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,11,NA,0,NA,NA
-54,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,0.012219959266802444,0.012219959266802444,1,589,1,1,0.47000362924573563,491
-54,TRUE,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,1,589,1,0,NA,NA
-54,TRUE,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,589,1,0,NA,NA
-55,FALSE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,252,NA,0,NA,NA
-55,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,0.034482758620689655,0.034482758620689655,0,591,NA,1,0.8472978603872037,116
-55,FALSE,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,591,NA,0,NA,NA
-55,FALSE,0,1,Constituent-party congruent,singlem,disagree,1,loyalist,loyalist,NA,NA,1,593,0,0,NA,NA
-56,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.0014154281670205257,0.0014154281670205257,0,294,NA,1,0.055569851154810786,1413
-56,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.0014174344436569779,0.0014174344436569779,0,295,NA,1,0.055569851154810786,1411
-56,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,295,NA,0,NA,NA
-56,TRUE,0,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,295,NA,0,NA,NA
-56,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,298,NA,0,NA,NA
-56,TRUE,0,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,298,NA,0,NA,NA
-56,TRUE,0,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,298,NA,0,NA,NA
-56,TRUE,1,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,1,595,1,0,NA,NA
-56,TRUE,1,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,595,1,0,NA,NA
-56,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,1,595,1,0,NA,NA
-57,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,0.0625,0.0625,0,560,NA,1,0.6931471805599453,16
-57,TRUE,1,0,Constituent-party not congruent,immigration,disagree,beyond 6,loyalist,loyalist,0.0625,0.0625,0,560,NA,1,0.6931471805599453,16
-57,TRUE,1,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,0.0625,0.0625,0,560,NA,1,0.6931471805599453,16
-57,TRUE,1,0,Constituent-party not congruent,regulation,disagree,beyond 6,unclear rebel,loyalist,NA,NA,1,599,1,0,NA,NA
-57,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,1,599,1,0,NA,NA
-57,TRUE,1,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,599,1,0,NA,NA
-57,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,602,NA,0,NA,NA
-57,FALSE,0,0,Constituent-party not congruent,singlem,agree,beyond 6,loyalist,loyalist,NA,NA,0,602,NA,0,NA,NA
-57,TRUE,1,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,0.03225806451612903,0.03225806451612903,1,603,1,1,0.7884573603642703,186
-57,TRUE,1,1,Constituent-party congruent,regulation,agree,beyond 6,unclear rebel,loyalist,0.058666666666666666,0.058666666666666666,1,603,1,0,2.120263536200091,375
-57,TRUE,1,1,Constituent-party congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,1,603,1,0,NA,NA
-57,TRUE,1,1,Constituent-party congruent,singlem,disagree,beyond 6,loyalist,loyalist,0.058666666666666666,0.058666666666666666,1,606,1,1,2.120263536200091,375
-57,TRUE,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,0.006263048016701467,0.006263048016701467,1,606,1,1,0.14660347419187544,958
-57,FALSE,0,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,606,NA,0,NA,NA
-57,TRUE,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,1,608,1,0,NA,NA
-57,TRUE,1,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,NA,NA,1,608,1,0,NA,NA
-57,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,0.036269430051813475,0.036269430051813475,1,611,1,1,0.8754687373538999,193
-57,FALSE,0,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,611,NA,0,NA,NA
-58,TRUE,1,1,Constituent-party congruent,regulation,agree,2-6,extreme rebel,rebel,NA,NA,1,524,1,0,NA,NA
-58,TRUE,1,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,1,524,1,0,NA,NA
-58,FALSE,0,1,Constituent-party congruent,secondr,disagree,2-6,unclear rebel,rebel,NA,NA,0,601,NA,0,NA,NA
-58,FALSE,0,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,601,NA,0,NA,NA
-58,FALSE,0,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,601,NA,0,NA,NA
-58,FALSE,0,0,Constituent-party not congruent,secondr,agree,1,unclear rebel,rebel,NA,NA,0,613,NA,0,NA,NA
-58,FALSE,0,0,Constituent-party not congruent,regulation,disagree,2-6,extreme rebel,rebel,NA,NA,0,613,NA,0,NA,NA
-58,FALSE,0,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,613,NA,0,NA,NA
-59,FALSE,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,1,613,0,0,NA,NA
-59,TRUE,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,0.028213166144200625,0.028213166144200625,1,613,0,1,1.7047480922384253,319
-59,FALSE,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,1,613,0,0,NA,NA
-59,FALSE,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,1,614,0,0,NA,NA
-59,FALSE,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,614,0,0,NA,NA
-59,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,614,NA,0,NA,NA
-59,FALSE,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,1,615,0,0,NA,NA
-59,FALSE,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,0,615,NA,0,NA,NA
-59,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,loyalist,0.006578947368421052,0.006578947368421052,1,618,0,1,0.22314355131420976,152
-59,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,618,0,0,NA,NA
-59,FALSE,0,1,Constituent-party congruent,freedomm,disagree,1,unclear rebel,loyalist,NA,NA,1,619,0,0,NA,NA
-59,TRUE,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,0.027950310559006212,0.027950310559006212,1,619,0,1,1.7047480922384253,322
-60,FALSE,0,1,Constituent-party congruent,secondr,disagree,2-6,unclear rebel,loyalist,NA,NA,0,246,NA,0,NA,NA
-60,FALSE,0,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,246,NA,0,NA,NA
-60,FALSE,0,0,Constituent-party not congruent,secondr,agree,1,unclear rebel,loyalist,NA,NA,1,622,0,0,NA,NA
-60,FALSE,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,622,NA,0,NA,NA
-61,FALSE,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,102,NA,0,NA,NA
-61,TRUE,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,0,0,0,102,NA,1,0,323
-61,FALSE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,102,NA,0,NA,NA
-61,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,624,NA,0,NA,NA
-61,FALSE,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,624,NA,0,NA,NA
-61,TRUE,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,0,0,0,624,NA,1,0,323
-62,FALSE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,4,NA,0,NA,NA
-62,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,4,NA,0,NA,NA
-62,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,1,16,0,0,NA,NA
-62,FALSE,0,1,Constituent-party congruent,freedomm,disagree,1,extreme rebel,rebel,NA,NA,0,551,NA,0,NA,NA
-62,FALSE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,625,NA,0,NA,NA
-62,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,625,NA,0,NA,NA
-63,FALSE,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,163,NA,0,NA,NA
-63,FALSE,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,0,163,NA,0,NA,NA
-63,FALSE,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,0,620,NA,0,NA,NA
-63,FALSE,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,0,620,NA,0,NA,NA
-63,FALSE,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,0,620,NA,0,NA,NA
-63,FALSE,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,1,626,0,0,NA,NA
-63,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,626,NA,0,NA,NA
-63,FALSE,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,0,627,NA,0,NA,NA
-63,FALSE,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,628,NA,0,NA,NA
-63,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,628,NA,0,NA,NA
-63,FALSE,0,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,0,629,NA,0,NA,NA
-63,FALSE,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,629,NA,0,NA,NA
-64,FALSE,0,0,Constituent-party not congruent,singlem,agree,2-6,moderate rebel,rebel,NA,NA,1,202,0,0,NA,NA
-64,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,1,202,0,0,NA,NA
-64,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,202,0,0,NA,NA
-64,FALSE,0,0,Constituent-party not congruent,secondr,agree,1,moderate rebel,rebel,NA,NA,0,210,NA,0,NA,NA
-64,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,moderate rebel,rebel,NA,NA,0,210,NA,0,NA,NA
-64,FALSE,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,210,NA,0,NA,NA
-64,FALSE,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,1,211,0,0,NA,NA
-64,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,1,211,0,0,NA,NA
-64,FALSE,0,1,Constituent-party congruent,secondr,disagree,2-6,moderate rebel,rebel,NA,NA,0,629,NA,0,NA,NA
-64,FALSE,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,629,NA,0,NA,NA
-64,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,629,NA,0,NA,NA
-64,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,moderate rebel,rebel,NA,NA,0,631,NA,0,NA,NA
-64,FALSE,0,1,Constituent-party congruent,singlem,disagree,2-6,moderate rebel,rebel,NA,NA,0,631,NA,0,NA,NA
-64,TRUE,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,-0.013157894736842105,-0.013157894736842105,1,631,1,0,-0.1823215567939546,76
-65,TRUE,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,1,506,0,0,NA,NA
-65,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,0.02564102564102564,0.02564102564102564,1,508,1,0,0.5596157879354227,117
-65,TRUE,1,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,508,1,0,NA,NA
-65,TRUE,0,1,Constituent-party congruent,freedomm,disagree,1,extreme rebel,rebel,NA,NA,1,637,0,0,NA,NA
-65,FALSE,0,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,NA,NA,1,637,0,0,NA,NA
-65,FALSE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,637,0,0,NA,NA
-66,TRUE,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,100,NA,0,NA,NA
-66,TRUE,0,1,Constituent-party congruent,tuitionfree,agree,1,loyalist,loyalist,NA,NA,0,640,NA,0,NA,NA
-67,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,moderate rebel,rebel,0.04,0.04,0,271,NA,1,0.4054651081081644,25
-67,FALSE,0,0,Constituent-party not congruent,regulation,agree,2-6,moderate rebel,rebel,NA,NA,0,271,NA,0,NA,NA
-67,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,271,NA,0,NA,NA
-67,FALSE,0,0,Constituent-party not congruent,secondr,agree,1,moderate rebel,rebel,NA,NA,0,641,NA,0,NA,NA
-67,FALSE,0,1,Constituent-party congruent,regulation,disagree,2-6,moderate rebel,rebel,NA,NA,0,641,NA,0,NA,NA
-67,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,641,NA,0,NA,NA
-68,TRUE,0,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,115,NA,0,NA,NA
-68,TRUE,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,1,481,0,0,NA,NA
-68,TRUE,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,651,NA,0,NA,NA
-68,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,651,NA,0,NA,NA
-69,TRUE,1,1,Constituent-party congruent,skilled,agree,1,loyalist,loyalist,0.028571428571428574,0.028571428571428574,1,651,0,1,1.5040773967762742,245
-69,TRUE,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,652,0,0,NA,NA
-70,TRUE,1,1,Constituent-party congruent,secondr,disagree,1,unclear rebel,rebel,NA,0.1111111111111111,1,379,0,1,0.6931471805599453,9
-70,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,unclear rebel,rebel,0.05253940455341506,0.05253940455341506,0,655,NA,1,1.6650077635889111,571
-71,TRUE,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,523,NA,0,NA,NA
-71,TRUE,0,0,Constituent-party not congruent,tuitionlevel,disagree,1,loyalist,loyalist,NA,NA,1,658,0,0,NA,NA
-72,FALSE,0,0,Constituent-party not congruent,skilled,agree,1,loyalist,loyalist,NA,NA,0,393,NA,0,NA,NA
-72,TRUE,1,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.014285714285714285,0.014285714285714285,0,393,NA,1,0.6931471805599453,70
-72,FALSE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,657,0,0,NA,NA
-72,TRUE,1,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,0.021739130434782608,0.021739130434782608,0,661,NA,1,0.6931471805599453,46
-73,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.020033388981636056,0.020033388981636056,0,45,NA,1,0.8472978603872037,599
-73,TRUE,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,-0.004,-0.004,0,45,NA,1,-0.11778303565638351,250
-73,TRUE,1,0,Constituent-party not congruent,customs,disagree,2-6,extreme rebel,rebel,0.035398230088495575,0.035398230088495575,1,47,0,1,0.6931471805599453,113
-73,TRUE,1,0,Constituent-party not congruent,regulation,agree,beyond 6,loyalist,loyalist,0.018987341772151903,0.018987341772151903,1,47,0,1,0.8266785731844679,474
-73,TRUE,1,1,Constituent-party congruent,singlem,disagree,beyond 6,extreme rebel,rebel,0.01442307692307692,0.01442307692307692,1,47,0,1,0.28768207245178085,208
-73,TRUE,1,1,Constituent-party congruent,customs,agree,2-6,extreme rebel,rebel,0.0072202166064981935,0.0072202166064981935,0,49,NA,1,0.20067069546215124,277
-73,TRUE,1,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,-0.010204081632653062,-0.010204081632653062,0,49,NA,1,-0.3364722366212129,196
-73,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,-0.004,-0.004,0,292,NA,1,-0.11778303565638351,250
-73,TRUE,1,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.004,-0.004,0,292,NA,1,-0.11778303565638351,250
-73,TRUE,1,1,Constituent-party congruent,regulation,disagree,beyond 6,loyalist,loyalist,-0.004,-0.004,0,293,NA,1,-0.11778303565638351,250
-73,TRUE,1,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,-0.030188679245283016,-0.030188679245283016,0,293,NA,1,-0.9555114450274363,265
-73,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,0.003318584070796462,0.003318584070796462,1,368,0,1,0.16251892949777494,904
-73,TRUE,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,0.013392857142857144,0.013392857142857144,1,368,0,1,0.3184537311185346,224
-73,TRUE,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,-0.010204081632653062,-0.010204081632653062,1,368,0,1,-0.3364722366212129,196
-73,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.04464285714285714,0.04464285714285714,0,369,NA,1,0.8109302162163288,112
-73,TRUE,1,0,Constituent-party not congruent,singlem,agree,beyond 6,extreme rebel,rebel,0,0,0,369,NA,1,0,167
-73,TRUE,1,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,-0.004,-0.004,0,662,NA,1,-0.11778303565638351,250
-73,TRUE,1,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,-0.03585657370517928,-0.03585657370517928,0,662,NA,1,-1.1786549963416462,251
-74,TRUE,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,384,NA,0,NA,NA
-74,TRUE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,487,NA,0,NA,NA
-74,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,1,507,1,0,NA,NA
-74,FALSE,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,537,NA,0,NA,NA
-74,TRUE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,566,0,0,NA,NA
-74,TRUE,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,-0.0028436018957345988,-0.0028436018957345988,1,568,0,1,-0.09844007281325252,1055
-74,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,-0.005976095617529882,-0.005976095617529882,1,568,0,1,-0.09844007281325252,502
-74,TRUE,1,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.0028436018957345988,-0.0028436018957345988,1,568,0,1,-0.09844007281325252,1055
-74,TRUE,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,576,NA,0,NA,NA
-74,TRUE,1,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,1,667,1,0,NA,NA
-75,FALSE,0,0,Constituent-party not congruent,singlem,agree,2-6,moderate rebel,rebel,NA,NA,0,61,NA,0,NA,NA
-75,FALSE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,61,NA,0,NA,NA
-75,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,61,NA,0,NA,NA
-75,FALSE,0,1,Constituent-party congruent,singlem,disagree,2-6,moderate rebel,rebel,NA,NA,0,632,NA,0,NA,NA
-75,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,moderate rebel,rebel,NA,NA,0,674,NA,0,NA,NA
-75,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,674,NA,0,NA,NA
-75,FALSE,0,0,Constituent-party not congruent,secondr,agree,2-6,moderate rebel,rebel,NA,NA,0,681,NA,0,NA,NA
-75,FALSE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,681,NA,0,NA,NA
-76,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,moderate rebel,rebel,NA,NA,0,10,NA,0,NA,NA
-76,FALSE,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,0,10,NA,0,NA,NA
-76,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,10,NA,0,NA,NA
-76,TRUE,1,0,Constituent-party not congruent,customs,disagree,2-6,moderate rebel,rebel,0.005277044854881268,0.005277044854881268,1,245,0,1,0.20067069546215124,379
-76,FALSE,0,1,Constituent-party congruent,singlem,disagree,beyond 6,moderate rebel,rebel,NA,NA,1,245,0,0,NA,NA
-76,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,245,0,0,NA,NA
-76,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,bothways rebel,rebel,NA,NA,0,248,NA,0,NA,NA
-76,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,moderate rebel,rebel,NA,NA,0,248,NA,0,NA,NA
-76,FALSE,0,0,Constituent-party not congruent,secondr,agree,2-6,bothways rebel,rebel,NA,NA,1,683,0,0,NA,NA
-76,FALSE,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,1,683,0,0,NA,NA
-76,TRUE,1,1,Constituent-party congruent,customs,agree,2-6,moderate rebel,rebel,0.025280898876404494,0.025280898876404494,1,686,0,1,0.9162907318741551,356
-76,TRUE,1,0,Constituent-party not congruent,singlem,agree,beyond 6,moderate rebel,rebel,0.025280898876404494,0.025280898876404494,1,686,0,1,0.9162907318741551,356
-77,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,-0.024390243902439025,-0.024390243902439025,0,152,NA,1,-0.6931471805599453,41
-77,TRUE,1,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,0.020725388601036267,0.020725388601036267,0,152,NA,1,0.6931471805599453,193
-77,TRUE,1,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,0.01639344262295082,0.01639344262295082,0,661,NA,1,0.5596157879354227,183
-77,TRUE,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.047619047619047616,0.047619047619047616,1,691,0,1,1.0986122886681098,42
-78,TRUE,1,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,0.07017543859649122,0.07017543859649122,0,689,NA,1,1.6094379124341003,57
-78,TRUE,1,1,Constituent-party congruent,skilled,agree,1,loyalist,loyalist,0,0,0,692,NA,1,0,44
-79,TRUE,0,1,Constituent-party congruent,regulation,agree,beyond 6,loyalist,loyalist,NA,NA,0,684,NA,0,NA,NA
-79,TRUE,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,0.06140350877192982,0.06140350877192982,1,684,1,0,2.0794415416798357,114
-79,TRUE,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,685,NA,0,NA,NA
-79,FALSE,0,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,NA,NA,0,685,NA,0,NA,NA
-79,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,0.13636363636363635,0,685,NA,1,1.3862943611198906,22
-79,TRUE,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,687,NA,0,NA,NA
-79,FALSE,0,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,NA,NA,0,687,NA,0,NA,NA
-79,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,687,NA,0,NA,NA
-79,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,0.125,0,690,NA,1,1.3862943611198906,24
-79,TRUE,1,1,Constituent-party congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,0.125,0,690,NA,1,1.3862943611198906,24
-79,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,0.13636363636363635,0,690,NA,1,1.3862943611198906,22
-79,TRUE,1,0,Constituent-party not congruent,regulation,disagree,beyond 6,loyalist,loyalist,NA,NA,1,697,1,0,NA,NA
-79,TRUE,1,0,Constituent-party not congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,1,697,1,0,NA,NA
-79,TRUE,1,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,697,1,0,NA,NA
-80,TRUE,0,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,NA,NA,0,193,NA,0,NA,NA
-80,TRUE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,700,NA,0,NA,NA
-81,TRUE,1,1,Constituent-party congruent,skilled,disagree,1,loyalist,loyalist,0.009090909090909087,0.009090909090909087,0,628,NA,1,0.15415067982725836,110
-81,TRUE,0,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,628,NA,0,NA,NA
-81,TRUE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,700,NA,0,NA,NA
-81,TRUE,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,700,NA,0,NA,NA
-82,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,unclear rebel,loyalist,NA,NA,0,699,NA,0,NA,NA
-82,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,0.05128205128205128,0.05128205128205128,0,699,NA,1,1.3862943611198906,117
-82,FALSE,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,699,NA,0,NA,NA
-82,FALSE,0,0,Constituent-party not congruent,secondr,agree,2-6,unclear rebel,loyalist,NA,NA,0,701,NA,0,NA,NA
-82,FALSE,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,0,701,NA,0,NA,NA
-82,TRUE,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,0.008333333333333335,0.008333333333333335,0,701,NA,1,0.28768207245178085,120
-83,TRUE,1,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,0.003802281368821294,0.003802281368821294,1,383,0,1,0.15415067982725836,526
-83,TRUE,1,0,Constituent-party not congruent,skilled,agree,1,loyalist,loyalist,-0.03594771241830065,-0.03594771241830065,0,702,NA,1,-1.8718021769015913,306
-84,TRUE,1,0,Constituent-party not congruent,singlem,agree,beyond 6,loyalist,loyalist,NA,NA,1,79,1,0,NA,NA
-84,TRUE,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,1,79,1,0,NA,NA
-84,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,137,NA,0,NA,NA
-84,FALSE,0,1,Constituent-party congruent,singlem,disagree,beyond 6,loyalist,loyalist,NA,NA,0,137,NA,0,NA,NA
-84,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,137,NA,0,NA,NA
-84,TRUE,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,-0.02348993288590604,-0.02348993288590604,0,675,NA,1,-1.5040773967762742,298
-84,TRUE,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,-0.01818181818181818,-0.01818181818181818,0,675,NA,1,-0.40546510810816444,55
-84,FALSE,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,687,NA,0,NA,NA
-84,FALSE,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,0,687,NA,0,NA,NA
-84,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,687,NA,0,NA,NA
-84,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,695,NA,0,NA,NA
-84,FALSE,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,695,NA,0,NA,NA
-84,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,695,NA,0,NA,NA
-84,FALSE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,705,NA,0,NA,NA
-84,FALSE,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,705,NA,0,NA,NA
-84,FALSE,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,705,NA,0,NA,NA
-85,TRUE,0,1,Constituent-party congruent,customs,agree,1,unclear rebel,loyalist,NA,NA,0,652,NA,0,NA,NA
-85,TRUE,1,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,-0.0078125,-0.0078125,0,652,NA,1,-0.1823215567939546,128
-85,TRUE,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,0,656,NA,0,NA,NA
-85,TRUE,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,656,NA,0,NA,NA
-85,TRUE,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,0,705,NA,0,NA,NA
-85,TRUE,1,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.041237113402061855,0.041237113402061855,0,705,NA,1,1.6094379124341003,97
-86,TRUE,1,1,Constituent-party congruent,skilled,agree,1,loyalist,loyalist,0.030303030303030304,0.030303030303030304,1,706,0,1,1.3217558399823195,363
-86,TRUE,1,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,0.02631578947368421,0.02631578947368421,0,707,NA,1,0.8109302162163288,190
-86,TRUE,1,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,0.01474201474201474,0.01474201474201474,0,710,NA,1,0.9162907318741551,407
-86,TRUE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,710,NA,0,NA,NA
-87,TRUE,1,1,Constituent-party congruent,customs,agree,2-6,extreme rebel,rebel,0.010714285714285714,0.010714285714285714,0,703,NA,1,0.4054651081081644,280
-87,TRUE,0,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,NA,NA,0,703,NA,0,NA,NA
-87,TRUE,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,-0.016129032258064516,-0.016129032258064516,0,703,NA,1,-0.40546510810816444,124
-87,TRUE,1,0,Constituent-party not congruent,customs,disagree,1,extreme rebel,rebel,0.02932551319648094,0.02932551319648094,1,713,0,1,1.252762968495368,341
-87,TRUE,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,1,713,0,0,NA,NA
-87,TRUE,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,0.026455026455026454,0.026455026455026454,1,713,1,1,1.252762968495368,189
-88,TRUE,1,1,Constituent-party congruent,customs,agree,1,extreme rebel,rebel,0.011627906976744186,0.011627906976744186,0,326,NA,1,0.4519851237430572,344
-88,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,0,0,0,326,NA,1,0,89
-88,TRUE,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,0.007194244604316545,0.007194244604316545,0,326,NA,1,0.4054651081081644,278
-88,TRUE,1,0,Constituent-party not congruent,customs,disagree,2-6,extreme rebel,rebel,-0.028169014084507043,-0.028169014084507043,0,716,NA,1,-1.2992829841302609,284
-88,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,-0.019672131147540985,-0.019672131147540985,0,716,NA,1,-0.7884573603642702,305
-88,FALSE,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,716,NA,0,NA,NA
-89,TRUE,1,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,1,708,1,0,NA,NA
-89,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,1,708,1,0,NA,NA
-89,TRUE,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,1,708,1,0,NA,NA
-89,TRUE,1,1,Constituent-party congruent,customs,agree,1,unclear rebel,loyalist,NA,NA,1,709,1,0,NA,NA
-89,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,709,NA,0,NA,NA
-89,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,716,NA,0,NA,NA
-89,FALSE,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,716,NA,0,NA,NA
-89,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,716,NA,0,NA,NA
-90,FALSE,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,0,706,NA,0,NA,NA
-90,FALSE,0,1,Constituent-party congruent,singlem,disagree,beyond 6,extreme rebel,rebel,NA,NA,0,706,NA,0,NA,NA
-90,FALSE,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,0,706,NA,0,NA,NA
-90,FALSE,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,711,NA,0,NA,NA
-90,FALSE,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,0,711,NA,0,NA,NA
-90,FALSE,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,0,711,NA,0,NA,NA
-90,TRUE,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,713,NA,0,NA,NA
-90,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,713,NA,0,NA,NA
-90,FALSE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,713,NA,0,NA,NA
-90,FALSE,0,0,Constituent-party not congruent,singlem,agree,beyond 6,extreme rebel,rebel,NA,NA,0,714,NA,0,NA,NA
-90,FALSE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,714,NA,0,NA,NA
-90,FALSE,0,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,NA,NA,0,715,NA,0,NA,NA
-90,FALSE,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,715,NA,0,NA,NA
-90,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,715,NA,0,NA,NA
-90,FALSE,0,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,1,717,0,0,NA,NA
-90,FALSE,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,717,NA,0,NA,NA
-91,TRUE,0,1,Constituent-party congruent,secondr,disagree,1,unclear rebel,rebel,NA,NA,0,399,NA,0,NA,NA
-91,TRUE,0,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,399,NA,0,NA,NA
-91,TRUE,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,399,NA,0,NA,NA
-91,TRUE,0,0,Constituent-party not congruent,secondr,agree,2-6,unclear rebel,rebel,NA,NA,0,558,NA,0,NA,NA
-91,TRUE,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,561,NA,0,NA,NA
-91,TRUE,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,719,NA,0,NA,NA
-92,TRUE,1,1,Constituent-party congruent,customs,agree,1,loyalist,loyalist,0.03626943005181347,0.03626943005181347,1,715,1,1,2.0794415416798357,193
-92,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,-0.005128205128205131,-0.005128205128205131,1,715,1,0,-0.10536051565782628,195
-92,TRUE,1,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,0.020512820512820516,0.020512820512820516,1,715,1,0,0.36772478012531734,195
-92,TRUE,1,0,Constituent-party not congruent,customs,disagree,2-6,loyalist,loyalist,NA,NA,1,720,1,0,NA,NA
-92,TRUE,1,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,1,720,1,0,NA,NA
-92,TRUE,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,720,1,0,NA,NA
-93,TRUE,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,1,334,1,1,-0.11778303565638351,853
-93,TRUE,1,0,Constituent-party not congruent,singlem,agree,beyond 6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,334,NA,1,-0.11778303565638351,853
-93,TRUE,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,334,NA,1,-0.11778303565638351,853
-93,TRUE,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,720,NA,0,NA,NA
-93,TRUE,0,1,Constituent-party congruent,regulation,agree,beyond 6,loyalist,loyalist,NA,NA,0,720,NA,0,NA,NA
-93,TRUE,0,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,720,NA,0,NA,NA
-93,TRUE,1,1,Constituent-party congruent,singlem,disagree,beyond 6,loyalist,loyalist,-0.0023419203747072626,-0.0023419203747072626,0,721,NA,1,-0.11778303565638351,854
-93,TRUE,1,0,Constituent-party not congruent,immigration,disagree,beyond 6,loyalist,loyalist,-0.0023419203747072626,-0.0023419203747072626,0,721,NA,1,-0.11778303565638351,854
-93,TRUE,1,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,-0.0023419203747072626,-0.0023419203747072626,0,721,NA,1,-0.11778303565638351,854
-93,TRUE,1,1,Constituent-party congruent,customs,disagree,2-6,unclear rebel,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,722,NA,1,-0.11778303565638351,853
-93,TRUE,1,0,Constituent-party not congruent,regulation,disagree,beyond 6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,722,NA,1,-0.11778303565638351,853
-93,TRUE,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,723,NA,1,-0.11778303565638351,853
-93,TRUE,1,0,Constituent-party not congruent,customs,agree,2-6,unclear rebel,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,723,NA,1,-0.11778303565638351,853
-93,TRUE,0,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,723,NA,0,NA,NA
-93,TRUE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,725,NA,0,NA,NA
-93,TRUE,0,1,Constituent-party congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,0,725,NA,0,NA,NA
-94,TRUE,0,0,Constituent-party not congruent,customs,disagree,1,unclear rebel,loyalist,NA,NA,0,485,NA,0,NA,NA
-94,TRUE,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,unclear rebel,loyalist,NA,NA,0,485,NA,0,NA,NA
-94,TRUE,0,0,Constituent-party not congruent,regulation,agree,2-6,unclear rebel,loyalist,NA,NA,0,728,NA,0,NA,NA
-94,TRUE,0,1,Constituent-party congruent,singlem,disagree,2-6,unclear rebel,loyalist,NA,NA,0,728,NA,0,NA,NA
-94,TRUE,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,unclear rebel,loyalist,NA,NA,0,728,NA,0,NA,NA
-94,TRUE,1,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,0.03007518796992481,0.03007518796992481,0,729,NA,1,0.8472978603872037,133
-94,TRUE,1,1,Constituent-party congruent,regulation,disagree,2-6,unclear rebel,loyalist,0.03007518796992481,0.03007518796992481,0,729,NA,1,0.8472978603872037,133
-94,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,unclear rebel,loyalist,0,0,0,729,NA,1,0,88
-95,TRUE,1,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,0,0,0,189,NA,1,0,13
-95,TRUE,1,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,0,0,0,189,NA,1,0,13
-95,TRUE,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,0,0,0,189,NA,1,0,13
-95,TRUE,1,0,Constituent-party not congruent,freedomm,agree,1,extreme rebel,rebel,0,0,0,761,NA,1,0,13
-95,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,0,0,0,761,NA,1,0,13
-95,TRUE,1,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,0,0,0,761,NA,1,0,13
-96,TRUE,1,1,Constituent-party congruent,skilled,disagree,1,loyalist,loyalist,-0.0017825311942958992,-0.0017825311942958992,0,139,NA,1,-0.15415067982725836,561
-96,TRUE,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,-0.0017825311942958992,-0.0017825311942958992,0,777,NA,1,-0.15415067982725836,561
-97,TRUE,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,0,237,NA,0,NA,NA
-97,TRUE,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,-0.0026737967914438505,-0.0026737967914438505,1,583,0,1,-0.0953101798043249,374
-97,TRUE,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,583,0,0,NA,NA
-97,TRUE,1,1,Constituent-party congruent,singlem,disagree,1,loyalist,loyalist,-0.038901601830663615,-0.038901601830663615,0,807,NA,1,-1.3437347467010947,437
-97,TRUE,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,-0.0026737967914438505,-0.0026737967914438505,0,807,NA,1,-0.0953101798043249,374
-97,TRUE,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,807,NA,0,NA,NA
-98,TRUE,1,0,Constituent-party not congruent,freedomm,disagree,2-6,loyalist,loyalist,0,0,0,484,NA,1,0,407
-98,TRUE,1,1,Constituent-party congruent,freedomm,agree,1,loyalist,loyalist,0.015037593984962405,0.015037593984962405,1,817,0,1,0.6931471805599453,133
-99,TRUE,1,1,Constituent-party congruent,customs,disagree,2-6,extreme rebel,rebel,NA,0.2,0,734,NA,1,0.6931471805599453,5
-99,TRUE,1,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,NA,0.09375,0,734,NA,1,1.3862943611198906,32
-99,TRUE,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.034482758620689655,0.034482758620689655,0,734,NA,1,0.6931471805599453,29
-99,TRUE,1,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,0,0,0,827,NA,1,0,36
-99,TRUE,1,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,0.05660377358490566,0.05660377358490566,0,827,NA,1,1.9459101490553132,106
-99,TRUE,1,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,0.058823529411764705,0.058823529411764705,0,828,NA,1,1.0986122886681098,34
-99,TRUE,1,0,Constituent-party not congruent,customs,agree,1,extreme rebel,rebel,-0.041666666666666664,-0.041666666666666664,0,829,NA,1,-0.6931471805599453,24
-99,TRUE,1,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,-0.0034482758620689655,-0.0034482758620689655,1,829,1,1,-0.2876820724517809,290
-100,TRUE,1,1,Constituent-party congruent,customs,disagree,1,loyalist,loyalist,-0.01704545454545455,-0.01704545454545455,1,834,0,1,-0.35667494393873245,176
-100,TRUE,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,1,834,0,0,NA,NA
-100,TRUE,1,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,0.010940919037199124,0.010940919037199124,1,834,0,1,1.252762968495368,457
-100,TRUE,0,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,NA,NA,0,835,NA,0,NA,NA
-100,TRUE,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,835,NA,0,NA,NA
-100,TRUE,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,835,NA,0,NA,NA
-101,TRUE,0,0,Constituent-party not congruent,freedomm,agree,1,extreme rebel,rebel,NA,NA,0,843,NA,0,NA,NA
-101,FALSE,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,0,843,NA,0,NA,NA
-101,FALSE,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,843,NA,0,NA,NA
-101,TRUE,0,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,NA,NA,0,844,NA,0,NA,NA
-101,FALSE,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,844,NA,0,NA,NA
-101,FALSE,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,844,NA,0,NA,NA
-101,TRUE,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,845,NA,0,NA,NA
-101,FALSE,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,845,NA,0,NA,NA
-102,TRUE,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0,0,1,589,1,0,0,218
-102,TRUE,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,853,NA,0,NA,NA
+id,const_anon_id,response_auto_and_manual,manualresponse_exists_inc_post_count_nonresponse,manualresponse_exists,partycongruent,partycongruent_neat,issue,position,send_cat,mp_type_detailed,mp_type_abstain_nonreb,diff_mp_party_outliers_removed,diff_mp_party,has_response_info,respondent_reported_letter_status,lr_mp_party,word_total
+6,1,FALSE,0,0,1,Constituent-party congruent,tuitionfree,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+18,1,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,0,0,1,0,0,68
+33,2,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.012195121951219513,0.012195121951219513,1,0,0.4054651081081644,82
+34,2,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,agree,1,loyalist,loyalist,0,0,0,NA,0,239
+35,2,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,0,0,0,NA,0,85
+37,2,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.0125,0.0125,0,NA,0.4054651081081644,80
+7,3,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+80,3,FALSE,0,0,0,Constituent-party not congruent,regulation,disagree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+81,3,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+85,3,FALSE,0,0,1,Constituent-party congruent,regulation,agree,2-6,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+25,4,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.02877697841726619,0.02877697841726619,1,0,0.9985288301111273,417
+25,4,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,-0.008163265306122448,-0.008163265306122448,0,NA,-0.40546510810816444,245
+27,4,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,0.00974025974025974,0.00974025974025974,1,0,0.47000362924573563,308
+88,4,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+89,4,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,0.014285714285714285,0.014285714285714285,0,NA,0.6061358035703155,350
+93,4,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,-0.015267175572519085,-0.015267175572519085,1,0,-1.0986122886681098,262
+93,4,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+110,4,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+115,5,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,rebel,-0.012195121951219513,-0.012195121951219513,0,NA,-0.6931471805599453,82
+115,5,TRUE,0,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+119,5,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,1,unclear rebel,rebel,NA,NA,1,0,NA,NA
+119,5,TRUE,1,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,-0.012195121951219513,-0.012195121951219513,1,0,-0.6931471805599453,82
+114,6,FALSE,0,0,0,Constituent-party not congruent,customs,agree,1,loyalist,loyalist,NA,NA,1,0,NA,NA
+114,6,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+114,6,TRUE,1,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.03940886699507389,-0.03940886699507389,1,0,-1.6094379124341003,203
+116,6,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+116,6,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,-0.007894736842105262,-0.007894736842105262,1,0,-0.4700036292457356,380
+116,6,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+121,6,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+121,6,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,-0.007339449541284404,-0.007339449541284404,1,0,-1.0986122886681098,545
+121,6,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+124,6,TRUE,1,1,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,-0.017543859649122806,-0.017543859649122806,1,0,-0.6931471805599453,57
+124,6,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+124,6,FALSE,0,0,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+103,7,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,unclear rebel,rebel,0.013793103448275862,0.013793103448275862,1,0,0.5877866649021191,290
+125,7,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,unclear rebel,rebel,0.04597701149425287,0.04597701149425287,1,0,1.6094379124341003,87
+28,8,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,NA,-0.2876820724517809,693
+28,8,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,NA,-0.2876820724517809,693
+28,8,TRUE,1,1,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,NA,-0.2876820724517809,693
+255,8,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,NA,-0.2876820724517809,693
+255,8,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,NA,-0.2876820724517809,693
+255,8,TRUE,1,1,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,-0.00865800865800866,-0.00865800865800866,0,NA,-0.2876820724517809,693
+227,9,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+257,9,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+265,10,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.021739130434782608,0.021739130434782608,0,NA,0.6931471805599453,46
+265,10,TRUE,1,1,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,0.027777777777777776,0.027777777777777776,0,NA,1.791759469228055,360
+265,10,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,loyalist,0.021739130434782608,0.021739130434782608,0,NA,0.6931471805599453,46
+266,10,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.06685236768802229,0.06685236768802229,0,NA,2.5649493574615367,359
+266,10,TRUE,1,1,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,0.05405405405405406,0.05405405405405406,0,NA,1.0986122886681098,37
+266,10,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,unclear rebel,loyalist,0.05405405405405406,0.05405405405405406,0,NA,1.0986122886681098,37
+273,11,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,-0.017621145374449337,-0.017621145374449337,0,NA,-0.6931471805599453,454
+273,11,TRUE,1,1,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,0.009615384615384616,0.009615384615384616,0,NA,0.6931471805599453,208
+273,11,FALSE,0,0,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+287,11,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,1,loyalist,loyalist,0,0,0,NA,0,146
+287,11,TRUE,1,1,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,0.020942408376963352,0.020942408376963352,0,NA,1.0986122886681098,191
+287,11,FALSE,0,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+274,12,TRUE,1,1,0,Constituent-party not congruent,regulation,agree,1,loyalist,loyalist,0.012711864406779662,0.012711864406779662,0,NA,0.3794896217049037,472
+274,12,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+290,12,TRUE,1,1,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,0.012711864406779662,0.012711864406779662,0,NA,0.3794896217049037,472
+290,12,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+113,13,TRUE,1,1,1,Constituent-party congruent,regulation,agree,2-6,extreme rebel,rebel,NA,0.14444444444444446,0,NA,1.6094379124341003,360
+113,13,TRUE,1,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,0.0638888888888889,0.0638888888888889,0,NA,1.5125880864441827,720
+113,13,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,0.007425742574257426,0.007425742574257426,0,NA,0.6931471805599453,404
+118,13,TRUE,1,1,0,Constituent-party not congruent,customs,agree,1,extreme rebel,rebel,0.07222222222222223,0.07222222222222223,1,0,1.6094379124341003,720
+118,13,TRUE,1,1,0,Constituent-party not congruent,regulation,disagree,2-6,extreme rebel,rebel,0.06581059390048155,0.06581059390048155,1,0,1.4853852637641216,623
+127,13,TRUE,1,1,1,Constituent-party congruent,customs,disagree,2-6,extreme rebel,rebel,NA,0.14444444444444446,0,NA,1.6094379124341003,360
+127,13,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,0.056944444444444436,0.056944444444444436,0,NA,1.4853852637641216,720
+127,13,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,0.027777777777777776,0.027777777777777776,0,NA,1.0360919316867758,720
+291,13,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,0,0,0,NA,0,104
+291,13,TRUE,1,1,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,0.03157894736842105,0.03157894736842105,0,NA,1.3862943611198906,190
+306,14,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,-0.07777777777777778,0,NA,-1.5040773967762742,360
+306,14,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,-0.01977401129943503,-0.01977401129943503,0,NA,-0.49247648509779407,354
+306,14,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,-0.039603960396039584,-0.039603960396039584,0,NA,-0.2363887780642304,101
+320,14,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+320,14,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+320,14,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+275,15,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,1,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+275,15,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+275,15,FALSE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+285,15,FALSE,0,0,1,Constituent-party congruent,regulation,disagree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+285,15,FALSE,0,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+324,15,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+324,15,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+324,15,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+327,15,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+327,15,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+230,16,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,moderate rebel,rebel,0.041666666666666664,0.041666666666666664,0,NA,1.3862943611198906,216
+240,16,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,1,moderate rebel,rebel,NA,0.8461538461538461,1,0,1.540445040947149,13
+321,16,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.06,0.06,1,0,1.3862943611198906,50
+330,16,TRUE,1,1,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,0,0,0,NA,0,9
+111,17,TRUE,1,1,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,NA,-1.8718021769015913,418
+111,17,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,NA,-1.8718021769015913,418
+318,17,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,NA,-1.8718021769015913,418
+318,17,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,NA,-1.8718021769015913,418
+318,17,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+325,17,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+331,17,TRUE,1,1,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,-0.026315789473684213,-0.026315789473684213,0,NA,-1.8718021769015913,418
+331,17,TRUE,0,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+331,17,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+334,17,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,-0.0013888888888888874,-0.0013888888888888874,0,NA,-0.04445176257083381,720
+334,17,TRUE,1,1,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,-0.0013888888888888874,-0.0013888888888888874,0,NA,-0.04445176257083381,720
+334,17,TRUE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+336,17,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,-0.0013888888888888874,-0.0013888888888888874,0,NA,-0.04445176257083381,720
+336,17,TRUE,1,1,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,-0.0013888888888888874,-0.0013888888888888874,0,NA,-0.04445176257083381,720
+337,18,FALSE,0,0,1,Constituent-party congruent,regulation,agree,1,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+337,18,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+337,18,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+339,18,FALSE,0,0,0,Constituent-party not congruent,regulation,disagree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+339,18,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+339,18,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+296,19,TRUE,1,1,0,Constituent-party not congruent,regulation,disagree,1,extreme rebel,rebel,-0.01293103448275862,-0.01293103448275862,0,NA,-0.6190392084062235,464
+296,19,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,0.006896551724137931,0.006896551724137931,0,NA,0.6931471805599453,435
+405,19,TRUE,1,1,1,Constituent-party congruent,regulation,agree,2-6,extreme rebel,rebel,0.01659751037344398,0.01659751037344398,0,NA,0.8472978603872037,241
+405,19,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.006896551724137931,0.006896551724137931,0,NA,0.6931471805599453,435
+409,20,TRUE,1,1,1,Constituent-party congruent,tuitionfree,agree,1,loyalist,loyalist,0.0165016501650165,0.0165016501650165,0,NA,0.9808292530117262,303
+410,20,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.03986710963455149,0.03986710963455149,1,0,1.9459101490553132,301
+276,21,TRUE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+276,21,TRUE,0,0,1,Constituent-party congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+276,21,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+421,21,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+421,21,TRUE,0,0,0,Constituent-party not congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+421,21,TRUE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+68,22,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+71,22,FALSE,0,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+281,22,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+281,22,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+322,22,FALSE,0,0,1,Constituent-party congruent,customs,agree,1,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+422,22,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+424,23,TRUE,1,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+424,23,TRUE,1,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+424,23,TRUE,1,0,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+425,23,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+425,23,FALSE,0,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+425,23,FALSE,0,0,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+428,23,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+428,23,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+418,24,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.012195121951219513,0.012195121951219513,0,NA,0.9808292530117262,410
+431,24,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,0.014150943396226415,0.014150943396226415,1,1,1.0986122886681098,424
+52,25,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,0.0304975922953451,0.0304975922953451,0,NA,1.1349799328389845,623
+52,25,FALSE,0,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+52,25,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+55,25,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,1,loyalist,loyalist,0.0304975922953451,0.0304975922953451,0,NA,1.1349799328389845,623
+55,25,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,0.01639344262295082,0.01639344262295082,0,NA,0.6931471805599453,61
+452,25,TRUE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+452,25,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,0.0304975922953451,0.0304975922953451,1,0,1.1349799328389845,623
+452,25,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+313,26,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.024024024024024024,0.024024024024024024,0,NA,0.9555114450274363,333
+458,26,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.024024024024024024,0.024024024024024024,0,NA,0.9555114450274363,333
+50,27,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,-0.022727272727272728,-0.022727272727272728,0,NA,-1.791759469228055,440
+50,27,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,-0.029239766081871343,-0.029239766081871343,0,NA,-0.9808292530117262,171
+50,27,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,0.009523809523809525,0.009523809523809525,1,1,0.4054651081081644,105
+112,27,TRUE,1,1,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,-0.023255813953488372,-0.023255813953488372,0,NA,-1.791759469228055,430
+112,27,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,-0.01079136690647482,-0.01079136690647482,0,NA,-1.7047480922384253,834
+112,27,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,beyond 6,loyalist,loyalist,-0.010922330097087379,-0.010922330097087379,0,NA,-1.7047480922384253,824
+239,27,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,unclear rebel,loyalist,-0.010817307692307692,-0.010817307692307692,0,NA,-1.7047480922384253,832
+239,27,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,beyond 6,loyalist,loyalist,-0.01090909090909091,-0.01090909090909091,0,NA,-1.7047480922384253,825
+239,27,TRUE,1,1,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,-0.033112582781456956,-0.033112582781456956,0,NA,-0.9808292530117262,151
+241,27,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,unclear rebel,loyalist,-0.02158273381294964,-0.02158273381294964,0,NA,-0.916290731874155,139
+241,27,FALSE,0,0,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+241,27,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,0.009523809523809525,0.009523809523809525,0,NA,0.4054651081081644,105
+461,27,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,-0.034482758620689655,-0.034482758620689655,0,NA,-0.9808292530117262,145
+461,27,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.033112582781456956,-0.033112582781456956,0,NA,-0.9808292530117262,151
+53,28,FALSE,0,0,0,Constituent-party not congruent,customs,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+53,28,TRUE,1,1,0,Constituent-party not congruent,singlem,disagree,2-6,loyalist,loyalist,0.027247956403269755,0.027247956403269755,0,NA,2.03688192726104,734
+352,28,TRUE,1,1,1,Constituent-party congruent,singlem,agree,2-6,loyalist,loyalist,0.02066115702479339,0.02066115702479339,0,NA,1.55814461804655,726
+441,28,TRUE,1,1,1,Constituent-party congruent,secondr,agree,2-6,loyalist,loyalist,0.003311258278145695,0.003311258278145695,0,NA,0.15415067982725836,604
+448,28,TRUE,1,1,1,Constituent-party congruent,customs,agree,2-6,loyalist,loyalist,0.021306818181818184,0.021306818181818184,0,NA,1.55814461804655,704
+449,28,TRUE,1,1,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,0.02380952380952381,0.02380952380952381,0,NA,1.252762968495368,420
+454,28,TRUE,1,1,0,Constituent-party not congruent,secondr,disagree,1,loyalist,loyalist,0.016908212560386476,0.016908212560386476,0,NA,1.2039728043259361,828
+459,28,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,0.019559902200488997,0.019559902200488997,0,NA,0.9555114450274363,409
+463,28,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,0.01965601965601966,0.01965601965601966,0,NA,0.9555114450274363,407
+470,28,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,0.024154589371980676,0.024154589371980676,1,0,1.252762968495368,414
+305,29,TRUE,0,0,1,Constituent-party congruent,immigration,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+305,29,TRUE,1,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,0.015151515151515152,0.015151515151515152,0,NA,0.28768207245178085,66
+305,29,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0,0,0,NA,0,55
+471,29,TRUE,0,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+471,29,TRUE,1,1,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,0.02702702702702703,0.02702702702702703,0,NA,0.6931471805599453,37
+471,29,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+44,30,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+44,30,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,0.009569377990430622,0.009569377990430622,0,NA,1.0986122886681098,209
+90,30,TRUE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+90,30,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+90,30,TRUE,1,1,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,0.21839080459770116,0,NA,1.992430164690206,87
+474,30,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,0.0032258064516129045,0.0032258064516129045,0,NA,0.10536051565782635,310
+474,30,TRUE,1,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,0.028089887640449437,0.028089887640449437,0,NA,1.252762968495368,178
+474,30,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,0.00737100737100737,0.00737100737100737,0,NA,0.6931471805599453,407
+485,31,TRUE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+489,31,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+504,32,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+511,32,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,-0.029585798816568046,-0.029585798816568046,1,0,-1.791759469228055,169
+515,33,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+516,33,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+472,34,TRUE,1,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+472,34,TRUE,1,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+521,34,TRUE,0,0,1,Constituent-party congruent,tuitionfree,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+521,34,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+363,35,TRUE,0,0,1,Constituent-party congruent,skilled,disagree,1,loyalist,loyalist,NA,NA,1,0,NA,NA
+521,35,TRUE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+207,36,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+207,36,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+528,36,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,0.020000000000000004,0.020000000000000004,0,NA,0.9734491457141037,1400
+528,36,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,0.15789473684210525,0,NA,1.3862943611198906,19
+492,37,TRUE,1,1,0,Constituent-party not congruent,customs,disagree,1,unclear rebel,loyalist,0.02348993288590604,0.02348993288590604,0,NA,0.8754687373538999,298
+492,37,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,0.03205128205128205,0.03205128205128205,0,NA,1.0986122886681098,312
+492,37,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+532,37,FALSE,0,0,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+532,37,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+532,37,FALSE,0,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+73,38,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,unclear rebel,rebel,NA,NA,1,0,NA,NA
+73,38,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0,0,1,0,0,41
+73,38,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+86,38,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,unclear rebel,rebel,NA,NA,0,NA,NA,NA
+86,38,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,rebel,NA,NA,0,NA,NA,NA
+86,38,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+534,38,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,unclear rebel,rebel,-0.01556420233463035,-0.01556420233463035,0,NA,-0.587786664902119,257
+534,38,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,0,0,0,NA,0,43
+78,39,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+535,39,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+338,40,TRUE,0,0,1,Constituent-party congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+338,40,TRUE,1,0,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+338,40,FALSE,0,0,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+453,40,TRUE,0,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+453,40,TRUE,0,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+544,40,TRUE,0,0,0,Constituent-party not congruent,regulation,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+543,41,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+546,41,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+543,42,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+551,42,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,0,0,0,NA,0,154
+541,43,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+541,43,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+549,43,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+549,43,TRUE,1,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+549,43,TRUE,1,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+552,43,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+552,43,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+552,43,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+226,44,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,1,moderate rebel,rebel,-0.0016313213703099474,-0.0016313213703099474,0,NA,-0.048790164169432056,613
+555,44,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,moderate rebel,rebel,-0.0016313213703099474,-0.0016313213703099474,0,NA,-0.048790164169432056,613
+457,45,TRUE,0,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+561,45,TRUE,0,0,1,Constituent-party congruent,skilled,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+91,46,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+91,46,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+565,46,TRUE,0,0,1,Constituent-party congruent,tuitionfree,disagree,1,loyalist,loyalist,NA,NA,1,0,NA,NA
+565,46,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+4,47,FALSE,0,0,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+573,47,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+563,48,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+564,48,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+565,48,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.02777777777777778,0.02777777777777778,0,NA,0.8109302162163288,180
+565,48,TRUE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+570,48,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+571,48,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+571,48,TRUE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+571,48,TRUE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+579,48,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+580,48,TRUE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+582,49,TRUE,1,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+585,49,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+435,50,FALSE,0,0,0,Constituent-party not congruent,customs,agree,1,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+445,50,FALSE,0,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+445,50,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+586,50,TRUE,1,1,1,Constituent-party congruent,customs,disagree,2-6,extreme rebel,rebel,NA,0.09565217391304347,0,NA,1.8718021769015913,115
+586,50,TRUE,1,1,1,Constituent-party congruent,skilled,agree,2-6,loyalist,loyalist,NA,0.09565217391304347,0,NA,1.8718021769015913,115
+586,50,FALSE,0,0,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+560,51,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,agree,1,loyalist,loyalist,0.03278688524590164,0.03278688524590164,0,NA,0.5108256237659907,61
+560,51,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+586,51,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.05084745762711865,0.05084745762711865,0,NA,0.9162907318741551,59
+586,51,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+101,52,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,-0.0045454545454545435,-0.0045454545454545435,0,NA,-0.1466034741918754,660
+494,52,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,-0.0045454545454545435,-0.0045454545454545435,0,NA,-0.1466034741918754,660
+494,52,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+587,52,TRUE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+587,52,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,-0.0045454545454545435,-0.0045454545454545435,0,NA,-0.1466034741918754,660
+587,52,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+347,53,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.05940594059405941,0.05940594059405941,1,0,0.6931471805599453,202
+588,53,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.05970149253731344,0.05970149253731344,1,0,0.6931471805599453,201
+11,54,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,0.0662251655629139,0.0662251655629139,0,NA,1.791759469228055,151
+11,54,TRUE,0,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+11,54,TRUE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+589,54,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,0.012219959266802444,0.012219959266802444,1,1,0.47000362924573563,491
+589,54,TRUE,1,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+589,54,TRUE,1,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+252,55,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+591,55,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,0.034482758620689655,0.034482758620689655,0,NA,0.8472978603872037,116
+591,55,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+593,55,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,1,loyalist,loyalist,NA,NA,1,0,NA,NA
+294,56,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.0014154281670205257,0.0014154281670205257,0,NA,0.055569851154810786,1413
+295,56,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.0014174344436569779,0.0014174344436569779,0,NA,0.055569851154810786,1411
+295,56,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+295,56,TRUE,0,0,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+298,56,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+298,56,TRUE,0,0,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+298,56,TRUE,0,0,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+595,56,TRUE,1,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+595,56,TRUE,1,0,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+595,56,TRUE,1,0,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+560,57,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,0.0625,0.0625,0,NA,0.6931471805599453,16
+560,57,TRUE,1,1,0,Constituent-party not congruent,immigration,disagree,beyond 6,loyalist,loyalist,0.0625,0.0625,0,NA,0.6931471805599453,16
+560,57,TRUE,1,1,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,0.0625,0.0625,0,NA,0.6931471805599453,16
+599,57,TRUE,1,0,0,Constituent-party not congruent,regulation,disagree,beyond 6,unclear rebel,loyalist,NA,NA,1,1,NA,NA
+599,57,TRUE,1,0,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+599,57,TRUE,1,0,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+602,57,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+602,57,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+603,57,TRUE,1,1,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,0.03225806451612903,0.03225806451612903,1,1,0.7884573603642703,186
+603,57,TRUE,1,0,1,Constituent-party congruent,regulation,agree,beyond 6,unclear rebel,loyalist,0.058666666666666666,0.058666666666666666,1,1,2.120263536200091,375
+603,57,TRUE,1,0,1,Constituent-party congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+606,57,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,beyond 6,loyalist,loyalist,0.058666666666666666,0.058666666666666666,1,1,2.120263536200091,375
+606,57,TRUE,1,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,0.006263048016701467,0.006263048016701467,1,1,0.14660347419187544,958
+606,57,FALSE,0,0,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+608,57,TRUE,1,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,1,1,NA,NA
+608,57,TRUE,1,0,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+611,57,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,0.036269430051813475,0.036269430051813475,1,1,0.8754687373538999,193
+611,57,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+524,58,TRUE,1,0,1,Constituent-party congruent,regulation,agree,2-6,extreme rebel,rebel,NA,NA,1,1,NA,NA
+524,58,TRUE,1,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+601,58,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,unclear rebel,rebel,NA,NA,0,NA,NA,NA
+601,58,FALSE,0,0,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+601,58,FALSE,0,0,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+613,58,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,1,unclear rebel,rebel,NA,NA,0,NA,NA,NA
+613,58,FALSE,0,0,0,Constituent-party not congruent,regulation,disagree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+613,58,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+613,59,FALSE,0,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+613,59,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,0.028213166144200625,0.028213166144200625,1,0,1.7047480922384253,319
+613,59,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+614,59,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+614,59,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+614,59,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+615,59,FALSE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+615,59,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+618,59,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,unclear rebel,loyalist,0.006578947368421052,0.006578947368421052,1,0,0.22314355131420976,152
+618,59,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+619,59,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,1,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+619,59,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,0.027950310559006212,0.027950310559006212,1,0,1.7047480922384253,322
+246,60,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+246,60,FALSE,0,0,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+622,60,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,1,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+622,60,FALSE,0,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+102,61,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+102,61,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,0,0,0,NA,0,323
+102,61,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+624,61,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+624,61,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+624,61,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,0,0,0,NA,0,323
+4,62,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+4,62,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+16,62,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,1,0,NA,NA
+551,62,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,1,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+625,62,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+625,62,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+163,63,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+163,63,FALSE,0,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+620,63,FALSE,0,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+620,63,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+620,63,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+626,63,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,1,0,NA,NA
+626,63,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+627,63,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+628,63,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+628,63,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+629,63,FALSE,0,0,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+629,63,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+202,64,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,moderate rebel,rebel,NA,NA,1,0,NA,NA
+202,64,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+202,64,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+210,64,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,1,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+210,64,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+210,64,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+211,64,FALSE,0,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+211,64,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+629,64,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+629,64,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+629,64,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+631,64,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+631,64,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+631,64,TRUE,1,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,-0.013157894736842105,-0.013157894736842105,1,1,-0.1823215567939546,76
+506,65,TRUE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,1,0,NA,NA
+508,65,TRUE,1,0,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,0.02564102564102564,0.02564102564102564,1,1,0.5596157879354227,117
+508,65,TRUE,1,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+637,65,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,1,extreme rebel,rebel,NA,NA,1,0,NA,NA
+637,65,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,NA,NA,1,0,NA,NA
+637,65,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+100,66,TRUE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+640,66,TRUE,0,0,1,Constituent-party congruent,tuitionfree,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+271,67,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,moderate rebel,rebel,0.04,0.04,0,NA,0.4054651081081644,25
+271,67,FALSE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+271,67,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+641,67,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,1,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+641,67,FALSE,0,0,1,Constituent-party congruent,regulation,disagree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+641,67,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+115,68,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+481,68,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,1,0,NA,NA
+651,68,TRUE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+651,68,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+651,69,TRUE,1,1,1,Constituent-party congruent,skilled,agree,1,loyalist,loyalist,0.028571428571428574,0.028571428571428574,1,0,1.5040773967762742,245
+652,69,TRUE,0,0,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+379,70,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,1,unclear rebel,rebel,NA,0.1111111111111111,1,0,0.6931471805599453,9
+655,70,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,unclear rebel,rebel,0.05253940455341506,0.05253940455341506,0,NA,1.6650077635889111,571
+523,71,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+658,71,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,1,loyalist,loyalist,NA,NA,1,0,NA,NA
+393,72,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+393,72,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.014285714285714285,0.014285714285714285,0,NA,0.6931471805599453,70
+657,72,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+661,72,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,0.021739130434782608,0.021739130434782608,0,NA,0.6931471805599453,46
+45,73,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.020033388981636056,0.020033388981636056,0,NA,0.8472978603872037,599
+45,73,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,-0.004,-0.004,0,NA,-0.11778303565638351,250
+47,73,TRUE,1,1,0,Constituent-party not congruent,customs,disagree,2-6,extreme rebel,rebel,0.035398230088495575,0.035398230088495575,1,0,0.6931471805599453,113
+47,73,TRUE,1,1,0,Constituent-party not congruent,regulation,agree,beyond 6,loyalist,loyalist,0.018987341772151903,0.018987341772151903,1,0,0.8266785731844679,474
+47,73,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,beyond 6,extreme rebel,rebel,0.01442307692307692,0.01442307692307692,1,0,0.28768207245178085,208
+49,73,TRUE,1,1,1,Constituent-party congruent,customs,agree,2-6,extreme rebel,rebel,0.0072202166064981935,0.0072202166064981935,0,NA,0.20067069546215124,277
+49,73,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,-0.010204081632653062,-0.010204081632653062,0,NA,-0.3364722366212129,196
+292,73,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,-0.004,-0.004,0,NA,-0.11778303565638351,250
+292,73,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.004,-0.004,0,NA,-0.11778303565638351,250
+293,73,TRUE,1,1,1,Constituent-party congruent,regulation,disagree,beyond 6,loyalist,loyalist,-0.004,-0.004,0,NA,-0.11778303565638351,250
+293,73,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,-0.030188679245283016,-0.030188679245283016,0,NA,-0.9555114450274363,265
+368,73,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,0.003318584070796462,0.003318584070796462,1,0,0.16251892949777494,904
+368,73,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,0.013392857142857144,0.013392857142857144,1,0,0.3184537311185346,224
+368,73,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,-0.010204081632653062,-0.010204081632653062,1,0,-0.3364722366212129,196
+369,73,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0.04464285714285714,0.04464285714285714,0,NA,0.8109302162163288,112
+369,73,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,beyond 6,extreme rebel,rebel,0,0,0,NA,0,167
+662,73,TRUE,1,1,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,-0.004,-0.004,0,NA,-0.11778303565638351,250
+662,73,TRUE,1,1,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,-0.03585657370517928,-0.03585657370517928,0,NA,-1.1786549963416462,251
+384,74,TRUE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+487,74,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+507,74,TRUE,1,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+537,74,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+566,74,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+568,74,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,-0.0028436018957345988,-0.0028436018957345988,1,0,-0.09844007281325252,1055
+568,74,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,-0.005976095617529882,-0.005976095617529882,1,0,-0.09844007281325252,502
+568,74,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.0028436018957345988,-0.0028436018957345988,1,0,-0.09844007281325252,1055
+576,74,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+667,74,TRUE,1,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+61,75,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+61,75,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+61,75,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+632,75,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+674,75,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+674,75,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+681,75,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+681,75,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+10,76,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+10,76,FALSE,0,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+10,76,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+245,76,TRUE,1,1,0,Constituent-party not congruent,customs,disagree,2-6,moderate rebel,rebel,0.005277044854881268,0.005277044854881268,1,0,0.20067069546215124,379
+245,76,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,beyond 6,moderate rebel,rebel,NA,NA,1,0,NA,NA
+245,76,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+248,76,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,bothways rebel,rebel,NA,NA,0,NA,NA,NA
+248,76,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,moderate rebel,rebel,NA,NA,0,NA,NA,NA
+683,76,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,bothways rebel,rebel,NA,NA,1,0,NA,NA
+683,76,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,1,0,NA,NA
+686,76,TRUE,1,1,1,Constituent-party congruent,customs,agree,2-6,moderate rebel,rebel,0.025280898876404494,0.025280898876404494,1,0,0.9162907318741551,356
+686,76,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,beyond 6,moderate rebel,rebel,0.025280898876404494,0.025280898876404494,1,0,0.9162907318741551,356
+152,77,TRUE,1,1,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,-0.024390243902439025,-0.024390243902439025,0,NA,-0.6931471805599453,41
+152,77,TRUE,1,1,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,0.020725388601036267,0.020725388601036267,0,NA,0.6931471805599453,193
+661,77,TRUE,1,1,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,0.01639344262295082,0.01639344262295082,0,NA,0.5596157879354227,183
+691,77,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,0.047619047619047616,0.047619047619047616,1,0,1.0986122886681098,42
+689,78,TRUE,1,1,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,0.07017543859649122,0.07017543859649122,0,NA,1.6094379124341003,57
+692,78,TRUE,1,1,1,Constituent-party congruent,skilled,agree,1,loyalist,loyalist,0,0,0,NA,0,44
+684,79,TRUE,0,0,1,Constituent-party congruent,regulation,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+684,79,TRUE,1,0,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,0.06140350877192982,0.06140350877192982,1,1,2.0794415416798357,114
+685,79,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+685,79,FALSE,0,0,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+685,79,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,0.13636363636363635,0,NA,1.3862943611198906,22
+687,79,TRUE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+687,79,FALSE,0,0,1,Constituent-party congruent,customs,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+687,79,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+690,79,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,0.125,0,NA,1.3862943611198906,24
+690,79,TRUE,1,1,1,Constituent-party congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,0.125,0,NA,1.3862943611198906,24
+690,79,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,0.13636363636363635,0,NA,1.3862943611198906,22
+697,79,TRUE,1,0,0,Constituent-party not congruent,regulation,disagree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+697,79,TRUE,1,0,0,Constituent-party not congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+697,79,TRUE,1,0,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+193,80,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+700,80,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+628,81,TRUE,1,1,1,Constituent-party congruent,skilled,disagree,1,loyalist,loyalist,0.009090909090909087,0.009090909090909087,0,NA,0.15415067982725836,110
+628,81,TRUE,0,0,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+700,81,TRUE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+700,81,TRUE,0,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+699,82,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+699,82,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,0.05128205128205128,0.05128205128205128,0,NA,1.3862943611198906,117
+699,82,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+701,82,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+701,82,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+701,82,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,0.008333333333333335,0.008333333333333335,0,NA,0.28768207245178085,120
+383,83,TRUE,1,1,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,0.003802281368821294,0.003802281368821294,1,0,0.15415067982725836,526
+702,83,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,1,loyalist,loyalist,-0.03594771241830065,-0.03594771241830065,0,NA,-1.8718021769015913,306
+79,84,TRUE,1,0,0,Constituent-party not congruent,singlem,agree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+79,84,TRUE,1,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,1,1,NA,NA
+137,84,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+137,84,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+137,84,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+675,84,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,-0.02348993288590604,-0.02348993288590604,0,NA,-1.5040773967762742,298
+675,84,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,-0.01818181818181818,-0.01818181818181818,0,NA,-0.40546510810816444,55
+687,84,FALSE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+687,84,FALSE,0,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+687,84,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+695,84,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+695,84,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+695,84,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+705,84,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+705,84,FALSE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+705,84,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+652,85,TRUE,0,0,1,Constituent-party congruent,customs,agree,1,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+652,85,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,agree,2-6,loyalist,loyalist,-0.0078125,-0.0078125,0,NA,-0.1823215567939546,128
+656,85,TRUE,0,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+656,85,TRUE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+705,85,TRUE,0,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+705,85,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,0.041237113402061855,0.041237113402061855,0,NA,1.6094379124341003,97
+706,86,TRUE,1,1,1,Constituent-party congruent,skilled,agree,1,loyalist,loyalist,0.030303030303030304,0.030303030303030304,1,0,1.3217558399823195,363
+707,86,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,0.02631578947368421,0.02631578947368421,0,NA,0.8109302162163288,190
+710,86,TRUE,1,1,0,Constituent-party not congruent,skilled,disagree,2-6,loyalist,loyalist,0.01474201474201474,0.01474201474201474,0,NA,0.9162907318741551,407
+710,86,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+703,87,TRUE,1,1,1,Constituent-party congruent,customs,agree,2-6,extreme rebel,rebel,0.010714285714285714,0.010714285714285714,0,NA,0.4054651081081644,280
+703,87,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+703,87,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,-0.016129032258064516,-0.016129032258064516,0,NA,-0.40546510810816444,124
+713,87,TRUE,1,1,0,Constituent-party not congruent,customs,disagree,1,extreme rebel,rebel,0.02932551319648094,0.02932551319648094,1,0,1.252762968495368,341
+713,87,TRUE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,1,0,NA,NA
+713,87,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,0.026455026455026454,0.026455026455026454,1,1,1.252762968495368,189
+326,88,TRUE,1,1,1,Constituent-party congruent,customs,agree,1,extreme rebel,rebel,0.011627906976744186,0.011627906976744186,0,NA,0.4519851237430572,344
+326,88,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,0,0,0,NA,0,89
+326,88,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,0.007194244604316545,0.007194244604316545,0,NA,0.4054651081081644,278
+716,88,TRUE,1,1,0,Constituent-party not congruent,customs,disagree,2-6,extreme rebel,rebel,-0.028169014084507043,-0.028169014084507043,0,NA,-1.2992829841302609,284
+716,88,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,-0.019672131147540985,-0.019672131147540985,0,NA,-0.7884573603642702,305
+716,88,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+708,89,TRUE,1,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,1,1,NA,NA
+708,89,TRUE,1,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+708,89,TRUE,1,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+709,89,TRUE,1,0,1,Constituent-party congruent,customs,agree,1,unclear rebel,loyalist,NA,NA,1,1,NA,NA
+709,89,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+716,89,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+716,89,FALSE,0,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+716,89,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+706,90,FALSE,0,0,0,Constituent-party not congruent,customs,disagree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+706,90,FALSE,0,0,1,Constituent-party congruent,singlem,disagree,beyond 6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+706,90,FALSE,0,0,1,Constituent-party congruent,immigration,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+711,90,FALSE,0,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+711,90,FALSE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+711,90,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+713,90,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+713,90,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+713,90,FALSE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+714,90,FALSE,0,0,0,Constituent-party not congruent,singlem,agree,beyond 6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+714,90,FALSE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+715,90,FALSE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+715,90,FALSE,0,0,0,Constituent-party not congruent,skilled,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+715,90,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+717,90,FALSE,0,0,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,NA,NA,1,0,NA,NA
+717,90,FALSE,0,0,1,Constituent-party congruent,skilled,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+399,91,TRUE,0,0,1,Constituent-party congruent,secondr,disagree,1,unclear rebel,rebel,NA,NA,0,NA,NA,NA
+399,91,TRUE,0,0,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+399,91,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+558,91,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,2-6,unclear rebel,rebel,NA,NA,0,NA,NA,NA
+561,91,TRUE,0,0,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+719,91,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+715,92,TRUE,1,1,1,Constituent-party congruent,customs,agree,1,loyalist,loyalist,0.03626943005181347,0.03626943005181347,1,1,2.0794415416798357,193
+715,92,TRUE,1,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,-0.005128205128205131,-0.005128205128205131,1,1,-0.10536051565782628,195
+715,92,TRUE,1,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,0.020512820512820516,0.020512820512820516,1,1,0.36772478012531734,195
+720,92,TRUE,1,0,0,Constituent-party not congruent,customs,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+720,92,TRUE,1,0,1,Constituent-party congruent,singlem,disagree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+720,92,TRUE,1,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,1,1,NA,NA
+334,93,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,1,1,-0.11778303565638351,853
+334,93,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,beyond 6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,NA,-0.11778303565638351,853
+334,93,TRUE,1,1,1,Constituent-party congruent,skilled,agree,beyond 6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,NA,-0.11778303565638351,853
+720,93,TRUE,0,0,1,Constituent-party congruent,secondr,disagree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
+720,93,TRUE,0,0,1,Constituent-party congruent,regulation,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+720,93,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+721,93,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,beyond 6,loyalist,loyalist,-0.0023419203747072626,-0.0023419203747072626,0,NA,-0.11778303565638351,854
+721,93,TRUE,1,1,0,Constituent-party not congruent,immigration,disagree,beyond 6,loyalist,loyalist,-0.0023419203747072626,-0.0023419203747072626,0,NA,-0.11778303565638351,854
+721,93,TRUE,1,1,0,Constituent-party not congruent,skilled,disagree,beyond 6,loyalist,loyalist,-0.0023419203747072626,-0.0023419203747072626,0,NA,-0.11778303565638351,854
+722,93,TRUE,1,1,1,Constituent-party congruent,customs,disagree,2-6,unclear rebel,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,NA,-0.11778303565638351,853
+722,93,TRUE,1,1,0,Constituent-party not congruent,regulation,disagree,beyond 6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,NA,-0.11778303565638351,853
+723,93,TRUE,1,1,0,Constituent-party not congruent,secondr,agree,2-6,loyalist,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,NA,-0.11778303565638351,853
+723,93,TRUE,1,1,0,Constituent-party not congruent,customs,agree,2-6,unclear rebel,loyalist,-0.0023446658851113723,-0.0023446658851113723,0,NA,-0.11778303565638351,853
+723,93,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+725,93,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+725,93,TRUE,0,0,1,Constituent-party congruent,immigration,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+485,94,TRUE,0,0,0,Constituent-party not congruent,customs,disagree,1,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+485,94,TRUE,0,0,1,Constituent-party congruent,tuitionlevel,disagree,beyond 6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+728,94,TRUE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+728,94,TRUE,0,0,1,Constituent-party congruent,singlem,disagree,2-6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+728,94,TRUE,0,0,0,Constituent-party not congruent,tuitionlevel,agree,beyond 6,unclear rebel,loyalist,NA,NA,0,NA,NA,NA
+729,94,TRUE,1,1,1,Constituent-party congruent,customs,agree,2-6,unclear rebel,loyalist,0.03007518796992481,0.03007518796992481,0,NA,0.8472978603872037,133
+729,94,TRUE,1,1,1,Constituent-party congruent,regulation,disagree,2-6,unclear rebel,loyalist,0.03007518796992481,0.03007518796992481,0,NA,0.8472978603872037,133
+729,94,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,unclear rebel,loyalist,0,0,0,NA,0,88
+189,95,TRUE,1,1,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,0,0,0,NA,0,13
+189,95,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,0,0,0,NA,0,13
+189,95,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,0,0,0,NA,0,13
+761,95,TRUE,1,1,0,Constituent-party not congruent,freedomm,agree,1,extreme rebel,rebel,0,0,0,NA,0,13
+761,95,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,0,0,0,NA,0,13
+761,95,TRUE,1,1,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,0,0,0,NA,0,13
+139,96,TRUE,1,1,1,Constituent-party congruent,skilled,disagree,1,loyalist,loyalist,-0.0017825311942958992,-0.0017825311942958992,0,NA,-0.15415067982725836,561
+777,96,TRUE,1,1,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,-0.0017825311942958992,-0.0017825311942958992,0,NA,-0.15415067982725836,561
+237,97,TRUE,0,0,0,Constituent-party not congruent,singlem,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+583,97,TRUE,1,1,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,-0.0026737967914438505,-0.0026737967914438505,1,0,-0.0953101798043249,374
+583,97,TRUE,0,0,1,Constituent-party congruent,skilled,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+807,97,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,1,loyalist,loyalist,-0.038901601830663615,-0.038901601830663615,0,NA,-1.3437347467010947,437
+807,97,TRUE,1,1,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,-0.0026737967914438505,-0.0026737967914438505,0,NA,-0.0953101798043249,374
+807,97,TRUE,0,0,0,Constituent-party not congruent,skilled,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+484,98,TRUE,1,1,0,Constituent-party not congruent,freedomm,disagree,2-6,loyalist,loyalist,0,0,0,NA,0,407
+817,98,TRUE,1,1,1,Constituent-party congruent,freedomm,agree,1,loyalist,loyalist,0.015037593984962405,0.015037593984962405,1,0,0.6931471805599453,133
+734,99,TRUE,1,1,1,Constituent-party congruent,customs,disagree,2-6,extreme rebel,rebel,NA,0.2,0,NA,0.6931471805599453,5
+734,99,TRUE,1,1,1,Constituent-party congruent,singlem,disagree,2-6,extreme rebel,rebel,NA,0.09375,0,NA,1.3862943611198906,32
+734,99,TRUE,1,1,1,Constituent-party congruent,tuitionfree,disagree,2-6,loyalist,loyalist,0.034482758620689655,0.034482758620689655,0,NA,0.6931471805599453,29
+827,99,TRUE,1,1,0,Constituent-party not congruent,singlem,agree,2-6,extreme rebel,rebel,0,0,0,NA,0,36
+827,99,TRUE,1,1,0,Constituent-party not congruent,tuitionlevel,disagree,beyond 6,loyalist,loyalist,0.05660377358490566,0.05660377358490566,0,NA,1.9459101490553132,106
+828,99,TRUE,1,1,0,Constituent-party not congruent,tuitionfree,agree,2-6,loyalist,loyalist,0.058823529411764705,0.058823529411764705,0,NA,1.0986122886681098,34
+829,99,TRUE,1,1,0,Constituent-party not congruent,customs,agree,1,extreme rebel,rebel,-0.041666666666666664,-0.041666666666666664,0,NA,-0.6931471805599453,24
+829,99,TRUE,1,1,1,Constituent-party congruent,tuitionlevel,agree,beyond 6,loyalist,loyalist,-0.0034482758620689655,-0.0034482758620689655,1,1,-0.2876820724517809,290
+834,100,TRUE,1,1,1,Constituent-party congruent,customs,disagree,1,loyalist,loyalist,-0.01704545454545455,-0.01704545454545455,1,0,-0.35667494393873245,176
+834,100,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,loyalist,loyalist,NA,NA,1,0,NA,NA
+834,100,TRUE,1,1,1,Constituent-party congruent,immigration,agree,2-6,loyalist,loyalist,0.010940919037199124,0.010940919037199124,1,0,1.252762968495368,457
+835,100,TRUE,0,0,0,Constituent-party not congruent,customs,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+835,100,TRUE,0,0,0,Constituent-party not congruent,freedomm,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+835,100,TRUE,0,0,0,Constituent-party not congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+843,101,TRUE,0,0,0,Constituent-party not congruent,freedomm,agree,1,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+843,101,FALSE,0,0,1,Constituent-party congruent,regulation,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+843,101,FALSE,0,0,0,Constituent-party not congruent,tuitionfree,disagree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+844,101,TRUE,0,0,1,Constituent-party congruent,freedomm,disagree,2-6,extreme rebel,rebel,NA,NA,0,NA,NA,NA
+844,101,FALSE,0,0,0,Constituent-party not congruent,regulation,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+844,101,FALSE,0,0,0,Constituent-party not congruent,immigration,agree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+845,101,TRUE,0,0,1,Constituent-party congruent,immigration,disagree,2-6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+845,101,FALSE,0,0,1,Constituent-party congruent,tuitionfree,agree,beyond 6,loyalist,loyalist,NA,NA,0,NA,NA,NA
+589,102,TRUE,1,0,1,Constituent-party congruent,secondr,disagree,2-6,loyalist,loyalist,0,0,1,1,0,218
+853,102,TRUE,0,0,0,Constituent-party not congruent,secondr,agree,1,loyalist,loyalist,NA,NA,0,NA,NA,NA
