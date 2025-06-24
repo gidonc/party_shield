@@ -1,0 +1,67 @@
+---
+title: 'Using the party as a shield: Power analysis'
+author: "Daniel Bishof, Vanessa Cheng-Matuno, Gidon Cohen, Sarah Cohen, Florian Foos,
+  Patrick M Kuhn, Kyriaki Nanou, Neil Visalvanich, Nick Vivyan"
+date: "`r Sys.Date()`"
+output: 
+  bookdown::pdf_document2:
+    latex_engine: xelatex # Use xelatex for better font support
+    pandoc_arg: --listings
+    includes:
+        in_header: preamble.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message=FALSE,
+                      warning=FALSE)
+
+knitr::read_chunk("power_analysis.R")
+```
+
+The power analysis was conducted at the end of the project (but based on code implemented at two earlier phases in the project - most recently from the first recruitment phase to inform decisions about future steps). Note, that MP non-response is not considered and this will have a major impact on power. 
+
+We shared the full code for our power analysis with the working paper and it can be accessed online on OSF.
+
+\paragraph{Theory and Data Generating Mechanism \label{app:power}}
+
+Letter $i$ is sent to MP $\alpha_{\mathrm{mp}\left[i\right]}$, from constituents who agree with and disagree with the MP on an issue. Where:
+
+\begin{itemize}
+    \item Binary $DV_i$ = e.g. Probability that MP responds to letter $i$
+    \item Continuous $DV_i$ = e.g. log-ratio of MP v party mentions in response to letter $i$  
+    \item $IV_i$ = MPs Party agrees with a constituent on Issue Position Expressed in Letter $i$
+    \item $\alpha_{\mathrm{mp}\left[i\right]}$  = MP fixed effect (for MP to whom letter $i$ is sent), representing e.g. differential responsiveness across MPs.
+\end{itemize}
+
+We assume a linear data-generating mechanism:\\
+$$DV_i = \beta_1 \cdot IV_i + \alpha_{\mathrm{mp}\left[i\right]}  + \epsilon_i $$
+
+With correlated MP effects, where we send letters on all the MPs on all the issues we have.  
+
+Figures \@ref(fig:contin-plot) and \@ref(fig:binary-plot) report the power of our design across ATEs.   It becomes evident that we are well powered (>.8) for ATEs around 0.1 for the binary and ATEs of 0.05 for continuous outcomes. In comparison to previous audit studies, we are well powered particularly given that we relied on `actual' voters. 
+
+```{r power-anal-setup}
+
+```
+
+```{r power-anal-functions}
+
+```
+
+```{r set-n-sims-short}
+
+```
+
+```{r run-power-anal}
+
+```
+
+```{r contin-plot, fig.cap="Power for continuous outcomes."}
+
+```
+
+```{r binary-plot, fig.cap="Power for binary outcomes."}
+
+```
+
