@@ -4,9 +4,10 @@
 
 #imain<-read.csv("MP_responses_votes.csv", stringsAsFactors = FALSE)
 
+##----read-local-data----
 library(tidyverse)
 
-imain<-read.csv("MP_votes_cleaned.csv", stringsAsFactors = FALSE)
+imain<-read.csv(file.path(d.path, "MP_votes_cleaned.csv"), stringsAsFactors = FALSE)
 
 new.anon<-read.csv("anon_email_responses2.csv", stringsAsFactors = FALSE)
 add_autoresponses <- read.csv("anon_email_autoresponses.csv", stringsAsFactors = FALSE)
@@ -27,6 +28,7 @@ bes.dat<-read.csv("BES-2015-General-Election-results-file-v2.2.csv", stringsAsFa
 bes17.dat<-haven::read_sav(paste0(d.path, "/BA_MP_Experiment/data sources/BES-2017-General-Election-results-file-v1.0.sav"))
 
 
+##----process-local-data----
 
 new.anon <- new.anon %>%
   dplyr::select(letterid, constituency, issue, position, send_position, manualresponse_exists, multiresponse, id, manualresponse_exists_inc_post, respondent_reported_letter_status, autoresponse_exists) %>%
