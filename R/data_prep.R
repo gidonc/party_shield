@@ -7,10 +7,11 @@
 ##----read-local-data----
 library(tidyverse)
 
-imain<-read.csv(file.path(d.path, "MP_votes_cleaned.csv"), stringsAsFactors = FALSE)
+imain<-read.csv(file.path(a.path, "MP_votes_cleaned.csv"), stringsAsFactors = FALSE)
 
-new.anon<-read.csv("anon_email_responses2.csv", stringsAsFactors = FALSE)
-add_autoresponses <- read.csv("anon_email_autoresponses.csv", stringsAsFactors = FALSE)
+new.anon<-read.csv(file.path(a.path, "anon_email_responses2.csv"), stringsAsFactors = FALSE)
+add_autoresponses <- read.csv(file.path(a.path, "anon_email_autoresponses.csv"), stringsAsFactors = FALSE)
+
 add_autoresponses <- add_autoresponses %>% 
   filter(!is.na(letterid)) %>% 
   group_by(letterid) %>% 
@@ -24,7 +25,7 @@ text.summary<-read_csv(paste0(d.path, "/BA_MP_Experiment/data sources/text_analy
 
 mp_rebel_dat <- read_csv(paste0(d.path, "/BA_MP_Experiment/data sources/mp_rebellion_YOS_updated.csv"))
 
-bes.dat<-read.csv("BES-2015-General-Election-results-file-v2.2.csv", stringsAsFactors = FALSE)
+bes.dat<-read.csv(file.path(a.path, "BES-2015-General-Election-results-file-v2.2.csv"), stringsAsFactors = FALSE)
 bes17.dat<-haven::read_sav(paste0(d.path, "/BA_MP_Experiment/data sources/BES-2017-General-Election-results-file-v1.0.sav"))
 
 
