@@ -1,5 +1,15 @@
+##----setup-additional-analysis----
+
 library(tidyverse)
 library(huxtable)
+library(kableExtra)
+library(arm)
+
+##----autoresponse-descriptives----
+
+prop_holding_to_substantive <- filter(main, autoresponse_exists == 1) |> pull(manualresponse_exists_inc_post_count_nonresponse) |> mean()
+prop_noholding_to_substantive <- filter(main, autoresponse_exists == 0) |> pull(manualresponse_exists_inc_post_count_nonresponse) |> mean()
+  
 
 ##----do-autoresponses-predict----
 # reviewer comments that autoresponses may be a sign that MPs have detected experiment
@@ -10,6 +20,7 @@ amresponse_summary <- main |>
   summarise(n = n(),
             autoresponse_prop = sum(autoresponse_exists, na.rm =TRUE)/n,
             manualresponse_exists_inc_post_count_nonresponse = sum(manualresponse_exists_inc_post_count_nonresponse, na.rm=TRUE)/n) 
+
 
 f1 <- lm(manualresponse_exists_inc_post_count_nonresponse ~ autoresponse_exists, main)
 f1a <- lm(manualresponse_exists_inc_post ~ autoresponse_exists, main)
@@ -24,9 +35,38 @@ huxtable::huxreg(f1, f1a, f2, f3, f4, coefs = c("(Intercept)",
                                            "autoresponse_prop"))
 
 
-##----descriptive-responsiveness-analysis----
+##----descriptive-responsiveness-analysis-setup----
 
-names(main)
+brexit_nice5_fn <- function(fct){
+  current_levels <- levels(fct)
+  brexit_nice <- c("Brexit vote very low",
+    "Brexit vote low",
+    "Brexit vote balanced",
+    "Brexit vote high",
+    "Brexit vote very high")
+  
+  recode_map <- setNames(
+    current_levels,
+    paste0(brexit_nice, ": ", current_levels)
+  )
+  fct_recode(fct, !!!recode_map)
+  
+}
+
+brexit_nice3_fn <- function(fct){
+  current_levels <- levels(fct)
+  brexit_nice <- c(
+                   "Brexit vote low",
+                   "Brexit vote balanced",
+                   "Brexit vote high")
+  
+  recode_map <- setNames(
+    current_levels,
+    paste0(brexit_nice, ": ", current_levels)
+  )
+  fct_recode(fct, !!!recode_map)
+  
+}
 
 main2 <- main |>
   left_join(as_factor(bes17.dat), by = c("constituency"="ONSConstID")) |>
@@ -39,54 +79,157 @@ main2 <- main |>
            win17 == "Liberal Democrat" ~ LDPPCsex17,
            win17 == "Green" ~ GreenPPCsex17,
          ),
+         MPsex2 = factor(case_when(
+           MPsex == "Woman" ~ "Female MP",
+           MPsex == "Man" ~ "Male MP",
+           TRUE ~ "check this"
+         )),
+         marginality_type = factor(case_when(
+           Majority17 < 2 ~ "Majority below 2%",
+           Majority17 < 5 ~ "Majority 2-5%",
+           Majority17 < 10 ~ "Majority 5-10%",
+           TRUE ~ "1. Majority above 10%"
+         )),
+         marginality_type2 = factor(case_when(
+           Majority17 < 10 ~ "Majority below 10%",
+           TRUE ~ "Majority above 10%"
+         )),
+         leave_cat = factor(cut_number(leaveHanretty, 5)),
+         leave_cat2 = brexit_nice5_fn(leave_cat),
+         leaveHanrettyprop = leaveHanretty/100,
+         majorityprop = Majority17/100,
          retired = c11Age65to74+c11Age75to84+c11Age85to89+c11Age90plus,
-         children = c11Age0to4 + c11Age5to7+c11Age8to9+c11Age10to14+c11Age15+c11Age16to17
+         children = c11Age0to4 + c11Age5to7+c11Age8to9+c11Age10to14+c11Age15+c11Age16to17,
+         win17_iscon = case_when(
+           win17 == "Conservative" ~ "Conservative",
+           TRUE ~ "Not Conservative"
+         )
+         
   ) |>
   mutate(has_resp = manualresponse_exists_inc_post_count_nonresponse) |>
   group_by(constituency) |>
   mutate(
     n_letters = n()
   )
-rr_const <- main |>
-  group_by(constituency) |>
-  summarise(
-    response_rate = mean(manualresponse_exists_inc_post_count_nonresponse),
-    n_letters = n(),
-    n_responses = sum(manualresponse_exists_inc_post_count_nonresponse),
-    rebel_prop = mean(mp_type == "rebel")
-  ) |>
-  left_join(as_factor(bes17.dat), by = c("constituency"="ONSConstID")) |>
-  mutate(win17 = as_factor(Winner17),
-         win15 = as_factor(Winner15),
-         cont = as.character(win15)==as.character(win17),
-         MPsex = case_when(
-           
-           win17 == "Conservative" ~ ConPPCsex17,
-           win17 == "Labour" ~ LabPPCsex17,
-           win17 == "Liberal Democrat" ~ LDPPCsex17,
-           win17 == "Green" ~ GreenPPCsex17,
-         ),
-         retired = c11Age65to74+c11Age75to84+c11Age85to89+c11Age90plus,
-         children = c11Age0to4 + c11Age5to7+c11Age8to9+c11Age10to14+c11Age15+c11Age16to17
-         )
+
 
 # could do with data for:
 # MP Localness based on place of birth (log(distance) of place of birth from the constituency) - Bolet and Campbell find that localness is not generally related to responsiveness, but there is a significant interaction of localness and partisanship (at the .1 level)
 # Rural/Urban
 # Further MP characteristics: MP seniority
 
-hist(rr_const$response_rate)
-f1 <- lm(response_rate ~ c11CarsTwo, rr_const)
-f2 <- lm(response_rate ~ c11Degree, rr_const)
+##----descriptive-response-analysis-----
+
+mf1_pty <- lmer(has_resp ~ win17_iscon + (1|constituency), main2)
+mf1_sex <- lmer(has_resp ~ MPsex2 + (1|constituency), main2)
+mf1_margin <- lmer(has_resp ~ marginality_type + (1|constituency), main2)
+mf1_brexit <- lmer(has_resp ~ leave_cat2 + (1|constituency), main2)
+mf2 <- lmer(has_resp ~ win17_iscon + MPsex2 + leave_cat2 + marginality_type + (1|constituency), main2)
+
+##----descriptive-response-results-plot-----
+
+sjPlot::plot_models(mf1_pty, mf1_sex, mf1_margin, mf1_brexit,mf2, 
+                    m.labels = c("Party only", "Sex only", "Marginality only","Brexit vote only", "Full model"),
+                    prefix.labels = "none",
+                    legend.title = "Independent variables") +
+  theme_bw() +
+  geom_hline(yintercept=0, colour="black", linetype="solid")
 
 
+##----descriptive-response-analysis-cont-----
 
-huxreg(f1, f2)
-library(arm)
-mf1 <- lmer(has_resp ~ win17 + MPsex + mp_type+ c11Degree + send_position_red + I(Majority17<10) + (1|constituency), main2)
-mf2 <- lmer(has_resp ~ win17 + retired + c11Degree + c11PopulationDensity + (1|constituency), main2)
+mf1_pty_cont <- lmer(has_resp ~ win17 + (1|constituency), main2)
+mf1_sex_cont <- lmer(has_resp ~ MPsex2 + (1|constituency), main2)
+mf1_margin_cont <- lmer(has_resp ~ majorityprop + (1|constituency), main2)
+mf1_brexit_cont <- lmer(has_resp ~ leaveHanrettyprop + (1|constituency), main2)
+mf2_cont <- lmer(has_resp ~ win17 + MPsex2 + leaveHanrettyprop + majorityprop + (1|constituency), main2)
 
-huxreg(mf1, mf2)
+##----descriptive-response-results-cont-plot-----
+
+sjPlot::plot_models(mf1_pty_cont, mf1_sex_cont, mf1_margin_cont, mf1_brexit_cont,mf2_cont, 
+                    m.labels = c("Party only", "Sex only", "Marginality only","Brexit vote only", "Full model"),
+                    prefix.labels = "none",
+                    legend.title = "Independent variables") +
+  theme_bw() +
+  geom_hline(yintercept=0, colour="black", linetype="solid")
+
+##----cases-per-cell-experiment----
+
+main2 |> 
+  group_by(marginality_type2, win17_iscon, leave_cat2, MPsex2, constituency) |>
+  summarise() |>
+  group_by(marginality_type2, win17_iscon, leave_cat2, MPsex2) |>
+  tally(name = "Cell_size") |>
+  arrange(Cell_size) |>
+  kbl(format="latex",
+             caption = "Cases per cell with broad categorisation of marginality, party and Estimated Brexit vote.",
+             label = "cases-per-cell-experiment",
+             booktabs=TRUE)
+
+##----cases-per-cell-response-experiment-----
+main2 |> 
+  group_by(constituency, n_letters) |>
+  mutate(n_responses = sum(has_resp)) |>
+  summarise(n_responses=mean(n_responses)) |>
+  group_by(n_letters, n_responses) |>
+  tally(name = "Cell_size") |>
+  arrange(Cell_size) |>
+  kbl(format="latex",
+      caption = "Cases per cell based solely on response pattern.",
+      label = "cases-per-cell-response-experiment",
+      booktabs=TRUE)
+
+
+##----cases-per-cell-bes----
+
+bes17.dat.summary <- bes17.dat |>
+  mutate(constituency=ONSConstID) |>
+  filter(
+    as_factor(Winner17) %in% c("Conservative", "Labour", "Liberal Democrat", "Green")
+    ) |>
+  mutate(across(c(ConPPCsex17, LabPPCsex17, LDPPCsex17, GreenPPCsex17), as_factor)) |>
+  mutate(win17 = as_factor(Winner17),
+         win15 = as_factor(Winner15),
+         cont = as.character(win15)==as.character(win17),
+         MPsex = case_when(
+           win17 == "Conservative" ~ ConPPCsex17,
+           win17 == "Labour" ~ LabPPCsex17,
+           win17 == "Liberal Democrat" ~ LDPPCsex17,
+           win17 == "Green" ~ GreenPPCsex17
+         ),
+         MPsex2 = factor(case_when(
+           MPsex == "Woman" ~ "Female MP",
+           MPsex == "Man" ~ "Male MP",
+           TRUE ~ "check this"
+         )),
+         marginality_type = factor(case_when(
+           # Majority17 < 2 ~ "Majority below 2%",
+           Majority17 < 5 ~ "Majority 2-5%",
+           Majority17 < 10 ~ "Majority 5-10%",
+           TRUE ~ "1. Majority above 10%"
+         )),
+         leave_cat = factor(cut_number(leaveHanretty, 3)),
+         leave_cat2 = brexit_nice3_fn(leave_cat),
+         retired = c11Age65to74+c11Age75to84+c11Age85to89+c11Age90plus,
+         children = c11Age0to4 + c11Age5to7+c11Age8to9+c11Age10to14+c11Age15+c11Age16to17,
+         win17_iscon = case_when(
+           win17 == "Conservative" ~ "Conservative",
+           TRUE ~ "Not Conservative"
+         )
+  ) |>
+  group_by(constituency) |>
+  mutate(
+    n_letters = n()
+  )
+
+
+bes17.dat.summary |> 
+  group_by(marginality_type, win17_iscon, leave_cat2, MPsex2, constituency) |>
+  summarise() |>
+  group_by(marginality_type, win17_iscon, leave_cat2, MPsex2) |>
+  tally() |> 
+  arrange(n) |> View()
+
 
 ##----Further-Analysis-and-Tables-Not-in-Paper-----
 
