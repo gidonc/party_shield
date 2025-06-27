@@ -2,7 +2,6 @@
 ## before running this code it is necessary to set the d.path route to the local data file which contains full dataset
 # d.path should point the analysis folder and the working directory should be set (in data_prep_local.R)
 
-#imain<-read.csv("MP_responses_votes.csv", stringsAsFactors = FALSE)
 
 ##----read-local-data----
 library(tidyverse)
