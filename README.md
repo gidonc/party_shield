@@ -18,4 +18,4 @@ The other main other files in the R folder are :
 *  additional_analysis_R+R.R (associated .Rmd file additional_analysis.Rmd): contains code for the additional analysis we need to do/might do for the R&R (plus a 'bin' of other code scraps from the previous analysis we did not end up using). This file uses the full data loaded by data_prep.R (not the reduced versions of the data stored in the Data folder.
 
 ##  Data Folder
-The `Data` folder contains two datasets, where the aim is for these datasets to be the versions that we share publicly. These datasets are documented below and at the outset of the 'Figs_and_Tables.pdf'.
+The `Data` folder contains two datasets, where the aim is for these datasets to be the versions that we share publicly. These datasets are at the outset of the 'Figs_and_Tables.pdf'.
