@@ -5,6 +5,7 @@
 
 ##----read-local-data----
 library(tidyverse)
+library(here)
 
 imain<-read.csv(file.path(a.path, "MP_votes_cleaned.csv"), stringsAsFactors = FALSE)
 
@@ -410,9 +411,9 @@ n_byelection_affected<-sum(new.anon$constituency %in% const_with_multi_mps$ONSCo
 
 
 ## ----save-party-shield-processed-data-local----
-current_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
-parent_dir <- file.path(current_dir, "..")
-data_dir <- file.path(parent_dir, "Data")
+root_dir <- here::here()
+data_dir <- file.path(root_dir, "Data")
+current_dir <- file.path(root_dir, "R")
 
 set.seed(123)
 main_ids <- main |>
