@@ -32,8 +32,7 @@ issue_nice$issue_order <- 1:nrow(issue_nice)
 
 ## ----load-party-shield-processed-data-local----
 
-current_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
-parent_dir <- file.path(current_dir, "..")
+parent_dir <- here::here()
 data_dir <- file.path(parent_dir, "Data")
 
 main <- read_csv(file.path(data_dir, "main.csv"))  
@@ -210,9 +209,11 @@ overall <- bes17.dat %>%
     "Av.leave" = scales::percent(mean(leaveHanretty)/100, accuracy = .1),
     "Av.majority" = scales::percent(mean(Majority17)/100, accuracy = .1),
     "Av.degree" = scales::percent(mean(c11Degree, na.rm=TRUE)/100, accuracy =.1),
-    "Service (years)" =mean(service_duration*10)
+    "Service (years)" =as.character(round(mean(service_duration*10), 1))
   ) %>%
-  mutate(in_experiment = "GB MPs")
+  mutate(in_experiment = "GB MPs")|>
+  pivot_longer(cols = -in_experiment, values_to = "GB MPs")  |>
+  dplyr::select(-in_experiment)
 
 treats <- bes17.dat %>% 
   group_by(in_experiment) %>%
@@ -224,16 +225,15 @@ treats <- bes17.dat %>%
     "Av.leave" = scales::percent(mean(leaveHanretty)/100, accuracy = .1),
     "Av.majority" = scales::percent(mean(Majority17)/100, accuracy = .1),
     "Av.degree" = scales::percent(mean(c11Degree, na.rm=TRUE)/100, accuracy =.1),
-    "Service (years)" =mean(service_duration*10)
+    "Service (years)" =as.character(round(mean(service_duration*10), 1))
   ) %>%
-  filter(in_experiment=="Included (letters sent)") 
+  filter(in_experiment=="Included (letters sent)") |>
+  pivot_longer(cols = -in_experiment, values_to = "Included (letters sent)") |>
+  dplyr::select(-in_experiment)
 
-
-
-bind_rows(treats, overall)%>%
-  rename(" " = in_experiment) %>%
-  huxtable()%>% 
-  # set_background_color(evens, everywhere, "grey95") %>%
+left_join(overall, treats) |>
+  dplyr::rename(" "=name) |>
+  huxtable()  |>
   set_bold(row = 1, col = everywhere) %>% 
   set_bottom_border(row = 1, col = everywhere,  brdr(.4, "solid", "black")) %>% 
   set_right_border(everywhere, 1,  brdr(.4, "solid", "black")) %>%
@@ -271,11 +271,12 @@ gtreats <- bes17.dat %>%
 
 gtreats %>%
   ungroup() %>%
-  select(c("Region", "Included")) %>%
+  dplyr::select(c("Region", "Included")) %>%
   left_join(ggbmps %>%
               ungroup() %>%
-              select(c("Region", "GB MPs")), 
+              dplyr::select(c("Region", "GB MPs")), 
             by = "Region") %>%
+  mutate(Region = as_factor(Region)) |>
   rename(" " = Region) %>%
   huxtable()%>% 
   set_bold(row = 1, col = everywhere) %>% 
