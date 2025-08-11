@@ -28,7 +28,179 @@ mp_rebel_dat <- read_csv(paste0(d.path, "/BA_MP_Experiment/data sources/mp_rebel
 bes.dat<-read.csv(file.path(a.path, "BES-2015-General-Election-results-file-v2.2.csv"), stringsAsFactors = FALSE)
 bes17.dat<-haven::read_sav(paste0(d.path, "/BA_MP_Experiment/data sources/BES-2017-General-Election-results-file-v1.0.sav"))
 
+##----parlparsedata----
 
+con_url <- "https://raw.githubusercontent.com/mysociety/parlparse/refs/heads/master/people/constituencies.json"
+#people_list <- fromJSON(url, simplifyVector = FALSE)
+con_list <- fromJSON(con_url)
+
+# Load people JSON
+people_url <- "https://raw.githubusercontent.com/mysociety/parlparse/refs/heads/master/members/people.json"
+people_list <- fromJSON(people_url)
+
+# The below gets the two (nested) data.frames which we can clean in regular ways (so we no longer need to worry about the JSON format)
+memberships <- people_list$memberships |> as_tibble()
+persons <- people_list$persons |> as_tibble()
+posts <- people_list$posts
+
+### Handle awkward details in posts
+MP_posts <- posts |>
+  as_tibble() |>
+  filter(organization_id == "house-of-commons",
+         role =="Member of Parliament") |>
+  unnest_wider(area) |>
+  rename(post_id = id,
+         constituency_name = name)
+ 
+##----parlparsepersonnames----
+
+
+# Cleaning the person names data - which is another of the nested columns in the persons tibble
+# We probably want one name per person - rather than all their names - but not sure which name to select - probably a name with the following as priority in order:
+# 1. a name with both a family name and a given name
+# 2. at the time of the experiment active 'main' (as opposed to 'alternative') name 
+# 3. We also have information on the original ordering of the names, which we can use to break ties 
+# Date of experiment 14-11-2018 to 3-7-2019
+
+person_names <- persons |>
+  select(id, other_names) |>
+  unnest(other_names) |>
+  mutate(init_name_order = row_number()) |>
+  ungroup() |>
+  mutate(
+    is_current_order = case_when(
+      (is.na(start_date)|ymd(start_date)<ymd("2018-11-14")) & (is.na(end_date)|ymd(end_date)>ymd("2018-11-14")) ~ 1,
+      TRUE ~ 2
+    ),
+    both_names_order = case_when(
+      !is.na(family_name)&!is.na(given_name) ~ 1,
+      TRUE ~ 2
+    ),
+    is_main_order = case_when(
+      note == "Main" ~ 1,
+      TRUE ~ 2
+    )) |> 
+  group_by(id) |>
+  arrange(id, both_names_order, is_current_order, is_main_order, init_name_order) |> # Find main name as main name current at start of experiment: 
+  slice(1)
+
+## NOTE: there seem to be 47 person records that have no associated names, not sure what/whom these records refer to 
+anti_join(persons, person_names, by = "id") |> nrow()
+
+## NOTE: there are also 65 cases that don't have any identifiers (65 cases of 14629 total), and these will be dropped by this code - likely this doesn't apply to any recent MPs - a quick check of five cases of those dropped by this procedure suggests that these are generally people who have not been MPs (e.g. The Queen, a former member of the London Assembly). All 47 of the cases above which don't have name information also do not have identifier information
+anti_join(persons, identifiers_wide, by = "id") |> nrow()
+
+# This is the cleaned flat dataset with identifiers and names information
+persons_wide <- persons |> 
+  select(-identifiers, -other_names) |>
+  left_join(identifiers_wide, by = "id") |>
+  left_join(person_names, by = "id")
+
+##----parlparselengthofservice----
+
+memberships_subset <- memberships %>%
+  inner_join(MP_posts |> select(-start_date, -end_date), by = "post_id") |>
+  select(person_id, start_date, end_date, post_id)
+
+# write.csv(memberships_subset, "memberships.csv", row.names = FALSE)
+# memberships <- read.csv("memberships.csv", stringsAsFactors = FALSE)
+
+# Convert end_date to Date if not already
+memberships_subset <- memberships_subset %>%
+  # filter(!organization_id %in% c("crown", "house-of-lords", "london-assembly")) |>
+  mutate(
+    start_date = ymd(start_date),
+    end_date = ymd(end_date)
+  )
+
+# Define the target window
+window_start <- ymd("2017-06-09")
+window_end <- ymd("2019-07-01")
+
+# Step 1: Filter MPs whose membership overlaps with that window
+memberships_window <- memberships_subset %>%
+  filter(start_date <= window_end & end_date >= window_start)
+
+# Step 2: Get the full membership records for those MPs
+relevant_mps <- memberships_subset %>%
+  filter(person_id %in% memberships_window$person_id) |>
+  left_join(MP_posts |> select(constituency_name, post_id))
+
+
+# Step 3: Get the minimum start_date for each of those MPs
+mps_min_start <- relevant_mps %>%
+  group_by(person_id) %>%
+  summarise(first_start = min(start_date, na.rm = TRUE)) %>%
+  ungroup() 
+
+# Step 4: Link to constituency names (with same names as in the BES data)
+# posts data has the same constituency names as the BES except for a minor difference for Carmarthen West and Pembrokshire South
+# However, there are duplicate entries in posts for MP who change parties or became independent - we want one link to constituency for each MP
+mps_min_start <- mps_min_start|>
+  left_join(memberships_window |> select(person_id, post_id)) |>
+  left_join(MP_posts |> select(post_id, constituency_name)) |>
+  select(-post_id) |>
+  group_by(person_id, first_start, constituency_name) |>
+  summarise() |>
+  ungroup() |>
+  mutate(ConstituencyName = case_when(
+    constituency_name == "Carmarthen West and South Pembrokeshire" ~ "Carmarthen West and Pembrokeshire South",
+    TRUE ~ constituency_name
+  )) |>
+  left_join(person_names |> select(id, family_name, given_name), by = c("person_id"="id"))
+
+# mps_min_start|>
+#   left_join(person_names |> select(id, family_name, given_name), by = c("person_id"="id")) |> 
+#   arrange(first_start)
+# 
+# con_matches <- mps_min_start$constituency_name[!mps_min_start$constituency_name %in% bes17.dat$ConstituencyName]
+# con_matches <- bes17.dat$ConstituencyName[!bes17.dat$ConstituencyName %in% mps_min_start$constituency_name]
+
+##----parlparsefrontbench----
+
+# 1) Download ministerial roles (2010–present)
+min_json <- "https://raw.githubusercontent.com/mysociety/parlparse/master/members/ministers-2010.json"
+ministers <- fromJSON(min_json, flatten = TRUE)
+
+# 2) Converting to tibbles
+roles <- ministers$memberships |> as_tibble()
+
+# 3) Clean IDs and dates
+roles <- roles %>%
+  transmute(
+    # person_id = str_extract(person_id, "\\d+"),
+    person_id = person_id,
+    role = role,
+    start_date = as.Date(start_date),
+    end_date   = as.Date(ifelse(is.na(end_date) | end_date == "", "9999-12-31", end_date))
+  )
+
+# 4) Experiment window
+window_start <- as.Date("2018-11-14")
+window_end   <- as.Date("2019-07-03")
+
+# 5) Define “minister or shadow minister”
+pattern <- regex("Secretary|Minister|Shadow", ignore_case = TRUE)
+
+# 6) Filter to matching roles that overlap the window
+frontbenchers <- roles %>%
+  filter(
+    !is.na(start_date),
+    str_detect(role, pattern),
+    start_date <= window_end,
+    end_date >= window_start
+  ) 
+
+# 6) Count unique MPs
+n_ministers <- n_distinct(frontbenchers$person_id)
+n_ministers
+
+mps_min_start_frontbench <- mps_min_start |>
+  mutate(frontbench = person_id %in% frontbenchers$person_id
+  )
+bes17.dat <- bes17.dat |>
+  left_join(mps_min_start_frontbench |> 
+              rename(mp_first_start = first_start), by = "ConstituencyName")
 ##----process-local-data----
 
 new.anon <- new.anon %>%
@@ -453,6 +625,8 @@ bes17.dat_small <- bes17.dat|>
                 leaveHanretty,
                 Majority17,
                 c11Degree,
+                mp_first_start,
+                frontbench,
                 in_experiment,
                 in_experimentn,
                 Region)
