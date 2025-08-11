@@ -29,10 +29,7 @@ bes.dat<-read.csv(file.path(a.path, "BES-2015-General-Election-results-file-v2.2
 bes17.dat<-haven::read_sav(paste0(d.path, "/BA_MP_Experiment/data sources/BES-2017-General-Election-results-file-v1.0.sav"))
 
 ##----parlparsedata----
-
-con_url <- "https://raw.githubusercontent.com/mysociety/parlparse/refs/heads/master/people/constituencies.json"
-#people_list <- fromJSON(url, simplifyVector = FALSE)
-con_list <- fromJSON(con_url)
+library(jsonlite)
 
 # Load people JSON
 people_url <- "https://raw.githubusercontent.com/mysociety/parlparse/refs/heads/master/members/people.json"
@@ -87,13 +84,9 @@ person_names <- persons |>
 ## NOTE: there seem to be 47 person records that have no associated names, not sure what/whom these records refer to 
 anti_join(persons, person_names, by = "id") |> nrow()
 
-## NOTE: there are also 65 cases that don't have any identifiers (65 cases of 14629 total), and these will be dropped by this code - likely this doesn't apply to any recent MPs - a quick check of five cases of those dropped by this procedure suggests that these are generally people who have not been MPs (e.g. The Queen, a former member of the London Assembly). All 47 of the cases above which don't have name information also do not have identifier information
-anti_join(persons, identifiers_wide, by = "id") |> nrow()
-
 # This is the cleaned flat dataset with identifiers and names information
 persons_wide <- persons |> 
   select(-identifiers, -other_names) |>
-  left_join(identifiers_wide, by = "id") |>
   left_join(person_names, by = "id")
 
 ##----parlparselengthofservice----
@@ -105,17 +98,29 @@ memberships_subset <- memberships %>%
 # write.csv(memberships_subset, "memberships.csv", row.names = FALSE)
 # memberships <- read.csv("memberships.csv", stringsAsFactors = FALSE)
 
-# Convert end_date to Date if not already
-memberships_subset <- memberships_subset %>%
-  # filter(!organization_id %in% c("crown", "house-of-lords", "london-assembly")) |>
-  mutate(
-    start_date = ymd(start_date),
-    end_date = ymd(end_date)
-  )
-
 # Define the target window
 window_start <- ymd("2017-06-09")
 window_end <- ymd("2019-07-01")
+
+# Convert end_date to Date if not already
+# Filter to only service prior to the experiment
+# Remove cases where start date is after the end of the experiment
+# If end date is after the end of the experiment then make end_date the end of the experiment
+memberships_subset <- memberships_subset %>%
+  mutate(
+    start_date = ymd(start_date),
+    end_date = ymd(end_date)
+  ) |>
+  filter(start_date < window_end) |>
+  mutate(
+    if_else(
+      end_date > window_end,
+      window_end,
+      end_date
+    )
+  )
+
+
 
 # Step 1: Filter MPs whose membership overlaps with that window
 memberships_window <- memberships_subset %>%
@@ -124,30 +129,37 @@ memberships_window <- memberships_subset %>%
 # Step 2: Get the full membership records for those MPs
 relevant_mps <- memberships_subset %>%
   filter(person_id %in% memberships_window$person_id) |>
-  left_join(MP_posts |> select(constituency_name, post_id))
+  left_join(MP_posts |> dplyr::select(constituency_name, post_id)) |>
+  mutate(service_duration = time_length(interval(start_date, end_date), "years"))
 
 
 # Step 3: Get the minimum start_date for each of those MPs
+
 mps_min_start <- relevant_mps %>%
   group_by(person_id) %>%
   summarise(first_start = min(start_date, na.rm = TRUE)) %>%
+  ungroup() 
+mps_min_start <- relevant_mps %>%
+  group_by(person_id) %>%
+  summarise(first_start = min(start_date, na.rm = TRUE),
+            service_duration = sum(service_duration)/10) %>%
   ungroup() 
 
 # Step 4: Link to constituency names (with same names as in the BES data)
 # posts data has the same constituency names as the BES except for a minor difference for Carmarthen West and Pembrokshire South
 # However, there are duplicate entries in posts for MP who change parties or became independent - we want one link to constituency for each MP
 mps_min_start <- mps_min_start|>
-  left_join(memberships_window |> select(person_id, post_id)) |>
-  left_join(MP_posts |> select(post_id, constituency_name)) |>
-  select(-post_id) |>
-  group_by(person_id, first_start, constituency_name) |>
+  left_join(memberships_window |> dplyr::select(person_id, post_id)) |>
+  left_join(MP_posts |> dplyr::select(post_id, constituency_name)) |>
+  dplyr::select(-post_id) |>
+  group_by(person_id, first_start, service_duration, constituency_name) |>
   summarise() |>
   ungroup() |>
   mutate(ConstituencyName = case_when(
     constituency_name == "Carmarthen West and South Pembrokeshire" ~ "Carmarthen West and Pembrokeshire South",
     TRUE ~ constituency_name
   )) |>
-  left_join(person_names |> select(id, family_name, given_name), by = c("person_id"="id"))
+  left_join(person_names |> dplyr::select(id, family_name, given_name), by = c("person_id"="id"))
 
 # mps_min_start|>
 #   left_join(person_names |> select(id, family_name, given_name), by = c("person_id"="id")) |> 
@@ -155,6 +167,7 @@ mps_min_start <- mps_min_start|>
 # 
 # con_matches <- mps_min_start$constituency_name[!mps_min_start$constituency_name %in% bes17.dat$ConstituencyName]
 # con_matches <- bes17.dat$ConstituencyName[!bes17.dat$ConstituencyName %in% mps_min_start$constituency_name]
+con_missing <- bes17.dat$ConstituencyName[!bes17.dat$ConstituencyName %in% mps_min_start$ConstituencyName]
 
 ##----parlparsefrontbench----
 
@@ -626,6 +639,7 @@ bes17.dat_small <- bes17.dat|>
                 Majority17,
                 c11Degree,
                 mp_first_start,
+                service_duration,
                 frontbench,
                 in_experiment,
                 in_experimentn,
