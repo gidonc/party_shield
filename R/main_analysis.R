@@ -202,9 +202,9 @@ reg_table_3
 
 overall <- bes17.dat %>% 
   summarise(
-    "Lab MP" = scales::percent(mean(Winner17==2), accuracy = .1),
-    "Con MP" = scales::percent(mean(Winner17==1), accuracy = .1),
-    "Oth MP" = scales::percent(mean(!Winner17 %in% c(1,2)), accuracy = .1),
+    "Lab MP" = scales::percent(mean(Winner17=="Labour"), accuracy = .1),
+    "Con MP" = scales::percent(mean(Winner17=="Conservative"), accuracy = .1),
+    "Oth MP" = scales::percent(mean(!Winner17 %in% c("Labour","Conservative")), accuracy = .1),
     "Frontbench" = scales::percent(mean(frontbench), accuracy = .1),
     "Av.leave" = scales::percent(mean(leaveHanretty)/100, accuracy = .1),
     "Av.majority" = scales::percent(mean(Majority17)/100, accuracy = .1),
@@ -218,9 +218,9 @@ overall <- bes17.dat %>%
 treats <- bes17.dat %>% 
   group_by(in_experiment) %>%
   summarise(
-    "Lab MP" = scales::percent(mean(Winner17==2), accuracy = .1),
-    "Con MP" = scales::percent(mean(Winner17==1), accuracy = .1),
-    "Oth MP" = scales::percent(mean(!Winner17 %in% c(1,2)), accuracy = .1),
+    "Lab MP" = scales::percent(mean(Winner17=="Labour"), accuracy = .1),
+    "Con MP" = scales::percent(mean(Winner17=="Conservative"), accuracy = .1),
+    "Oth MP" = scales::percent(mean(!Winner17 %in% c("Labour","Conservative")), accuracy = .1),
     "Frontbench" = scales::percent(mean(frontbench), accuracy = .1),
     "Av.leave" = scales::percent(mean(leaveHanretty)/100, accuracy = .1),
     "Av.majority" = scales::percent(mean(Majority17)/100, accuracy = .1),
@@ -248,10 +248,10 @@ ggbmps <- bes17.dat %>%
   haven::as_factor() %>%
   mutate(in_experimentn="GB MPs") %>%
   mutate(n_condition=n()) %>%
-  group_by(Region, n_condition, in_experimentn) %>%
+  group_by(RegionNo, Region, n_condition, in_experimentn) %>%
   tally() %>%
   mutate(prop =scales::percent(n/n_condition)) %>%
-  dplyr::select(-n_condition, -n) %>%
+  dplyr::select(-n_condition, -n, -RegionNo) %>%
   pivot_wider(names_from=in_experimentn, values_from=prop, values_fill = "0%") 
 
 gtreats <- bes17.dat %>%
@@ -259,10 +259,10 @@ gtreats <- bes17.dat %>%
   haven::as_factor() %>%
   group_by(in_experimentn) %>%
   mutate(n_condition=n()) %>%
-  group_by(in_experimentn, Region, n_condition) %>%
+  group_by(in_experimentn, RegionNo, Region, n_condition) %>%
   tally() %>%
   mutate(prop =scales::percent(n/n_condition)) %>%
-  dplyr::select(-n_condition, -n) %>%
+  dplyr::select(-n_condition, -n, -RegionNo) %>%
   pivot_wider(names_from=in_experimentn, values_from=prop, values_fill = "0%") 
 
 
