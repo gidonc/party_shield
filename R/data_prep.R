@@ -643,7 +643,12 @@ bes17.dat_small <- bes17.dat|>
                 frontbench,
                 in_experiment,
                 in_experimentn,
-                Region)
+                Region) |>
+  as_factor() |>
+  mutate(
+    RegionNo = as.numeric(Region),
+    Region = as.factor(Region)
+  )
 
 write_csv(bes17.dat_small, 
           file = file.path(data_dir, "bes17.dat_small.csv"))
