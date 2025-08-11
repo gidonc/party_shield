@@ -206,9 +206,11 @@ overall <- bes17.dat %>%
     "Lab MP" = scales::percent(mean(Winner17==2), accuracy = .1),
     "Con MP" = scales::percent(mean(Winner17==1), accuracy = .1),
     "Oth MP" = scales::percent(mean(!Winner17 %in% c(1,2)), accuracy = .1),
+    "Frontbench" = scales::percent(mean(frontbench), accuracy = .1),
     "Av.leave" = scales::percent(mean(leaveHanretty)/100, accuracy = .1),
     "Av.majority" = scales::percent(mean(Majority17)/100, accuracy = .1),
-    "Av.degree" = scales::percent(mean(c11Degree, na.rm=TRUE)/100, accuracy =.1)
+    "Av.degree" = scales::percent(mean(c11Degree, na.rm=TRUE)/100, accuracy =.1),
+    "Service (years)" =mean(service_duration*10)
   ) %>%
   mutate(in_experiment = "GB MPs")
 
@@ -218,9 +220,11 @@ treats <- bes17.dat %>%
     "Lab MP" = scales::percent(mean(Winner17==2), accuracy = .1),
     "Con MP" = scales::percent(mean(Winner17==1), accuracy = .1),
     "Oth MP" = scales::percent(mean(!Winner17 %in% c(1,2)), accuracy = .1),
+    "Frontbench" = scales::percent(mean(frontbench), accuracy = .1),
     "Av.leave" = scales::percent(mean(leaveHanretty)/100, accuracy = .1),
     "Av.majority" = scales::percent(mean(Majority17)/100, accuracy = .1),
-    "Av.degree" = scales::percent(mean(c11Degree, na.rm=TRUE)/100, accuracy =.1)
+    "Av.degree" = scales::percent(mean(c11Degree, na.rm=TRUE)/100, accuracy =.1),
+    "Service (years)" =mean(service_duration*10)
   ) %>%
   filter(in_experiment=="Included (letters sent)") 
 
