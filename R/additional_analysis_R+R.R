@@ -4,6 +4,7 @@ library(tidyverse)
 library(huxtable)
 library(kableExtra)
 library(arm)
+library(estimatr)
 
 ##----autoresponse-descriptives----
 
@@ -105,7 +106,6 @@ main2 <- main |>
            TRUE ~ "MP not Conservative"
          ),
          mp_duration = interval(lubridate::ymd("2019-07-3"), mp_first_start)%/% years(10),
-         `MP service (decades)` = mp_duration
          
   ) |>
   mutate(has_resp = manualresponse_exists_inc_post_count_nonresponse) |>
@@ -127,13 +127,13 @@ mf1_sex <- lmer(has_resp ~ MPsex2 + (1|constituency), main2)
 mf1_margin <- lmer(has_resp ~ marginality_type + (1|constituency), main2)
 mf1_brexit <- lmer(has_resp ~ leave_cat2 + (1|constituency), main2)
 mf1_frontbench <- lmer(has_resp ~ frontbench + (1|constituency), main2)
-mf1_mp_duration <- lmer(has_resp ~ mp_duration + (1|constituency), main2)
-mf2 <- lmer(has_resp ~ win17_iscon + MPsex2 + leave_cat2 + marginality_type + frontbench + mp_duration + (1|constituency), main2)
+mf1_mp_duration <- lmer(has_resp ~ service_duration + (1|constituency), main2)
+mf2 <- lmer(has_resp ~ win17_iscon + MPsex2 + leave_cat2 + marginality_type + frontbench + service_duration + (1|constituency), main2)
 
 ##----descriptive-response-results-plot-----
 the_models <- c(mf1_pty, mf1_sex, mf1_margin, mf1_brexit,mf1_frontbench, mf1_mp_duration, mf2)
 mod_labels <- sjlabelled::term_labels(the_models)
-mod_labels["mp_duration"] <- "Decades since MP first elected"
+mod_labels["service_duration"] <- "MP service (decades)"
 mod_labels["win17_isconMP not Conservative"] <- "MP is not Conservative"
 mod_labels["frontbenchTRUE"] <- "Frontbench MP"
 sjPlot::plot_models(the_models, 
