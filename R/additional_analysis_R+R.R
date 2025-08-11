@@ -101,9 +101,11 @@ main2 <- main |>
          retired = c11Age65to74+c11Age75to84+c11Age85to89+c11Age90plus,
          children = c11Age0to4 + c11Age5to7+c11Age8to9+c11Age10to14+c11Age15+c11Age16to17,
          win17_iscon = case_when(
-           win17 == "Conservative" ~ "Conservative",
-           TRUE ~ "Not Conservative"
-         )
+           win17 == "Conservative" ~ "MP Conservative",
+           TRUE ~ "MP not Conservative"
+         ),
+         mp_duration = interval(lubridate::ymd("2019-07-3"), mp_first_start)%/% years(10),
+         `MP service (decades)` = mp_duration
          
   ) |>
   mutate(has_resp = manualresponse_exists_inc_post_count_nonresponse) |>
@@ -124,13 +126,20 @@ mf1_pty <- lmer(has_resp ~ win17_iscon + (1|constituency), main2)
 mf1_sex <- lmer(has_resp ~ MPsex2 + (1|constituency), main2)
 mf1_margin <- lmer(has_resp ~ marginality_type + (1|constituency), main2)
 mf1_brexit <- lmer(has_resp ~ leave_cat2 + (1|constituency), main2)
-mf2 <- lmer(has_resp ~ win17_iscon + MPsex2 + leave_cat2 + marginality_type + (1|constituency), main2)
+mf1_frontbench <- lmer(has_resp ~ frontbench + (1|constituency), main2)
+mf1_mp_duration <- lmer(has_resp ~ mp_duration + (1|constituency), main2)
+mf2 <- lmer(has_resp ~ win17_iscon + MPsex2 + leave_cat2 + marginality_type + frontbench + mp_duration + (1|constituency), main2)
 
 ##----descriptive-response-results-plot-----
-
-sjPlot::plot_models(mf1_pty, mf1_sex, mf1_margin, mf1_brexit,mf2, 
-                    m.labels = c("Party only", "Sex only", "Marginality only","Brexit vote only", "Full model"),
+the_models <- c(mf1_pty, mf1_sex, mf1_margin, mf1_brexit,mf1_frontbench, mf1_mp_duration, mf2)
+mod_labels <- sjlabelled::term_labels(the_models)
+mod_labels["mp_duration"] <- "Decades since MP first elected"
+mod_labels["win17_isconMP not Conservative"] <- "MP is not Conservative"
+mod_labels["frontbenchTRUE"] <- "Frontbench MP"
+sjPlot::plot_models(the_models, 
+                    m.labels = c("Party only", "Gender only", "Marginality only","Brexit vote only", "Frontbench only", "MP duration only","Full model"),
                     prefix.labels = "none",
+                    axis.labels = mod_labels,
                     legend.title = "Independent variables") +
   theme_bw() +
   geom_hline(yintercept=0, colour="black", linetype="solid")
