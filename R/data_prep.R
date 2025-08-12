@@ -57,7 +57,7 @@ MP_posts <- posts |>
 # Date of experiment 14-11-2018 to 3-7-2019
 
 person_names <- persons |>
-  select(id, other_names) |>
+  dplyr::select(id, other_names) |>
   unnest(other_names) |>
   mutate(init_name_order = row_number()) |>
   ungroup() |>
@@ -79,18 +79,18 @@ person_names <- persons |>
   slice(1)
 
 ## NOTE: there seem to be 47 person records that have no associated names, not sure what/whom these records refer to 
-anti_join(persons, person_names, by = "id") |> nrow()
+# anti_join(persons, person_names, by = "id") |> nrow()
 
 # This is the cleaned flat dataset with identifiers and names information
 persons_wide <- persons |> 
-  select(-identifiers, -other_names) |>
+  dplyr::select(-identifiers, -other_names) |>
   left_join(person_names, by = "id")
 
 # parlparselengthofservice
 
 memberships_subset <- memberships %>%
-  inner_join(MP_posts |> select(-start_date, -end_date), by = "post_id") |>
-  select(person_id, start_date, end_date, post_id)
+  inner_join(MP_posts |> dplyr::select(-start_date, -end_date), by = "post_id") |>
+  dplyr::select(person_id, start_date, end_date, post_id)
 
 # write.csv(memberships_subset, "memberships.csv", row.names = FALSE)
 # memberships <- read.csv("memberships.csv", stringsAsFactors = FALSE)
@@ -101,14 +101,14 @@ window_end <- ymd("2019-07-01")
 
 # Convert end_date to Date if not already
 # Filter to only service prior to the experiment
-# Remove cases where start date is after the end of the experiment
+# Remove cases where start date is after the start of the experiment (we do not use the end of the experiment because there were three by-elections during the experiment in Lewisham East, Newport West and Peterborough, none of those constituencies is in our study - but for the balance tables we need to compare just one MP from each of those constituencies)
 # If end date is after the end of the experiment then make end_date the end of the experiment
 memberships_subset <- memberships_subset %>%
   mutate(
     start_date = ymd(start_date),
     end_date = ymd(end_date)
   ) |>
-  filter(start_date < window_end) |>
+  filter(start_date <= window_start) |>
   mutate(
     if_else(
       end_date > window_end,
