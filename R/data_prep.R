@@ -48,9 +48,6 @@ MP_posts <- posts |>
   unnest_wider(area) |>
   rename(post_id = id,
          constituency_name = name)
- 
-##----parlparsepersonnames----
-
 
 # Cleaning the person names data - which is another of the nested columns in the persons tibble
 # We probably want one name per person - rather than all their names - but not sure which name to select - probably a name with the following as priority in order:
@@ -89,7 +86,7 @@ persons_wide <- persons |>
   select(-identifiers, -other_names) |>
   left_join(person_names, by = "id")
 
-##----parlparselengthofservice----
+# parlparselengthofservice
 
 memberships_subset <- memberships %>%
   inner_join(MP_posts |> select(-start_date, -end_date), by = "post_id") |>
@@ -169,7 +166,7 @@ mps_min_start <- mps_min_start|>
 # con_matches <- bes17.dat$ConstituencyName[!bes17.dat$ConstituencyName %in% mps_min_start$constituency_name]
 con_missing <- bes17.dat$ConstituencyName[!bes17.dat$ConstituencyName %in% mps_min_start$ConstituencyName]
 
-##----parlparsefrontbench----
+# parlparsefrontbench
 
 # 1) Download ministerial roles (2010–present)
 min_json <- "https://raw.githubusercontent.com/mysociety/parlparse/master/members/ministers-2010.json"
@@ -214,6 +211,7 @@ mps_min_start_frontbench <- mps_min_start |>
 bes17.dat <- bes17.dat |>
   left_join(mps_min_start_frontbench |> 
               rename(mp_first_start = first_start), by = "ConstituencyName")
+
 ##----process-local-data----
 
 new.anon <- new.anon %>%
