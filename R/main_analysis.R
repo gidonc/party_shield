@@ -228,10 +228,10 @@ treats <- bes17.dat %>%
     "Service (years)" =as.character(round(mean(service_duration*10), 1))
   ) %>%
   filter(in_experiment=="Included (letters sent)") |>
-  pivot_longer(cols = -in_experiment, values_to = "Included (letters sent)") |>
+  pivot_longer(cols = -in_experiment, values_to = "Sample") |>
   dplyr::select(-in_experiment)
 
-left_join(overall, treats) |>
+left_join(treats, overall) |>
   dplyr::rename(" "=name) |>
   huxtable()  |>
   set_bold(row = 1, col = everywhere) %>% 
@@ -263,7 +263,8 @@ gtreats <- bes17.dat %>%
   tally() %>%
   mutate(prop =scales::percent(n/n_condition)) %>%
   dplyr::select(-n_condition, -n, -RegionNo) %>%
-  pivot_wider(names_from=in_experimentn, values_from=prop, values_fill = "0%") 
+  pivot_wider(names_from=in_experimentn, values_from=prop, values_fill = "0%") |>
+  dplyr::rename(Sample = Included)
 
 
 ## ----regional-distribution-table----
@@ -271,7 +272,7 @@ gtreats <- bes17.dat %>%
 
 gtreats %>%
   ungroup() %>%
-  dplyr::select(c("Region", "Included")) %>%
+  dplyr::select(c("Region", "Sample")) %>%
   left_join(ggbmps %>%
               ungroup() %>%
               dplyr::select(c("Region", "GB MPs")), 
