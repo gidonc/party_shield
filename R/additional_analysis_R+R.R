@@ -114,12 +114,6 @@ main2 <- main |>
     n_letters = n()
   )
 
-
-# could do with data for:
-# MP Localness based on place of birth (log(distance) of place of birth from the constituency) - Bolet and Campbell find that localness is not generally related to responsiveness, but there is a significant interaction of localness and partisanship (at the .1 level)
-# Rural/Urban
-# Further MP characteristics: MP seniority
-
 ##----descriptive-response-analysis-----
 
 mf1_pty <- lmer(has_resp ~ win17_iscon + (1|constituency), main2)
@@ -142,6 +136,7 @@ sjPlot::plot_models(the_models,
                     axis.labels = mod_labels,
                     legend.title = "Independent variables") +
   theme_bw() +
+  theme(legend.position = "bottom") +
   geom_hline(yintercept=0, colour="black", linetype="solid")
 
 
@@ -151,7 +146,9 @@ mf1_pty_cont <- lmer(has_resp ~ win17 + (1|constituency), main2)
 mf1_sex_cont <- lmer(has_resp ~ MPsex2 + (1|constituency), main2)
 mf1_margin_cont <- lmer(has_resp ~ majorityprop + (1|constituency), main2)
 mf1_brexit_cont <- lmer(has_resp ~ leaveHanrettyprop + (1|constituency), main2)
-mf2_cont <- lmer(has_resp ~ win17 + MPsex2 + leaveHanrettyprop + majorityprop + (1|constituency), main2)
+mf1_frontbench <- lmer(has_resp ~ frontbench + (1|constituency), main2)
+mf1_mp_duration <- lmer(has_resp ~ service_duration + (1|constituency), main2)
+mf2_cont <- lmer(has_resp ~ win17 + MPsex2 + leaveHanrettyprop + majorityprop + frontbench + service_duration + (1|constituency), main2)
 
 ##----descriptive-response-results-cont-plot-----
 
