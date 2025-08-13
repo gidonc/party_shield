@@ -37,7 +37,7 @@ library(kableExtra)
 main_description <- tibble::tribble(
   ~variable_name, ~description,
   "id", "id (identifying letter sent to MP)",
-  "const_anon_id", "id for constituency",
+  "const_anon_id", "id for constituency (this is a non-standard id number from a random number generator).",
   "response_auto_and_manual", "Response received by email (including autoresponses and substantive responses)",
   "manualresponse_exists_inc_post_count_nonresponse", "Substantive response received either by email or post or both (all non-responses are coded as zero even if no confirmation of non-response was received from constituent).",
     "manualresponse_exists", "Substantive response received by email",
@@ -74,9 +74,13 @@ bes17_description <- tibble::tribble(
   "leaveHanretty", "Estimate vote for leave in the 2016 Referendum",
   "Majority17", "Majority for the winning party (percent) in 2017.",
   "c11Degree", "Proportion of the population with a degree level qualification in 2011 census.",
+  "mp_first_start", "Year when the MP for the seat was first elected to the House of Commons according to ParlParse data. MP is taken as the member in post at the start of the experiment (November 2018)",
+  "service_duration", "Length of time the MP for the seat has served in the House of Commons (in decades) according to ParlParse data. . MP is taken as the member in post at the start of the experiment (November 2018)",
+  "frontbench", "Was the MP was a minister or shadow minister during the period when we ran our experiment (November 2018-July 2019 according to ParlParse data.",
+  "in_experiment", "Is constituency in the experiment (categories: Included (letters sent), Excluded (no letters))",
+  "in_experimentn", "Is constituency in the experiment (categories: Included, Excluded)",
   "Region", "Government Office Region",
-  "in_experiment", "Is constituency in the experiement (categories: Included (letters sent), Excluded (no letters))",
-  "in_experimentn", "Is constituency in the experiment (categories: Included, Excluded)"
+  "RegionNo", "Government Office Region (numeric)"
 )
 
 kbl(bes17_description,
