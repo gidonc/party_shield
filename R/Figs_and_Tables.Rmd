@@ -71,6 +71,7 @@ kbl(main_description,
 bes17_description <- tibble::tribble(
   ~variable_name, ~description,
   "Winner17", "Which party won the seat in the 2017 General Election.",
+  "MPsex2", "Gender of the winner of the seat in the 2017 General Election.",
   "leaveHanretty", "Estimate vote for leave in the 2016 Referendum",
   "Majority17", "Majority for the winning party (percent) in 2017.",
   "c11Degree", "Proportion of the population with a degree level qualification in 2011 census.",

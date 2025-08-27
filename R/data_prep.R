@@ -527,7 +527,30 @@ main <- main %>%
 
 bes17.dat <- bes17.dat %>% 
   mutate(in_experimentn = ifelse(ONSConstID %in% main$constituency, "Included", "Excluded"))%>%
-  mutate(in_experiment = ifelse(ONSConstID %in% main$constituency, "Included (letters sent)", "Excluded (no letters)"))
+  mutate(in_experiment = ifelse(ONSConstID %in% main$constituency, "Included (letters sent)", "Excluded (no letters)"),
+         win17 = as_factor(Winner17),
+         MPsexn = case_when(
+           win17 == "Conservative" ~ ConPPCsex17,
+           win17 == "Labour" ~ LabPPCsex17,
+           win17 == "Liberal Democrat" ~ LDPPCsex17,
+           win17 == "Scottish National Party" ~ SNPPPCsex17,
+           win17 == "Plaid Cymru" ~ PCPPCsex17,
+           win17 == "UKIP" ~ UKIPPPCsex17,
+           win17 == "Green" ~ GreenPPCsex17,
+           win17 == "Speaker" ~ 0
+         ),
+         MPsex = case_when(
+           MPsexn == 0 ~ "Man",
+           MPsexn == 1 ~ "Woman"
+          ),
+         MPsex2 = factor(
+           case_when(
+             MPsex == "Woman" ~ "Female MP",
+             MPsex == "Man" ~ "Male MP",
+             TRUE ~ "check this"
+             )
+           )
+         )
 
 # bes17.dat %>% 
 #   group_by(in_experiment) %>%
@@ -633,6 +656,7 @@ write_csv(main_small,
 
 bes17.dat_small <- bes17.dat|>
   dplyr::select(Winner17,
+                MPsex2,
                 leaveHanretty,
                 Majority17,
                 c11Degree,
