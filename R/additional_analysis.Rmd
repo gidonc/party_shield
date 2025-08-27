@@ -3,6 +3,7 @@ title: 'Using the party as a shield: additional analyses'
 output: 
     bookdown::pdf_document2:
       toc: false
+      keep_tex: true
 date: "`r Sys.Date()`"
 ---
 
@@ -61,7 +62,7 @@ Gender of MP
 
 Seniority of MP
 
-# Exploratory Non-response Analysis
+# Exploratory Analysis of MP Responsiveness{#explore-response}
 
 ```{r descriptive-responsiveness-analysis-setup}
 
@@ -81,20 +82,48 @@ Seniority of MP
 
 ```
 
-```{r descriptive-response-results-cont-plot, fig.cap="Coefficient plot of linear probability model using some continuous categorical variables, where the dependent variable is whether the letter has a response by either email or post (1) or no recorded response by either email or post (0). The plot includes coeffiecients from models with each potential dependent variable entered separately, and a full model with all potential dependent variables entered together. All models include MP random effects."}
+```{r descriptive-response-results-cont-plot, fig.cap="Coefficient plot of linear probability model using some continuous categorical variables, where the dependent variable is whether the letter has a response by either email or post (1) or no recorded response by either email or post (0). The plot includes coeffiecients from models with each potential dependent variable entered separately, and a full model with all potential dependent variables entered together. All models include MP random effects.", eval=FALSE}
 
 ```
 
-Reviewer 4 says that it might be fun/interesting to examine whether response rate to letters to MPs are associated with things like: MP gender, MP seniority, marginaltiy, est. Brexit Referendum Vote, Party, length of MP service, MP seniority (backbench v frontbench MPs)
+<!-- Reviewer 4 says that it might be fun/interesting to examine whether response rate to letters to MPs are associated with things like: MP gender, MP seniority, marginaltiy, est. Brexit Referendum Vote, Party, length of MP service, MP seniority (backbench v frontbench MPs) -->
 
-We have some data which could be used to answer some of these questions from the BES data (party, gender, marginality, Brexit Referendum vote), it would be good to supplement this with the data on length of MP service, MP frontbench v backbench.
+<!-- We have some data which could be used to answer some of these questions from the BES data (party, gender, marginality, Brexit Referendum vote), it would be good to supplement this with the data on length of MP service, MP frontbench v backbench. -->
 
-We could examine the association between whether the MP responds or not to our letter in a model with MP random effects. For some variables we have to decide whether to use either use categorical or continuous versions of those variables (e.g. to make identification of the constituencies involved harder - but see discussion below). 
-
-For example we could use a binary version of the party variable: e.g. Conservative v all other parties, use `cut_number` to create categories of the estimated Brexit vote in the constituency. We could also use use a categorical measure of marginality (following the discussion of marginality in the [House of Commons Library insight on paper on marginality](https://commonslibrary.parliament.uk/2024-general-election-marginality/) we could consider constituencies where the result was not very close alongside three categories of marginal, where the winning margin was less than 10%, where the winning margin was less than 5% and where the winning margin was less than 2%).   
+<!-- We could examine the association between whether the MP responds or not to our letter in a model with MP random effects. For some variables we have to decide whether to use either use categorical or continuous versions of those variables (e.g. to make identification of the constituencies involved harder - but see discussion below).  -->
 
 
-The results of some preliminary analysis using categorical versions of variables is shown in Figure \@ref(fig:descriptive-response-results-plot) and a similar analysis using continuous versions of the variables is shown in Figure \@ref(fig:descriptive-response-results-cont-plot). In both cases the results suggest that there is not much relationship between MP response rates and either constituency marginality or with the party of the MP, but that there is an association between response rates and the level of support for leave in the EU referendum.
+<!-- The results of some preliminary analysis using categorical versions of variables is shown in Figure \@ref(fig:descriptive-response-results-plot) and a similar analysis using continuous versions of the variables is shown in Figure \@ref(fig:descriptive-response-results-cont-plot). In both cases the results suggest that there is not much relationship between MP response rates and either constituency marginality or with the party of the MP, but that there is an association between response rates and the level of support for leave in the EU referendum. -->
+
+To help understand our null results we provide a exploratory and speculative analysis of how response rates vary across MPs and constituencies, examining whether response rates are associated with MP and constituency characteristics. One relevant question is whether cross-constituency MP responsiveness varies in ways which might be expected given an assumption that responsiveness varies according to strategic considerations. We examine the following MP characteristics: 
+
+*  MP party: comparing Conservative Party MP as the base line to all other parties MPs (BES constituency file).
+*  MP gender: with female MPs as the baseline category (BES constituency file).
+*  MP seniority: comparing frontbench MPs to backbench MPs as the baseline category. We use parlparse data to identify MP who held Ministerial or Shadow Ministerial positions at any point during the period of our study.
+*  MP length of service: number of decades MP has served in the House of Commons. We use parlparse data to identify the number of decades of service given by MPs who represented a constituency to the outset of our study.
+
+We also examine the following constituency characteristics:
+
+*  Winning party majority in 2017 General Election, with four categories where the majority is: above 10% (baseline), 5-10%, 2-5% and below 2% (BES constituency file).
+*  Estimated 2016 referendum vote in the constituency (Hanretty estimates from the BES constituency file).
+
+
+<!-- For example we could use a binary version of the party variable: e.g. Conservative v all other parties, use `cut_number` to create categories of the estimated Brexit vote in the constituency. We could also use use a categorical measure of marginality (following the discussion of marginality in the [House of Commons Library insight on paper on marginality](https://commonslibrary.parliament.uk/2024-general-election-marginality/) we could consider constituencies where the result was not very close alongside three categories of marginal, where the winning margin was less than 10%, where the winning margin was less than 5% and where the winning margin was less than 2%).    -->
+
+We examine the association between MP responsiveness and these variables using a linear probability model with MP random effects. We run models where each independent variable is entered separately, and a full model where all the independent variable are entered together. The results of these models are shown in Figure \@ref(fig:descriptive-response-results-plot). 
+
+We find mixed evidence on the question of whether strategic considerations drive MP responsiveness. We find some patterns which could suggest that differential responsiveness might be partly explained by variation in the importance of valence considerations. We find that MP responsiveness was significantly related to length of service, which may be because more newer MPs have more need to build a local reputation, with more established MPs having had more opportunity to already develop that. We also find that MP responsiveness was significantly higher among MP representing seats with the lowest estimated support for leaving the European Union in the 2016 referendum, which could potentially be because it is more important for MPs to establish their activity and competence in constituencies where national minority positions are in the majority. However, we do not find a clear association between the marginality of the results in the 2017 General Election and the MP responsiveness, none of the categories of marginal seat shows an significantly higher response rate than found in MPs in safe seats (the baseline category). Given that electoral incentives are more pronounced in more marginal seats, this provides some evidence against the idea that strategic electoral considerations play the major role in determining MP responsiveness to policy inquiries from constituents. We also did not find a relationship between party, gender or frontbench/backbench MPs and probability of an MP responding to a letter. 
+
+
+
+<!-- Many of our letters were about Brexit related issues, and we sent them in a period where parties had less yet to form a sufficiently clear policy on these issues.  -->
+
+
+
+<!--  However, we think that a lack of a party line would actually give MPs more room for manoeuvre to selectively blame their party for positions unpopular with a constituent. Furthermore, we were able to identify reasonably clear party leadership stances on the issues upon which constituents sent letters to MPs in the study.    -->
+
+
+<!-- and a similar analysis using continuous versions of the variables is shown in Figure \@ref(fig:descriptive-response-results-cont-plot).  -->
 
 
 ## Sharing the data for analysis has a high risk of revealing which MPs respond to letters

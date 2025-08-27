@@ -95,6 +95,11 @@ main2 <- main |>
            Majority17 < 10 ~ "Majority below 10%",
            TRUE ~ "Majority above 10%"
          )),
+         marginality_type = fct_relevel(marginality_type,
+                                        "1. Majority above 10%",
+                                        "Majority 5-10%",
+                                        "Majority 2-5%",
+                                        "Majority below 2%"),
          leave_cat = factor(cut_number(leaveHanretty, 5)),
          leave_cat2 = brexit_nice5_fn(leave_cat),
          leaveHanrettyprop = leaveHanretty/100,
@@ -128,15 +133,16 @@ mf2 <- lmer(has_resp ~ win17_iscon + MPsex2 + leave_cat2 + marginality_type + fr
 the_models <- c(mf1_pty, mf1_sex, mf1_margin, mf1_brexit,mf1_frontbench, mf1_mp_duration, mf2)
 mod_labels <- sjlabelled::term_labels(the_models)
 mod_labels["service_duration"] <- "MP service (decades)"
-mod_labels["win17_isconMP not Conservative"] <- "MP is not Conservative"
+mod_labels["win17_isconMP not Conservative"] <- "MP: not Conservative"
 mod_labels["frontbenchTRUE"] <- "Frontbench MP"
 sjPlot::plot_models(the_models, 
-                    m.labels = c("Party only", "Gender only", "Marginality only","Brexit vote only", "Frontbench only", "MP duration only","Full model"),
+                    m.labels = c("Pty only", "Gender only", "Marginality only","Brexit only", "F'bench only", "MP service only","Full model"),
                     prefix.labels = "none",
                     axis.labels = mod_labels,
-                    legend.title = "Independent variables") +
+                    legend.title = "Ind. vars") +
   theme_bw() +
-  theme(legend.position = "bottom") +
+  theme(legend.position = "bottom",
+        legend.title = element_text(size=10)) +
   geom_hline(yintercept=0, colour="black", linetype="solid")
 
 
