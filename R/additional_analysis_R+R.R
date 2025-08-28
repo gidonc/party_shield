@@ -5,6 +5,7 @@ library(huxtable)
 library(kableExtra)
 library(arm)
 library(estimatr)
+library(broom.mixed)
 
 ##----autoresponse-descriptives----
 
@@ -135,16 +136,82 @@ mod_labels <- sjlabelled::term_labels(the_models)
 mod_labels["service_duration"] <- "MP service (decades)"
 mod_labels["win17_isconMP not Conservative"] <- "MP: not Conservative"
 mod_labels["frontbenchTRUE"] <- "Frontbench MP"
-sjPlot::plot_models(the_models, 
-                    m.labels = c("Pty only", "Gender only", "Marginality only","Brexit only", "F'bench only", "MP service only","Full model"),
-                    prefix.labels = "none",
-                    axis.labels = mod_labels,
-                    legend.title = "Ind. vars") +
-  theme_bw() +
-  theme(legend.position = "bottom",
-        legend.title = element_text(size=10)) +
-  geom_hline(yintercept=0, colour="black", linetype="solid")
 
+# sjPlot::plot_models(the_models, 
+#                     m.labels = c("Pty only", "Gender only", "Marginality only","Brexit only", "F'bench only", "MP service only","Full model"),
+#                     prefix.labels = "none",
+#                     axis.labels = mod_labels,
+#                     legend.title = "Ind. vars") +
+#   theme_bw() +
+#   theme(legend.position = "bottom",
+#         legend.title = element_text(size=10)) +
+#   geom_hline(yintercept=0, colour="black", linetype="solid")
+
+
+
+# 2. Use `broom.mixed::tidy()` to extract coefficients and CIs for all models
+#    add an `id` column to distinguish the models
+plot_data_i <- tibble(
+  model = the_models,
+  id = c(rep("One IV only", length(the_models) - 1), "Full model")
+) %>% 
+  mutate(tidied = purrr::map(model, broom.mixed::tidy, conf.int=TRUE)) %>%
+  tidyr::unnest(tidied) %>%
+  filter(effect == "fixed") |> 
+  filter(term!="(Intercept)")
+
+baselines <- c("MP: Conservative (ref)", 
+               "Female MP (ref)",
+               "Majority above 10% (ref)",
+               "Backbench MP (ref)",
+               "Brexit vote very low (ref)"
+               )
+baseline_df <- data.frame(
+  nice_term = c(baselines, baselines), 
+  id = c(rep("Full model", length(baselines)), rep("One IV only", length(baselines))),
+  estimate = rep(0, 2*length(baselines))
+)
+mod_labels_df <- data.frame(term = names(mod_labels),
+                            nice_term = c(mod_labels)) 
+
+     
+    
+plot_data <- plot_data_i |> 
+  left_join(mod_labels_df) |>
+  bind_rows(baseline_df) |>
+  mutate(nice_term = factor(
+    nice_term,
+    levels = c(
+      "Brexit vote very high: (61.2,71.1]",
+      "Brexit vote high: (54.9,61.2]",
+      "Brexit vote balanced: (47.2,54.9]",
+      "Brexit vote low: (35.7,47.2]",
+      "Brexit vote very low (ref)",
+      "MP service (decades)",
+      "Frontbench MP",
+      "Backbench MP (ref)",
+      "Majority below 2%",
+      "Majority 2-5%",
+      "Majority 5-10%",
+      "Majority above 10% (ref)",
+      "Male MP",
+      "Female MP (ref)",
+      "MP: not Conservative",
+      "MP: Conservative (ref)"
+    )
+  ))
+  
+
+ggplot(plot_data, aes(x = estimate, y = nice_term, color = id)) +
+  geom_vline(xintercept = 0, linetype = "solid", color = "black") +
+  geom_point(position = position_dodge(width = 0.5)) +
+  geom_errorbarh(aes(xmin = conf.low, xmax = conf.high), height = 0.2, position = position_dodge(width = 0.5)) +
+  labs(color = "Model Type",
+       y=NULL) + 
+  theme_bw() +
+  scale_color_manual(values = c("black", "grey")) +
+  theme(legend.position = "bottom",
+        legend.title = element_text(size = 10))
 
 ##----descriptive-response-analysis-cont-----
 
@@ -164,6 +231,7 @@ sjPlot::plot_models(mf1_pty_cont, mf1_sex_cont, mf1_margin_cont, mf1_brexit_cont
                     legend.title = "Independent variables") +
   theme_bw() +
   geom_hline(yintercept=0, colour="black", linetype="solid")
+
 
 ##----cases-per-cell-experiment----
 
