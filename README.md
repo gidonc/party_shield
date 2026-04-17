@@ -1,6 +1,6 @@
 # party_shield
 
-Replication code and data for Bishof et. al. 'Using the Party as a Shield? How British MPs Explain Policy Positions to Constituents'. The material is shared in two folders, described below:
+Replication code and data for Bishof et. al. "When Legislators Do Not Differentiate: A Field Experiment on British MPs' Responses to Constituent Policy Queries". The material is shared in two folders, described below:
 
 ## R Folder
 
