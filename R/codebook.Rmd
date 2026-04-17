@@ -1,5 +1,5 @@
 ---
-title: 'When legislators do not differentiate: A field experiment on British MPs responses to constituent policy queries: codebook, figures and tables'
+title: 'When legislators do not differentiate: A field experiment on British MPs responses to constituent policy queries: Codebook'
 
 # author: "Daniel Bishof, Vanessa Cheng-Matuno, Gidon Cohen, Sarah Cohen, Florian Foos,
 #   Patrick M Kuhn, Kyriaki Nanou, Neil Visalvanich, Nick Vivyan"
@@ -12,22 +12,9 @@ output:
     includes:
         in_header: preamble.tex
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,
-                      message = FALSE,
-                      warning = FALSE,
-                      width = 30
-                      
-                      )
-
-chunk_path <- paste0("main_analysis.R")
-
-knitr::read_chunk(chunk_path)
+```{r setup, echo=FALSE}
 
 library(kableExtra)
-
-
 ```
 
 
@@ -94,38 +81,6 @@ kbl(bes17_description,
 
 ```
 
-# File Structure
-
-This `Figs_and_Tables.Rmd` file will compile and generate a pdf with the tables and figures from `main_analysis.R` if the files and data are stored with the following structure:
-
-*  `project_root/`
-    *  `Data/`
-        *  `main.csv`
-        *  `bes17.dat.small.csv`
-    * `R/`
-        *  `main_analysis.R`
-        *  `power_analysis.R`
-        *  `Figs_and_tables.Rmd`
-        *  `power_analysis.Rmd`
-
-# Files
-
-The replication code is stored in two files in the `R` folder:
-
-  1.  `main_analysis.R`  
-      Contains code for all of the tables and figures in the article and most of the tables and figures in the appendix. 
-  1.  `power_analysis.R`  
-      Contains the code which generates the power analysis graphs in the appendix.
-
-There are two `.Rmd` files which create pdfs which use these files:
-
-  1.  `Figs_and_Tables.Rmd`  
-       Generates the figures and tables from the `main_analysis.R` file.
-  1.  `power_analysis.Rmd`  
-       Generates the power analysis graphs and tables.
-  
-      
-
 # Data
 
 In the Data folder, we provide two dataset to enable replication of our analysis. 
@@ -133,83 +88,4 @@ In the Data folder, we provide two dataset to enable replication of our analysis
   1.  `main.csv`. This is the principle dataset with the results of the experiment. This dataset generates the main results. Each row in the dataset contains data about a letter we arranged to be sent to an MP. The variables in this dataset are described in Table \ref{tab:mainvardesc}. 
   1.  `bes17.dat.small.csv`. This is a secondary dataset at constituency level. This dataset is principally used to describe the balance between constituencies in the experiment and those not in the experiment. Each row in the dataset contains data about a constituency. The variables in this dataset are described in Table \ref{tab:bes17vardesc}.
 
-
-
-# Code and Output
-
-The replication code for the figures and tables in the paper is provided in the  'main_analysis.R' file in the R folder. This document uses that file to produce output identical to that found in the article. 
-
-```{r setup-party-shield}
-
-```
-
-```{r load-party-shield-processed-data-Rmd}
-
-```
-
-
-
-```{r response-rate-descriptives}
-
-```
-
-```{r response-rate-on-congruence}
-
-```
-
-```{r lin-mod-responsiveness}
-
-```
-
-```{r lin-responsiveness-varyresponsetypes}
-
-```
-
-```{r OLS-self-v-party}
-
-```
-
-```{r balance-table}
-
-```
-
-```{r regional-distribution-setup}
-
-```
-
-```{r regional-distribution-table}
-
-```
-
-```{r lin-responsiveness-alternativeloyalist}
-
-```
-
-```{r OLS-self-v-party-alternativeloyalist}
-
-```
-
-```{r response-rate-by-issue-plot, fig.cap="Rates of MP substantive responses to constituent letters by policy topic."}
-
-```
-
-```{r response-rate-sendorder}
-
-```
-
-```{r lin-responsiveness-brexit}
-
-```
-
-```{r dist-lr-by-congruence, fig.cap="Distribution of log-ratio of MP versus party mentions in observed MP response texts, conditional on constituent-party policy congruence."}
-
-```
-
-```{r lin-mpparty-standardised}
-
-```
-
-```{r reg-letter-length}
-
-```
 
