@@ -65,7 +65,7 @@ The frequency with which MPs followed up on holding responses to provide substan
 
 ```
 
-```{r descriptive-response-results-plot, fig.cap="Coefficient plot of linear probability model using largely categorical independent variables, where the dependent variable is whether the letter has a response by either email or post (1) or no recorded response by either email or post (0). The plot includes coeffiecients from models with each potential dependent variable entered separately, and a full model with all potential dependent variables entered together. All models include MP random effects."}
+```{r descriptive-response-results-plot, fig.cap="Coefficient plot of linear probability model using largely categorical independent variables, where the dependent variable is whether the letter has a response by either email or post (1) or no recorded response by either email or post (0). The plot includes coeffiecients from models with each potential dependent variable entered separately, and a full model with all potential dependent variables entered together. All models include MP random effects.", fig.height=6}
 
 ```
 
