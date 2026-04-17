@@ -1,6 +1,6 @@
 ---
-title: 'Using the party as a shield: Power analysis'
-author: "Daniel Bishof, Vanessa Cheng-Matuno, Gidon Cohen, Sarah Cohen, Florian Foos,
+title: 'When legislators do not differentiate: Power analysis'
+author: "Daniel Bischof, Vanessa Cheng-Matuno, Gidon Cohen, Sarah Cohen, Florian Foos,
   Patrick M Kuhn, Kyriaki Nanou, Neil Visalvanich, Nick Vivyan"
 date: "`r Sys.Date()`"
 output: 
